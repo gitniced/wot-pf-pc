@@ -1,6 +1,0 @@
-FROM registry.cn-hangzhou.aliyuncs.com/wotu_platform/nginx:v2-root
-
-
-
-
-EXPOSE 80
