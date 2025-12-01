@@ -1,0 +1,248 @@
+/* stylelint-disable*/
+/**
+ * Created by cgl on 2020/9/21.
+ */
+
+.float_btn_wrapper {
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    z-index: 999;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .kefu_img_wrapper {
+        position: relative;
+        margin-right: -45px;
+        width: 60px;
+        height: 80px;
+
+        &:hover {
+            .kefu_img {
+                right: 45px;
+            }
+        }
+
+        .kefu_img {
+            position: absolute;
+            right: 0;
+            height: 80px;
+            transition: right ease-in-out 0.8s;
+            cursor: pointer;
+            backface-visibility: hidden;
+        }
+    }
+
+    .float_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        width: 32px;
+        height: 80px;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0 1px 8px 2px rgba(218, 218, 218, 50%);
+        flex-direction: column;
+        cursor: pointer;
+
+        &:hover {
+            .icon {
+                fill: var(--primary-color);
+            }
+
+            .text {
+                color: var(--primary-color);
+            }
+        }
+
+        .icon {
+            fill: rgba(0, 0, 0, 45%);
+        }
+
+        .text {
+            margin-top: 4px;
+            font-size: 14px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 18px;
+        }
+    }
+}
+
+.tooltip_class {
+    top: -87px !important;
+    left: -54px !important;
+
+    .tooltip_class_content {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        text-align: left;
+        color: rgba(255, 255, 255, 85%);
+        line-height: 24px;
+        font-style: normal;
+    }
+
+    :global {
+        .ant-tooltip-arrow {
+            left: 67% !important;
+        }
+    }
+}
+
+.hide_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    height: 40px;
+    background-color: var(--primary-color-005);
+    cursor: pointer;
+
+    .icon {
+        fill: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .text {
+        font-size: 14px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        color: var(--primary-color);
+        cursor: pointer;
+        line-height: 18px;
+    }
+
+    &:hover {
+        background-color: var(--primary-color);
+
+        .icon {
+            fill: #fff;
+        }
+
+        .text {
+            color: #fff;
+        }
+    }
+}
+
+.container_wrapper {
+    position: fixed;
+    top: 50%;
+    right: -100px;
+    z-index: 999;
+    width: 70px;
+    transform: translateY(-50%);
+    transition: right ease-in-out 0.2s;
+
+    &.show {
+        right: 16px;
+    }
+
+    .kefu_img {
+        position: absolute;
+        top: 0;
+        left: -3px;
+        width: 75px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .container {
+        overflow: hidden;
+        padding-top: 40px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 8px 2px rgba(218, 218, 218, 50%);
+
+        .satisfaction {
+            height: unset;
+
+            > p {
+                margin: 0 auto;
+                width: 55px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+.mascot_item {
+    position: relative;
+    width: 70px;
+    height: 106px;
+}
+
+.mascot_container {
+    position: absolute;
+    right: -54px;
+    display: flex;
+    align-items: center;
+    width: 78px;
+    transition: right 0.3s;
+
+    .mascot_content {
+        display: flex;
+        align-items: center;
+        width: 348px;
+        height: 56px;
+        line-height: 56px;
+        cursor: pointer;
+
+        .mascot_text {
+            width: 332px;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 8px;
+            text-align: center;
+            color: #fff;
+            background: var(--primary-color);
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8px 0 8px 8px;
+            border-color: transparent var(--primary-color) transparent;
+        }
+    }
+
+    .mascot {
+        width: 78px;
+        height: 106px;
+        cursor: pointer;
+    }
+}
+
+.popover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+
+    .qrcode {
+        min-width: 160px;
+        -webkit-user-drag: none;
+    }
+
+    > p {
+        margin-top: 12px;
+        font-size: 14px;
+        text-align: center;
+        color: #333;
+        line-height: 14px;
+    }
+
+    .backToTop {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+}

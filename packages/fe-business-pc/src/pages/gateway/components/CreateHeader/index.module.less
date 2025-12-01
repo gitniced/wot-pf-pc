@@ -1,0 +1,114 @@
+/* stylelint-disable */
+.create_hearder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 1200px;
+    height: 64px;
+    padding: 0 24px;
+    background: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 21, 41, 0.08);
+
+    :global {
+        .ant-modal-confirm-content {
+            margin-left: 0 !important;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: auto;
+        width: 100%;
+        height: 1px;
+        box-shadow: 0 2px 6px 0 rgba(0, 21, 41, 20%);
+        content: '';
+    }
+
+    .quit_btn {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        color: #575757;
+
+        & > span {
+            margin-left: 5px;
+        }
+
+        .quit_icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .edit_con {
+        .preview_btn {
+            margin-right: 18px;
+            color: rgba(0, 0, 0, 50%);
+            border-radius: 6px;
+        }
+
+        .draft_btn {
+            margin-right: 18px;
+            color: rgba(0, 0, 0, 50%);
+            border-radius: 6px;
+        }
+
+        .release_btn {
+            border-radius: 6px;
+            background: var(--primary-color);
+        }
+    }
+
+    .quit_btn:hover,
+    .preview_btn:hover,
+    .draft_btn:hover {
+        color: var(--primary-color);
+    }
+}
+
+.preview_content {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    justify-content: center;
+    padding: 10px 0;
+
+    .preview_mobile {
+        flex: none;
+        width: 375px;
+        height: 584px;
+        overflow: hidden;
+        overflow-y: auto;
+        background: rgb(222, 222, 222);
+    }
+
+    .preview_qrcode {
+        flex: none;
+
+        .qrcode {
+            width: 174px;
+            height: 174px;
+            background: #f00;
+        }
+
+        .label {
+            width: 100%;
+            margin-top: 16px;
+            color: rgba(0, 0, 0, 45%);
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+
+.load_btn {
+    display: inline-block;
+}

@@ -1,0 +1,184 @@
+/* stylelint-disable */
+.import_start {
+    :global {
+        .fe-enroll-pc-upload {
+            width: 100%;
+        }
+
+        .fe-enroll-pc-alert-message {
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .fe-enroll-pc-typography {
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+
+    .import_wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .download_template,
+        .upload_file {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            border: 1px dashed;
+            border-color: rgba(0, 0, 0, 0.15);
+            padding: 24px;
+            flex: 1;
+            height: 222px;
+
+            .header {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 32px;
+
+                .sort {
+                    font-size: 14px;
+                    color: #fff;
+                    text-align: center;
+                    background: var(--primary-color);
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    border-radius: 50%;
+                    margin-right: 8px;
+                }
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    margin-bottom: 4px;
+                    color: rgba(0, 0, 0, 0.85);
+                }
+
+                .sub_title {
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: rgba(0, 0, 0, 0.45);
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    margin-bottom: 12px;
+                }
+
+                :global {
+                    .fe-enroll-pc-typography {
+                        margin-bottom: 12px;
+                        line-height: 48px;
+                    }
+                    .fe-enroll-pc-btn {
+                        color: rgba(0, 0, 0, 0.65);
+
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        .download_template {
+            margin-right: 24px;
+        }
+    }
+}
+
+.batch_import_modal {
+    .import_loading {
+        padding: 24px 0;
+        text-align: center;
+
+        .text {
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 24px;
+            margin-top: 16px;
+        }
+
+        .file {
+            margin-top: 28px;
+            text-align: left;
+
+            .file_name {
+                color: rgba(0, 0, 0, 0.65);
+                line-height: 24px;
+                margin-left: 4px;
+            }
+        }
+
+        :global {
+            .fe-enroll-pc-progress {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .import_resolved {
+        padding: 24px 0;
+
+        :global {
+            .fe-enroll-pc-space {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .anticon {
+                font-size: 40px;
+                color: #36c626;
+            }
+        }
+
+        .text {
+            margin-bottom: 8px;
+            font-size: 24px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 32px;
+        }
+    }
+
+    .import_rejected {
+        .header {
+            :global {
+                .fe-enroll-pc-space {
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                .anticon {
+                    font-size: 40px;
+                    color: #ff4d4f;
+                }
+            }
+            .text {
+                margin-bottom: 8px;
+                font-size: 24px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.85);
+                line-height: 32px;
+            }
+        }
+
+        .download_record {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 24px 0 16px;
+
+            .text {
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.85);
+                line-height: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.page {
+    width: 100%;
+    height: 586px;
+    background-color: #fff;
+
+    .main {
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 80px 0;
+        width: 1200px;
+        min-width: 1200px;
+        flex-direction: column;
+
+        .title {
+            font-size: 36px;
+            font-family: PingFang-SC-Heavy, PingFang-SC;
+            font-weight: 800;
+            color: #333;
+            line-height: 50px;
+        }
+
+        .image {
+            margin-top: 64px;
+            width: 1200px;
+            height: 200px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 56px;
+
+            .button {
+                width: 224px !important;
+                height: 56px !important;
+                border: none;
+                border-radius: 8px;
+                text-align: center;
+                background: #177dff;
+
+                &:hover {
+                    background: rgba(23, 125, 255, 80%);
+                }
+
+                .text {
+                    font-size: 16px;
+                    font-family: PingFangSC-Regular, 'PingFang SC';
+                    font-weight: 400;
+                    color: #fff;
+                    line-height: 24px;
+                }
+
+                .icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}

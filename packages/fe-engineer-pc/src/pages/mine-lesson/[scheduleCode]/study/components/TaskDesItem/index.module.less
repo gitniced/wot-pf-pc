@@ -1,0 +1,44 @@
+.des_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 24px;
+    width: 100%;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .des_item_label {
+        min-width: 80px;
+        height: 28px;
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        text-align: left;
+        color: rgba(0, 0, 0, 85%);
+        flex: none;
+        line-height: 28px;
+    }
+
+    .des_item_value {
+        flex: 1;
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        text-align: left;
+        color: rgba(0, 0, 0, 65%);
+        line-height: 28px;
+        font-style: normal;
+
+        & > p {
+            margin-top: 24px;
+            margin-bottom: 0;
+            width: 100%;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

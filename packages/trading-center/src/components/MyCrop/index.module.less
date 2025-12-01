@@ -1,0 +1,55 @@
+/* stylelint-disable selector-class-pattern */
+.crop_control {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:first-of-type {
+        margin-top: 16px;
+    }
+
+    &:last-of-type {
+        margin-bottom: -8px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        font-style: normal;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+
+        &[disabled] {
+            cursor: default;
+        }
+    }
+
+    button + div:only-of-type {
+        flex: 1;
+        margin: 0 8px;
+    }
+}
+
+.crop_control_zoom button {
+    font-size: 18px;
+}
+
+.crop_control_rotate button {
+    font-size: 16px;
+
+    &:first-of-type {
+        transform: rotate(-20deg);
+    }
+
+    &:last-of-type {
+        transform: rotate(20deg);
+    }
+}

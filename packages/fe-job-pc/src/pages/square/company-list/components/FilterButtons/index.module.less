@@ -1,0 +1,188 @@
+/* stylelint-disable*/
+.company_industry {
+    position: absolute;
+    left: -10px;
+    z-index: 4;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: block;
+        width: 120px;
+        height: 12px;
+        content: '';
+    }
+
+    .options_box {
+        position: relative;
+        top: 8px;
+        overflow: auto;
+        overflow: overlay;
+        padding: 4px 0;
+        width: 884px;
+        height: 286px;
+        border: 1px solid #ebeef5;
+        border-radius: 12px;
+        background: #fff;
+        transition: opacity 0.2s linear;
+
+        .clearfix {
+            position: relative;
+            padding-left: 182px;
+            width: 100%;
+
+            .label {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                z-index: 1;
+                overflow: hidden;
+                padding: 0 16px;
+                width: 182px;
+                font-size: 14px;
+                font-weight: 500;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #222;
+                line-height: 20px;
+            }
+
+            .select_list {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+
+                .children {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 24px 8px 8px;
+                    width: 25%;
+                    font-size: 14px;
+                    font-weight: 400;
+                    border-radius: 4px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: #333;
+                    transition: all 0.2s linear;
+                    line-height: 20px;
+
+                    .icon {
+                        position: absolute;
+                        right: 8px;
+                        display: none;
+                        color: var(--primary-color);
+                    }
+
+                    &:hover {
+                        font-weight: 500;
+                        color: var(--primary-color);
+                        background: #f8f8f8;
+                    }
+                }
+
+                .active {
+                    font-weight: 500;
+                    color: var(--primary-color);
+
+                    .icon {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.filter_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    min-width: 800px;
+    column-gap: 44px;
+
+    :global {
+        .fe-job-pc-form-item-control-input-content {
+            flex: none;
+        }
+    }
+
+    .reset {
+        font-size: 14px;
+        color: #999;
+        line-height: 20px;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.selection {
+    .options_box {
+        position: absolute;
+        top: 8px;
+        left: -12px;
+        z-index: 4;
+        padding: 4px 8px;
+        width: 168px;
+        border: 1px solid #ededed;
+        border-radius: 8px;
+        background: #fff;
+        transition: opacity 0.2s linear;
+
+        &::before {
+            position: absolute;
+            top: -12px;
+            left: 0;
+            z-index: 10;
+            display: block;
+            width: 120px;
+            height: 12px;
+            content: '';
+        }
+
+        .option {
+            position: relative;
+            display: block;
+            display: flex;
+            overflow: hidden;
+            padding: 8px 24px 8px 8px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 4px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333;
+            transition: all 0.2s linear;
+            line-height: 20px;
+            cursor: pointer;
+
+            .icon {
+                position: absolute;
+                right: 8px;
+                display: none;
+                color: var(--primary-color);
+            }
+
+            &:hover {
+                font-weight: 500;
+                color: var(--primary-color);
+                background: #f8f8f8;
+            }
+        }
+
+        .active {
+            font-weight: 500;
+            color: var(--primary-color);
+
+            .icon {
+                display: block;
+            }
+        }
+    }
+}

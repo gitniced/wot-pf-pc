@@ -1,0 +1,174 @@
+.page {
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 550px;
+    background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/bg_mine_lesson.png');
+
+    .page_content {
+        overflow: hidden;
+        margin: auto;
+        width: 1200px;
+
+        /* stylelint-disable selector-class-pattern */
+        :global {
+            .fe-engineer-pc-timeline-item-head-blue {
+                background: var(--primary-color);
+            }
+
+            .fe-engineer-pc-timeline-item-tail {
+                top: 15px;
+                height: calc(100% - 20px);
+                border-left: 2px solid var(--primary-color);
+            }
+
+            .wt_pt_micro_component_container {
+                padding: 0 !important;
+            }
+        }
+        /* stylelint-enable */
+
+        .title_right {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            color: var(--primary-color);
+            cursor: pointer;
+            user-select: none;
+            line-height: 24px;
+
+            svg {
+                width: 16px;
+                font-size: 14px;
+                fill: var(--primary-color);
+            }
+        }
+
+        .user_card {
+            display: flex;
+            justify-content: space-between;
+            margin: 24px 0;
+            padding: 24px;
+            width: 1200px;
+            height: 128px;
+            border-radius: 12px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/bg_mine_lesson_stu.png');
+
+            .user_card_avatar {
+                position: relative;
+                overflow: hidden;
+                width: 80px;
+                height: 80px;
+                border: 2px solid #fff;
+                border-radius: 40px;
+                flex: none;
+                transform: translateZ(0);
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .user_card_info {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 16px;
+                color: #fff;
+
+                .user_card_name {
+                    overflow: hidden;
+                    margin-bottom: 8px;
+                    max-width: 300px;
+                    height: 32px;
+                    font-size: 24px;
+                    font-family: PingFangSC, 'PingFang SC';
+                    font-weight: 500;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    line-height: 32px;
+                    word-break: break-all;
+                }
+
+                .user_card_class {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    font-family: PingFangSC, 'PingFang SC';
+                    font-weight: 400;
+                    line-height: 22px;
+
+                    span {
+                        padding: 0 10px;
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            .user_card_data {
+                display: flex;
+                flex-direction: column;
+                margin-right: 25px;
+                color: #fff;
+
+                .user_card_data_title {
+                    font-size: 14px;
+                    font-family: PingFangSC, 'PingFang SC';
+                    font-weight: 400;
+                    text-align: right;
+                    line-height: 20px;
+                }
+
+                .user_card_data_value {
+                    font-size: 28px;
+                    font-family: PingFangSC, 'PingFang SC';
+                    font-weight: 500;
+                    text-align: right;
+                    line-height: 40px;
+                }
+
+                .user_card_data_info {
+                    font-size: 14px;
+                    font-family: PingFangSC, 'PingFang SC';
+                    font-weight: 400;
+                    text-align: right;
+                    line-height: 20px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .content {
+            padding: 24px;
+            width: 1200px;
+            min-height: 368px;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 48%);
+
+            .content_list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 24px;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+.order {
+    position: relative;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+
+    .mini_header {
+        height: 24px;
+        margin-bottom: 24px;
+        font-weight: bold;
+        position: relative;
+
+        &:not(:first-child) {
+            margin-top: 48px;
+        }
+        &::after {
+            width: 64px;
+            height: 6px;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background: rgba(0, 103, 255, 0.2);
+        }
+    }
+
+    .mini_header_red {
+        height: 24px;
+        margin-bottom: 24px;
+        font-weight: bold;
+        position: relative;
+        &::after {
+            width: 64px;
+            height: 6px;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background: rgba(255, 77, 79, 0.2);
+        }
+    }
+
+    .order_id {
+        align-items: flex-start;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+
+    .tracking {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .tracking_no {
+            max-width: 224px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .tracking_copy {
+            margin-left: 8px;
+            color: #1678ff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+    .file {
+        display: block;
+        max-width: 224px;
+        overflow: hidden;
+        line-height: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 24px;
+        cursor: pointer;
+
+        .go_back {
+            display: flex;
+            align-items: center;
+            margin-right: 32px;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 24px;
+            cursor: pointer;
+
+            .svg_icon {
+                width: 18px;
+                height: 16px;
+                margin-right: 8px;
+                opacity: 0.45;
+                fill: #000;
+            }
+
+            &:hover .svg_icon {
+                opacity: 1;
+                fill: var(--primary-color);
+            }
+
+            &:hover {
+                color: var(--primary-color);
+            }
+
+            .image {
+                width: 18px;
+                height: 16px;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    .result {
+        // width: 100%;
+        // margin: 0 2px 2px 2px;
+        // padding: 24px 22px;
+        // background: var(--primary-color-006);
+        // border-radius: 0 0 8px 8px;
+        margin-top: 48px;
+
+        .text_warp {
+            display: flex;
+
+            > div:first-child {
+                flex-shrink: 0;
+            }
+
+            > div:last-child {
+                display: -webkit-box;
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-all;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+
+                /* 这里是超出几行省略 */
+            }
+        }
+    }
+
+    .card_line {
+        position: absolute;
+        bottom: -24px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 96px;
+
+        .left,
+        .right {
+            width: 16px;
+            height: 24px;
+            background: linear-gradient(180deg, #eaf2ff 0%, #fff 100%);
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+        }
+    }
+}

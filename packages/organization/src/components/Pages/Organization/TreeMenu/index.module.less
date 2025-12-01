@@ -1,0 +1,215 @@
+/* stylelint-disable selector-class-pattern */
+.content {
+    .organization_title_content {
+        box-sizing: border-box;
+        width: 100%;
+        height: 48px;
+        margin: 0.1rem 0;
+        padding: 0 8px 0 8px;
+        overflow: hidden;
+        border: none;
+        border-radius: 0.04rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all ease-in-out 0.15s;
+        .organization_title {
+            width: calc(100% - 28px);
+            display: flex;
+            align-items: center;
+            .organization_title_str {
+                width: fit-content;
+                max-width: 100%;
+                overflow: hidden;
+                font-weight: 400;
+                font-size: var(--size-1);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .organization_num {
+                flex: none;
+                font-weight: 400;
+                font-size: var(--size-1);
+                white-space: nowrap;
+            }
+        }
+        .organization_title_btn {
+            flex: none;
+            width: 19px;
+            height: 19px;
+            border-radius: 4px;
+            margin-left: 8px;
+            opacity: 1;
+            padding: 2px;
+            &:hover {
+                opacity: 1;
+                background: rgba(22, 120, 255, 0.15);
+            }
+        }
+        &.organization_title_active {
+            color: var(--primary-color);
+            background: var(--primary-color-006);
+            // .organization_title_btn {
+            //     opacity: 1;
+            // }
+        }
+
+        &:hover {
+            color: var(--primary-color);
+            background: var(--primary-color-006);
+            // .organization_title_btn {
+            //     opacity: 1;
+            // }
+        }
+    }
+    :global {
+        .organization-tree-title {
+            & > span {
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .organization-tree-switcher {
+            align-self: center;
+            line-height: 0.1rem;
+        }
+
+        // .organization-tree-treenode-selected,
+        .organization-tree .organization-tree-node-content-wrapper.organization-tree-node-selected {
+            background-color: initial;
+            color: var(--primary-color);
+            svg {
+                opacity: 1;
+            }
+        }
+
+        .organization-tree-treenode-selected {
+            background: var(--primary-color-006);
+
+            .organization-tree-node-selected:hover {
+                background: initial;
+            }
+        }
+
+        .organization-tree-treenode:hover {
+            background: var(--primary-color-006);
+
+            .organization-tree-node-content-wrapper:hover {
+                background: initial;
+                svg {
+                    opacity: 1;
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        .organization-tree .organization-tree-node-content-wrapper {
+            transition: null;
+            padding: 0;
+        }
+
+        .organization-tree-treenode {
+            // align-items: center;
+            width: 100%;
+            height: 48px;
+            color: #333;
+            font-weight: 400;
+            font-size: var(--size-1);
+            font-family: PingFangSC-Regular, 'PingFang SC';
+            border-radius: 0.04rem;
+            margin: 0 0 4px 0;
+            padding: 0 8px 0 0;
+        }
+        .organization-tree-title {
+            display: block;
+            width: 100%;
+            max-width: 224px;
+        }
+
+        .organization-tree-node-content-wrapper,
+        .organization-tree-node-content-wrapper-close {
+            width: calc(100% - 0.15rem);
+            // height: 0.26rem;
+            // line-height: 0.26rem;
+        }
+
+        .organization-tree-switcher_close > img {
+            transition: all 0.3s;
+        }
+
+        .organization-tree-switcher_open > img {
+            transform: rotate(90deg);
+            transition: all 0.3s;
+        }
+    }
+
+    .tree_item {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 6px;
+        transition: all ease-in-out 0.15s;
+
+        .tree_item_info {
+            display: flex;
+            align-items: center;
+            width: calc(100% - 28px);
+
+            .tree_item_title {
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 400;
+                font-size: 16px;
+                // color: rgba(0, 0, 0, 0.85);
+                display: block;
+                word-break: break-all;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                // max-width: ();
+                max-width: calc(100% - 40px);
+            }
+            .tree_item_count {
+                flex: none;
+                margin-left: 8px;
+            }
+        }
+        .tree_item_btn {
+            flex: none;
+            width: 20px;
+            height: 20px;
+            // background: rgba(22, 120, 255, 0.15);
+            border-radius: 4px;
+            margin-left: 8px;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+                color: var(--primary-color);
+                background: var(--primary-color-015);
+            }
+        }
+        // &:hover {
+        //     .tree_item_btn {
+        //         opacity: 1;
+        //         color: var(--primary-color);
+        //         // background: var(--primary-color-015);
+        //     }
+        // }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .content {
+        :global {
+            .organization-tree-treenode {
+                align-items: center;
+                min-height: 0.4rem;
+            }
+        }
+    }
+}

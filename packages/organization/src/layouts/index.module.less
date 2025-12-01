@@ -1,0 +1,101 @@
+/* stylelint-disable selector-class-pattern */
+.page {
+    box-sizing: content-box;
+    width: 100%;
+    min-width: 1200px;
+    min-height: calc(100vh - 0.4rem);
+    padding-top: 0.4rem;
+    background-color: #f7f8fc !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .layout {
+        display: flex;
+
+        .menu {
+            width: 1.3rem;
+            min-height: calc(100vh - 0.4rem);
+            background: #fff;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            margin: 0.15rem;
+
+            .children {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .org_layout {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+        .org_content {
+            position: relative;
+            width: 1200px;
+            overflow: hidden;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 8%);
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 6px;
+                background: var(--primary-color);
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 8%);
+                content: '';
+            }
+
+            .org_title {
+                width: 100%;
+                margin-top: 62px;
+                color: rgba(0, 0, 0, 85%);
+                font-weight: 500;
+                font-size: 24px;
+                font-family: PingFangSC-Medium, 'PingFang SC';
+                line-height: 32px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .page {
+        .layout {
+            // margin: auto;
+            .content {
+                position: relative;
+                width: 100%;
+                margin: 24px;
+            }
+        }
+    }
+
+    :global {
+        .ant-input-affix-wrapper {
+            height: auto !important;
+            padding: 0 11px !important;
+        }
+
+        .ant-input {
+            height: 36px !important;
+        }
+
+        .ant-btn {
+            width: auto !important;
+            height: auto !important;
+            padding: 4px 20px !important;
+        }
+    }
+}

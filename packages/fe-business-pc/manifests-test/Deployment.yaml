@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fe-business-pc
+spec:
+  replicas: 1 # 部署userService服务的个数
+  selector:
+    matchLabels:
+      name: fe-business-pc # pod名称
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1          # 允许比期望Pod数多出的最大数量（可以是具体数字或百分比，如25%）
+      maxUnavailable: 0    # 更新过程中不可用Pod的最大数量（0表示更新时必须保持所有Pod可用）
+  minReadySeconds: 1      # 新Pod就绪后等待多长时间才被视为可用（单位：秒）
+  template:
+    metadata:
+      labels:
+        name: fe-business-pc # pod名称
+    spec:
+      containers:
+        - name: fe-business-pc # 镜像名称
+          image: ${DATETIME} # 我们打包的镜像
+          imagePullPolicy: Always # 容器拉取规则，Always表示每次都从docker私有仓库registry拉取镜像部署
+          ports:
+            - containerPort: 80
+          volumeMounts:
+          - name: nginx-config
+            mountPath: "/etc/nginx"
+          - name: nginx-html
+            mountPath: "/usr/share/nginx/html"
+          env: # 设置容器内环境变量，以下效果为设置容器时间为上海标准时间
+            - name: TZ
+              value: Asia/Shanghai
+          lifecycle:
+            postStart:
+              exec:
+                command:
+                - sh
+                - -c
+                - |
+                  sleep 5;
+                  nginx -s reload;
+            preStop:
+              exec:
+                command:
+                - sleep
+                - "5"
+          readinessProbe:  # 就绪探针
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 80
+              scheme: HTTP
+            initialDelaySeconds: 7
+            periodSeconds: 5
+            successThreshold: 1
+            timeoutSeconds: 10
+          livenessProbe:  # 存活探针
+            httpGet:
+              path: /
+              port: 80
+              scheme: HTTP
+            initialDelaySeconds: 15  # 初始延迟时间
+            periodSeconds: 10         # 检查频率
+            timeoutSeconds: 10         # 超时时间
+            failureThreshold: 3       # 失败重试次数
+      volumes:
+      - name: nginx-config
+        persistentVolumeClaim:
+          claimName: fe-business-pc-conf-test-pvc
+      - name: nginx-html
+        persistentVolumeClaim:
+          claimName: fe-business-pc-html-test-pvc

@@ -1,0 +1,74 @@
+/* stylelint-disable selector-class-pattern */
+.form_list {
+    margin-bottom: 16px;
+
+    .form_list_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .delete_button {
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+
+            span {
+                display: none;
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover {
+                color: #1678ff;
+                fill: #1678ff;
+            }
+        }
+
+        &:hover {
+            .delete_button {
+                span {
+                    display: block !important;
+                    font-size: 16px;
+                }
+            }
+
+            div[class*='editor_input'] {
+                border: #1678ff 1px solid;
+            }
+
+            div[class*='editor_title'] {
+                border-right: #1678ff 1px solid;
+            }
+        }
+
+        :global {
+            .form-item-control-input-content {
+                border: #fff 1px solid;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    .editor_radio_item {
+        display: flex;
+        align-items: center;
+        width: fill-available;
+        margin-bottom: 8px;
+    }
+
+    div[class*='form-item'] {
+        margin-bottom: 0;
+    }
+
+    .add {
+        color: #1678ff;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: PingFangSC-Regular, 'PingFang SC';
+        line-height: 24px;
+    }
+
+    div[class*='radio-group'] {
+        display: block;
+    }
+}

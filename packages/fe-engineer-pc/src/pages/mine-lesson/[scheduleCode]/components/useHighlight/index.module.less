@@ -1,0 +1,256 @@
+// ExplainPopover 动画样式
+.explain_popover {
+    user-select: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-origin: center top;
+}
+
+.explain_popover_hidden {
+    opacity: 0;
+    transform: scale(0.9) translateY(-10px);
+    pointer-events: none;
+}
+
+.explain_popover_visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+}
+
+.highlight_tooltip {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 32px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 5%), 0 6px 16px 0 rgba(0, 0, 0, 8%),
+        0 3px 6px -4px rgba(0, 0, 0, 12%);
+    transition: all 0.2s ease-in-out;
+
+    & > svg {
+        margin-right: 4px;
+        width: 18px;
+        height: 18px;
+        fill: var(--primary-color);
+    }
+
+    & > span {
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        color: rgba(0, 0, 0, 85%);
+        line-height: normal;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px 8px rgba(0, 0, 0, 8%), 0 8px 20px 0 rgba(0, 0, 0, 12%),
+            0 4px 8px -4px rgba(0, 0, 0, 16%);
+
+        span {
+            color: var(--primary-color) !important;
+        }
+    }
+}
+
+.explain_content {
+    overflow: hidden;
+    width: 400px;
+    height: 460px;
+    // max-height: 460px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 12px 48px 16px rgba(0, 0, 0, 3%), 0 9px 28px 0 rgba(0, 0, 0, 5%),
+        0 6px 16px -8px rgba(0, 0, 0, 8%);
+
+    .explain_content_title_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        border-bottom: 1px solid rgba(0, 0, 0, 6%);
+
+        .explain_content_title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1;
+            padding-left: 18px;
+
+            & > svg {
+                margin-right: 5px;
+                width: 21px;
+                height: 21px;
+                fill: var(--primary-color);
+            }
+
+            & > span {
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 500;
+                color: rgba(0, 0, 0, 85%);
+                line-height: normal;
+            }
+        }
+
+        .explain_content_close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            flex: none;
+            user-select: none;
+            cursor: pointer;
+
+            & > svg {
+                width: 16px;
+                height: 16px;
+                fill: rgba(0, 0, 0, 45%);
+            }
+
+            &:hover {
+                & > svg {
+                    fill: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .explain_content_info_content {
+        overflow: hidden;
+        overflow-y: auto;
+        padding: 16px;
+        width: 100%;
+        height: 356px;
+        // max-height: 356px;
+        border-bottom: 1px solid rgba(0, 0, 0, 6%);
+
+        .explain_content_select_content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 12px;
+            width: 100%;
+            // height: 100%;
+            flex-wrap: wrap;
+
+            .explain_content_select_content_sign {
+                flex: none;
+                display: block;
+                margin-right: 8px;
+                width: 16px;
+                height: 18px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/icon_mingci%402x.png');
+            }
+
+            .explain_content_select_content_text {
+                flex: 1;
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 500;
+                color: rgba(0, 0, 0, 85%);
+                line-height: 24px;
+            }
+        }
+
+        strong {
+            font-size: 14px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 22px;
+        }
+
+        p,
+        li {
+            font-size: 14px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            color: rgba(0, 0, 0, 65%);
+            line-height: 22px;
+        }
+
+        // .explain_content_item_content {
+        //     margin-bottom: 8px;
+        //     width: 100%;
+
+        //     .explain_content_item_content_title {
+        //         margin-bottom: 4px;
+        //         font-size: 14px;
+        //         font-family: PingFangSC, 'PingFang SC';
+        //         font-weight: 500;
+        //         color: rgba(0, 0, 0, 85%);
+        //         line-height: 22px;
+        //     }
+
+        //     .explain_content_item_content_value {
+        //         font-size: 14px;
+        //         font-family: PingFangSC, 'PingFang SC';
+        //         font-weight: 400;
+        //         color: rgba(0, 0, 0, 65%);
+        //         line-height: 22px;
+        //     }
+        // }
+    }
+
+    .explain_content_foot_content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 52px;
+        border-top: 1px solid rgba(0, 0, 0, 6%);
+
+        .explain_content_foot_content_button {
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+            user-select: none;
+            cursor: pointer;
+            border-radius: 16px;
+
+            & > span {
+                font-size: 14px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                color: var(--primary-color);
+                line-height: normal;
+            }
+
+            & > img {
+                display: block;
+                margin-right: 2px;
+                width: 16px;
+                height: 16px;
+                object-fit: cover;
+            }
+
+            & > svg {
+                margin-right: 2px;
+                width: 16px;
+                height: 16px;
+                fill: var(--primary-color);
+            }
+        }
+    }
+}
+
+.explain_content_loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.loading_spinner {
+    width: 16px;
+    height: 16px;
+}

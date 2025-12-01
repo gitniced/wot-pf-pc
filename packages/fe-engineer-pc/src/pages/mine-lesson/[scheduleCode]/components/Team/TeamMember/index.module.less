@@ -1,0 +1,75 @@
+.team_member {
+    padding: 24px;
+    height: 120px;
+
+    .team_member_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 85%);
+        line-height: 24px;
+
+        > span:last-child {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--primary-color);
+            cursor: pointer;
+            line-height: 22px;
+        }
+    }
+
+    .team_member_content {
+        display: flex;
+        margin-top: 16px;
+        column-gap: 16px;
+
+        .team_member_content_item {
+            display: flex;
+            align-items: center;
+            flex: none;
+            width: 144px;
+
+            .item_avatar {
+                flex: none;
+                width: 32px;
+                height: 32px;
+            }
+
+            .item_name_content {
+                display: flex;
+                align-items: center;
+                margin-left: 8px;
+                width: calc(100% - 40px);
+                gap: 2px;
+
+                & > .item_name {
+                    overflow: hidden;
+                    // flex: 1;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: rgba(0, 0, 0, 65%);
+                    line-height: 24px;
+                    word-break: break-all;
+                }
+
+                & > svg {
+                    flex: none;
+                }
+            }
+        }
+    }
+}
+
+.team_member_confirm_text {
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 4px;
+        color: #faad14;
+    }
+}

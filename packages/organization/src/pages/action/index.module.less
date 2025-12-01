@@ -1,0 +1,67 @@
+/* stylelint-disable selector-class-pattern */
+.action_page {
+    width: 100%;
+    height: 100%;
+    padding: 0.15rem;
+    background-color: #fff;
+    border-radius: 0.08rem;
+
+    .progress {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    div[class~='organization-progress-line'] {
+        width: 60%;
+    }
+
+    .content {
+        margin-top: 0.15rem;
+    }
+
+    .form {
+        margin-bottom: 0.2rem;
+    }
+
+    .btn {
+        border-radius: 0.04rem;
+        cursor: pointer;
+    }
+
+    .fileName {
+        word-break: break-all;
+    }
+
+    .format {
+        white-space: nowrap;
+    }
+
+    .select {
+        width: 1.54rem;
+        height: 0.2rem;
+        background: #fff;
+        border-radius: 0.04rem;
+    }
+
+    .operation {
+        display: flex;
+        align-items: center;
+
+        &_btn {
+            height: 0.14rem;
+            margin-right: 0.1rem;
+            color: var(--primary-color);
+            font-weight: 400;
+            font-size: 16px;
+            font-family: PingFangSC-Regular, 'PingFang SC';
+            line-height: 0.14rem;
+            cursor: pointer;
+        }
+
+        .be_overdue {
+            padding-bottom: 2px;
+            color: #ccc;
+        }
+    }
+}

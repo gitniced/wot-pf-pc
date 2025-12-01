@@ -1,0 +1,15 @@
+/* stylelint-disable */
+body {
+    background: #f0f2f5;
+}
+
+p {
+    margin: 0 !important;
+}
+
+@media print {
+    body,
+    #root {
+        min-width: auto !important;
+    }
+}

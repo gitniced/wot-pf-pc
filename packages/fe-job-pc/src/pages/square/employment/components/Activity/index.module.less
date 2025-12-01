@@ -1,0 +1,173 @@
+/* stylelint-disable*/
+.selected_job {
+    margin-top: 64px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+    }
+
+    .tabs {
+        display: flex;
+        align-items: flex-end;
+        min-width: 0;
+        height: 40px;
+        flex: 1;
+
+        > span {
+            overflow: hidden;
+            margin-right: 32px;
+            font-size: 24px;
+            font-weight: 400;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333;
+            line-height: 36px;
+            cursor: pointer;
+        }
+
+        .active {
+            font-size: 28px;
+            line-height: 40px;
+            font-weight: 500;
+        }
+    }
+
+    .container {
+        margin-top: 32px;
+        height: 338px;
+
+        .empty {
+            margin: auto;
+        }
+    }
+}
+
+.event_card {
+    overflow: hidden;
+    width: 100%;
+    min-width: 282px;
+    height: 100%;
+    min-height: 246px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 5%);
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+    .event_card_img_con {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        height: 216px;
+
+        & > img {
+            object-fit: cover;
+        }
+
+        .event_status {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 8px;
+            height: 24px;
+            font-size: 16px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            border-radius: 16px;
+            color: #fff;
+
+            &.no_pending {
+                background: linear-gradient(270deg, #d1d1d1 0%, #e7e7e7 100%);
+                box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 5%);
+            }
+
+            &.pending {
+                background: linear-gradient(270deg, #ff4d4f 0%, #f99 100%);
+                box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 5%);
+            }
+        }
+
+        .event_watch {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 16px;
+            width: 100%;
+            height: 32px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0%) 0%, rgba(0, 0, 0, 60%) 100%);
+            box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 5%);
+
+            .event_watch_svg {
+                padding-right: 4px;
+                color: #fff;
+                flex: none;
+            }
+
+            .event_watch_text {
+                font-size: 14px;
+                font-family: PingFang-SC, PingFang-SC;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+    }
+
+    .event_card_name {
+        display: -webkit-box;
+        overflow: hidden;
+        margin: 16px 0 12px;
+        padding: 0 16px;
+        width: 100%;
+        height: 52px;
+        font-size: 18px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 500;
+        text-overflow: ellipsis;
+        color: rgba(0, 0, 0, 85%);
+        line-height: 26px;
+        word-break: break-all;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .event_card_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        padding-bottom: 16px;
+        width: 100%;
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        color: rgba(0, 0, 0, 45%);
+    }
+
+    &:hover {
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 8%);
+        transform: translateY(-4px);
+
+        .event_card_img_con {
+            .event_status,
+            .event_watch {
+                box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 8%);
+            }
+        }
+
+        .event_card_name {
+            color: var(--primary-color);
+        }
+    }
+}

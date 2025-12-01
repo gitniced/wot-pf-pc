@@ -1,0 +1,118 @@
+.page {
+    display: flex;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100vh;
+    background: #f7f8fc;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    flex-direction: column;
+
+    div[class*='ant-alert'] {
+        border-radius: 0.04rem;
+        color: rgba(0, 0, 0, 65%);
+    }
+
+    .user_message {
+        display: flex;
+        justify-content: space-between;
+        margin: 32px auto 0;
+        padding: 16px 24px;
+        width: 792px;
+        border: 1px solid #ffe58f;
+        border-radius: 8px;
+        background: #fffbe6;
+
+        .user_message_left {
+            width: 24px;
+            height: 24px;
+            fill: rgba(250, 173, 20, 100%);
+        }
+
+        .user_message_right {
+            display: flex;
+            align-items: flex-start;
+            width: 704px;
+            flex: none;
+            flex-direction: column;
+
+            .user_message_right_title {
+                margin-bottom: 4px;
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 500;
+                color: rgba(0, 0, 0, 85%);
+                line-height: 24px;
+            }
+
+            .user_message_right_text {
+                height: 72px;
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                color: rgba(0, 0, 0, 65%);
+                line-height: 24px;
+
+                .user_message_right_tel {
+                    color: #f00;
+                }
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        padding-right: 18%;
+        padding-left: 18%;
+        width: 100%;
+        min-height: calc(100vh - 0.49rem);
+        flex: 1;
+
+        &.no_height {
+            min-height: auto;
+        }
+
+        .img {
+            margin-right: 130px;
+        }
+
+        .user_image {
+            margin-right: 130px;
+            width: 672px;
+            height: 502px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex: none;
+        }
+
+        .user_content {
+            flex: none;
+            width: 438px;
+        }
+    }
+
+    .blank_content {
+        flex: 1;
+
+        .user_content {
+            flex: none;
+            width: 490px;
+        }
+
+        img {
+            width: 494px;
+            height: 391px;
+        }
+    }
+
+    .center {
+        justify-content: center;
+    }
+
+    .right {
+        justify-content: flex-end;
+    }
+}

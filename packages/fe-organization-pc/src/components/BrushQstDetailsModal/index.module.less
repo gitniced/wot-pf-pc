@@ -1,0 +1,157 @@
+.component_brush_questions {
+    width: 600px;
+    margin: auto;
+
+    :global {
+        .exam-center-space {
+            width: 100%;
+            justify-content: end;
+        }
+    }
+
+    .text {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 22px;
+    }
+
+    .practice_url {
+        .link {
+            width: 375px;
+            height: 32px;
+            background: rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 32px;
+            padding: 0 12px;
+            border-radius: 6px;
+        }
+    }
+
+    .practice_code {
+        margin-top: 32px;
+    }
+
+    .poster_wrapper {
+        width: 375px;
+        height: 573px;
+        margin: auto;
+        margin-left: 16px;
+        padding: 48px 48px;
+        border-radius: 6px;
+        text-align: center;
+        background-image: url('https://static.zpimg.cn/public/fe-exam-pc/bg_poster.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #2480fa;
+
+        .org_name {
+            font-size: 17px;
+            line-height: 22px;
+            min-height: 44px;
+            color: #fff;
+            margin-bottom: 12px;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .invite_text {
+            line-height: 34px;
+            text-align: center;
+            letter-spacing: 4px;
+            width: 242px;
+            height: 36px;
+            margin: auto;
+            margin-bottom: 48px;
+            background-image: url('https://static.zpimg.cn/public/fe-exam-pc/pic_circle.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .practice_title {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+            // min-height: 50px;
+            margin-bottom: 4px;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .practice_number {
+            position: relative;
+            font-size: 15px;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 400;
+            color: rgba(23, 26, 29, 0.6);
+        }
+        .practice_number::before {
+            content: '';
+            position: absolute;
+            left: 101px;
+            top: 11px;
+            width: 6px;
+            height: 2px;
+            background: rgba(23, 26, 29, 0.4);
+        }
+        .practice_number::after {
+            content: '';
+            position: absolute;
+            right: 101px;
+            top: 11px;
+            width: 6px;
+            height: 2px;
+            background: rgba(23, 26, 29, 0.4);
+        }
+
+        .start_time {
+            font-size: 15px;
+            line-height: 22px;
+            min-height: 22px;
+            color: rgba(23, 26, 29, 0.6);
+            margin-bottom: 16px;
+        }
+
+        .qr_code_wrapper {
+            width: 184px;
+            height: 207px;
+            margin: auto;
+            background-image: url('https://static.zpimg.cn/public/fe-exam-pc/pic_erweima.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            .qr_code {
+                width: 152px;
+                height: 152px;
+                position: absolute;
+                top: 4px;
+                left: 16px;
+                padding: 12px;
+                border-radius: 10px;
+                background-color: #fff;
+            }
+
+            .tips {
+                width: 100%;
+                font-size: 17px;
+                line-height: 22px;
+                color: #fff;
+                position: absolute;
+                bottom: 6px;
+                left: 50%;
+                transform: translate(-50%, 0px);
+            }
+        }
+    }
+}

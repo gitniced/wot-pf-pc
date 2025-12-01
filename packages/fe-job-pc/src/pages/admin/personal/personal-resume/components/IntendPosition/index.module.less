@@ -1,0 +1,58 @@
+.job_expect_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+
+    &:hover {
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 5%);
+
+        .operate {
+            visibility: visible !important;
+        }
+    }
+
+    .job_expect_container_left {
+        display: flex;
+        align-items: center;
+
+        .job_type {
+            margin-right: 12px;
+            padding: 0 8px;
+            width: fit-content;
+            font-size: 16px;
+            border: 1px solid;
+            border-radius: 4px;
+            line-height: 24px;
+
+            &_3,
+            &_4 {
+                border-color: rgba(82, 196, 26, 48%);
+                color: #52c41a;
+                background: rgba(82, 196, 26, 12%);
+            }
+
+            &_2,
+            &_1 {
+                border-color: rgba(250, 173, 20, 48%);
+                color: #faad14;
+                background: rgba(250, 173, 20, 12%);
+            }
+        }
+
+        .capacity_name,
+        .salary,
+        .city_name {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 24px;
+        }
+    }
+
+    .operate {
+        visibility: hidden;
+    }
+}

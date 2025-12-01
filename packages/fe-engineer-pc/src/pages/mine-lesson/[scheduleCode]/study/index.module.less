@@ -1,0 +1,91 @@
+.page {
+    margin: auto;
+    width: calc(1200px - 48px);
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        width: 100%;
+
+        .content_left {
+            flex: none;
+            width: 298px;
+            height: 100%;
+
+            .content_left_image {
+                overflow: hidden;
+                margin-bottom: 24px;
+                width: 100%;
+                height: 168px;
+                border-radius: 8px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 168px;
+                    object-fit: cover;
+                }
+            }
+
+            .content_left_info {
+                display: flex;
+                margin-top: 16px;
+                width: 100%;
+                font-size: 14px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                color: rgba(0, 0, 0, 85%);
+                line-height: 22px;
+
+                div {
+                    flex: none;
+                }
+
+                span {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    width: 100%;
+                    height: auto;
+                    max-height: 44px;
+                    color: rgba(0, 0, 0, 65%);
+                    flex: 1;
+                    -webkit-line-clamp: 2; /* 超出2行显示省略号 */
+                    line-clamp: 2; /* 超出2行显示省略号 */
+                    -webkit-box-orient: vertical;
+                    word-break: break-all;
+                }
+            }
+
+            .content_left_more {
+                user-select: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                margin-top: 16px;
+                height: 22px;
+                font-size: 14px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                text-align: left;
+                color: var(--primary-color);
+                line-height: 22px;
+                font-style: normal;
+
+                svg {
+                    width: 16px;
+                    font-size: 10px;
+                    fill: var(--primary-color);
+                }
+            }
+        }
+
+        .content_right {
+            width: 836px;
+            height: 655px;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            background: #fff;
+        }
+    }
+}

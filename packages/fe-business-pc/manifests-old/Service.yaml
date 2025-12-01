@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: fe-business-pc
+spec:
+    type: ClusterIP # 集群IP类型：NodePort、ClusterIP、None
+    selector:
+        name: fe-business-pc
+    ports:
+        - protocol: TCP
+          port: 80 # 集群service端口
+          targetPort: 80 # docker容器端口

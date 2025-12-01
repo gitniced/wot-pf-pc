@@ -1,0 +1,93 @@
+/* stylelint-disable */
+
+.page_question_list {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #fff;
+   
+    :global {
+
+        .pt_knowledge_category_expend {
+            overflow-y: auto;
+        }
+        .super_table_warp {
+            padding: 0 24px;
+
+            .exam-center-pagination {
+                position: absolute;
+                right: 0;
+                width: calc(100% - 250px);
+            }
+        }
+
+        .super_form_item {
+            // width: 400px !important;
+            margin-bottom: 24px !important;
+
+            .exam-center-select {
+                width: 100%;
+            }
+            
+            .exam-center-picker {
+                width: 100%;
+                border-radius: 6px;
+                height: 32px;
+            }
+        }
+
+        .exam-center-table-cell {
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+            }
+            p {
+                margin: 0;
+                overflow: hidden;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                width: 100%;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+
+    .page_space_wrapper {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        height: calc(100% - 64px);
+
+        &.collapsed {
+            .list_wrapper {
+                height: 100%;
+                width: calc(100% - 24px);
+                overflow-y: auto;
+            }
+        }
+
+        .list_wrapper {
+            height: 100%;
+            width: calc(100% - 240px);
+            overflow-y: auto;
+        }
+    }
+
+    .footer_bar {
+        margin-top: 16px;
+
+        :global {
+            .exam-center-typography {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.exam-center-btn-primary {
+    background-color: var(--primary-color) !important;
+}

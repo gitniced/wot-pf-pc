@@ -1,0 +1,111 @@
+.sign_in_detail {
+    padding: 32px 32px 16px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 100%;
+
+    .content {
+        max-width: 366px;
+
+        .svg_box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 81px;
+            height: 32px;
+            z-index: 2;
+
+            .icon {
+                width: 81px;
+                height: 32px;
+                border-top-right-radius: 8px;
+            }
+
+            span {
+                position: absolute;
+                z-index: 3;
+                top: 4px;
+                right: 12px;
+                font-size: 16px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 24px;
+            }
+        }
+
+        .descriptions {
+            .index {
+                :global {
+                    .fe-signin-pc-descriptions-item-content {
+                        font-weight: 500;
+                        color: rgba(0, 0, 0, 0.85);
+                    }
+                }
+            }
+            .time {
+                :global {
+                    .fe-signin-pc-descriptions-item-content {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #ff4d4f;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            :global {
+                .fe-signin-pc-descriptions-item-label,
+                .fe-signin-pc-descriptions-item-content {
+                    font-size: 16px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.65);
+                    line-height: 24px;
+                }
+
+                .fe-signin-pc-descriptions-item-label {
+                    color: rgba(0, 0, 0, 0.85);
+                }
+            }
+        }
+
+        > div {
+            width: 100%;
+        }
+
+        .divider {
+            margin: 16px 0;
+        }
+
+        .img_list {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 24px;
+
+            .img_item {
+                // width: 171px;\
+                flex: 1;
+                text-align: center;
+
+                .img,
+                .no_img {
+                    width: 100%;
+                    // width: 171px;
+                    height: 240px;
+                    margin-bottom: 8px;
+                }
+
+                .no_img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #d8d8d8;
+                }
+            }
+        }
+    }
+}

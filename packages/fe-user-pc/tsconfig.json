@@ -1,0 +1,11 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"],
+            "@@/*": ["src/.umi/*"]
+        }
+    },
+    "include": ["src/**/*", "mock/**/*", "config/**/*", ".umirc.ts", "typings.d.ts", "*.js", "*.ts"]
+}

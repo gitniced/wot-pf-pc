@@ -1,0 +1,57 @@
+/* stylelint-disable*/
+.page {
+    position: relative;
+    padding-top: 42px;
+    min-height: calc(100vh - 452px);
+    background: #f8f8f8;
+
+    :global {
+        .fe-job-pc-spin {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(180deg, var(--primary-color-006) 0%, #f8f8f8 100%);
+        content: '';
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        width: 1200px;
+        max-width: 1200px;
+
+        :global {
+            .fe-job-pc-tabs-nav-wrap {
+                padding-left: 24px;
+                border-radius: 6px;
+                background: #fff;
+            }
+        }
+
+        .content {
+            display: flex;
+            margin-top: 8px;
+            column-gap: 24px;
+
+            .left {
+                flex: 1;
+            }
+
+            .right {
+                width: 284px;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+/* stylelint-disable */
+.pc_tab {
+    border-radius: 12px;
+
+    :global {
+        .ant-upload-list-picture-card {
+            overflow: hidden;
+        }
+
+        .pc_nav_view_warp {
+            // padding: 0 24px;
+
+            .pc_nav_view {
+                // width: 100%;
+                // padding: 0 190px;
+            }
+        }
+
+        @media screen and (max-width: 1600px) {
+            .pc_nav_view {
+                width: 700px !important;
+            }
+
+            .pc_nav_view_list {
+                width: 700px !important;
+            }
+        }
+
+        .pc_nav_view_list {
+            width: 100%;
+        }
+
+        .pc_nav_view_warp {
+            // overflow-x: auto;
+        }
+
+        // .pc_nav_view_left {
+        //     margin-right: 176px;
+        //     margin-left: 176px;
+        // }
+
+        div[class*='ant-tabs-nav'] {
+            margin: 0 !important;
+        }
+
+        .pc_nav_view_list {
+            background: var(--primary-color);
+        }
+
+        .template_preview_two_link {
+            padding: 32px;
+            width: 100% !important;
+            max-width: 1200px;
+        }
+
+        div[class*='ant-tabs-tab'] {
+            padding-top: 8px;
+        }
+    }
+
+    .nav_warp {
+        // width: 1546px;
+        margin-top: 24px;
+        box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 5%);
+
+        .registry {
+            color: var(--primary-color);
+        }
+
+        .login {
+            border-radius: 6px;
+        }
+
+        .nav_list_data {
+            padding-left: 200px;
+            width: 100%;
+            height: 56px;
+            background: var(--primary-color);
+        }
+    }
+
+    .nav_warp_title {
+        position: relative;
+        margin-top: 24px;
+        height: 24px;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 85%);
+        line-height: 24px;
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 82px;
+            height: 6px;
+            background: var(--primary-color-025);
+            content: '';
+        }
+    }
+
+    .form_warp {
+        // width: 1300px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .nav_upload {
+        width: 120px;
+        height: 120px;
+
+        .nav_upload_placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    :global {
+        #naviLogo_extra {
+            margin-top: -24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.icon {
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.3em;
+    fill: var(--primary-color);
+}

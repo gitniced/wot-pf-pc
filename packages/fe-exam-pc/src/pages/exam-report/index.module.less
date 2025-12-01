@@ -1,0 +1,220 @@
+.page_exam_report {
+    background-color: #f0f2f5;
+    font-size: 16px;
+    padding-bottom: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    --exam-center-primary-color: #1890ff;
+    --exam-center-primary-color-hover: #40a9ff;
+    --exam-center-primary-color-active: #096dd9;
+    --exam-center-primary-color-outline: rgba(24, 144, 255, 0.2);
+    --exam-center-primary-1: #e6f7ff;
+    --exam-center-primary-2: #bae7ff;
+    --exam-center-primary-3: #91d5ff;
+    --exam-center-primary-4: #69c0ff;
+    --exam-center-primary-5: #40a9ff;
+    --exam-center-primary-6: #1890ff;
+    --exam-center-primary-7: #096dd9;
+    --exam-center-primary-color-deprecated-l-35: #cbe6ff;
+    --exam-center-primary-color-deprecated-l-20: #7ec1ff;
+    --exam-center-primary-color-deprecated-t-20: #46a6ff;
+    --exam-center-primary-color-deprecated-t-50: #8cc8ff;
+    --exam-center-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+    --exam-center-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+    --exam-center-primary-color-active-deprecated-d-02: #dcf4ff;
+    --exam-center-success-color: #52c41a;
+    --exam-center-success-color-hover: #73d13d;
+    --exam-center-success-color-active: #389e0d;
+    --exam-center-success-color-outline: rgba(82, 196, 26, 0.2);
+    --exam-center-success-color-deprecated-bg: #f6ffed;
+    --exam-center-success-color-deprecated-border: #b7eb8f;
+    --exam-center-error-color: #ff4d4f;
+    --exam-center-error-color-hover: #ff7875;
+    --exam-center-error-color-active: #d9363e;
+    --exam-center-error-color-outline: rgba(255, 77, 79, 0.2);
+    --exam-center-error-color-deprecated-bg: #fff2f0;
+    --exam-center-error-color-deprecated-border: #ffccc7;
+    --exam-center-warning-color: #faad14;
+    --exam-center-warning-color-hover: #ffc53d;
+    --exam-center-warning-color-active: #d48806;
+    --exam-center-warning-color-outline: rgba(250, 173, 20, 0.2);
+    --exam-center-warning-color-deprecated-bg: #fffbe6;
+    --exam-center-warning-color-deprecated-border: #ffe58f;
+    --exam-center-info-color: #1890ff;
+    --exam-center-info-color-deprecated-bg: #e6f7ff;
+    --exam-center-info-color-deprecated-border: #91d5ff;
+
+    .report_header {
+        background-color: #fff;
+
+        .report_header_wrapper {
+            min-width: 1200px;
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0 14px;
+
+            .GRADING_TYPE_tag {
+                border: 1px solid;
+                border-radius: 4px;
+                padding: 0 8px;
+                color: #1678ff;
+                background-color: #edf5ff;
+                border-color: #97c3ff;
+            }
+
+            .paper_name {
+                line-height: 28px;
+                font-size: 20px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            .exam_name {
+                margin-top: 4px;
+                line-height: 24px;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.45);
+
+                > span:not(:first-child) {
+                    margin-left: 24px;
+                }
+            }
+
+            .student_name,
+            .submit_sort {
+                line-height: 24px;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.65);
+            }
+        }
+    }
+
+    .content_wrapper {
+        min-width: 1200px;
+        width: 1200px;
+        margin: auto;
+        margin-top: 24px;
+
+        .data_view {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+
+            .data_view_item {
+                height: 104px;
+                background: #fafafa;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .item_chart {
+                    margin-right: 16px;
+                }
+
+                .item_content {
+                    text-align: center;
+
+                    .item_content_label {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 0.85);
+                        line-height: 24px;
+                    }
+
+                    .item_content_text {
+                        font-weight: 500;
+                        font-size: 24px;
+                        color: rgba(0, 0, 0, 0.85);
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+
+        .analysis_paper {
+            margin-top: 24px;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 24px;
+
+            .analysis_paper_title {
+                font-weight: 500;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.85);
+                line-height: 24px;
+                text-align: left;
+                font-style: normal;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 4em;
+                    height: 6px;
+                    background: rgba(0, 103, 255, 0.2);
+                    position: absolute;
+                    bottom: 1px;
+                    left: 0;
+                }
+            }
+
+            .analysis_paper_table {
+                margin-top: 24px;
+
+                .report_table {
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.85);
+                }
+            }
+        }
+
+        .analysis_question {
+            margin-top: 24px;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 24px;
+
+            .analysis_question_title {
+                font-weight: 500;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.85);
+                line-height: 24px;
+                text-align: left;
+                font-style: normal;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 4em;
+                    height: 6px;
+                    background: rgba(0, 103, 255, 0.2);
+                    position: absolute;
+                    bottom: 1px;
+                    left: 0;
+                }
+            }
+
+            .analysis_question_table {
+                margin-top: 24px;
+
+                .report_table {
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.85);
+                }
+            }
+        }
+    }
+
+    .question_index_text {
+        margin-right: 8px;
+        width: 5em;
+    }
+
+    .question_index_text_detail {
+    }
+}

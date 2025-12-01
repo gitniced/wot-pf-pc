@@ -1,0 +1,42 @@
+/* stylelint-disable selector-class-pattern */
+.pay_roof {
+    .info {
+        height: 72px;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 32px;
+        display: flex;
+        .settlement_item {
+            width: 33.33%;
+        }
+    }
+    .form_center {
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .img_upload {
+        height: 128px;
+        border-radius: 8px;
+
+        :global {
+            .transaction-upload-list {
+                display: flex;
+            }
+
+            .transaction-upload-list-picture-card-container {
+                width: 128px !important;
+            }
+
+            .transaction-upload-select-picture-card {
+                width: 128px !important;
+            }
+        }
+
+        img {
+            max-width: 120px;
+            max-height: 120px;
+        }
+    }
+}

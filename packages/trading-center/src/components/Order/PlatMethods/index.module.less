@@ -1,0 +1,37 @@
+.plat_methods {
+    display: flex;
+
+    label[class*='transaction-radio-button-wrapper-checked'] {
+        border: 2px solid var(--transaction-primary-color);
+        background: #F5F9FF;
+    }
+
+    .check_list {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 56px;
+        margin-right: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 16px;
+        border-radius: 8px !important;
+        user-select: none;
+        border: 1px solid;
+        border-color: rgba(0, 0, 0, 0.15);
+        
+        &::before {
+            display: none !important;
+        }
+
+        .play_icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        .pay_text {
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 24px;
+        }
+    }
+}

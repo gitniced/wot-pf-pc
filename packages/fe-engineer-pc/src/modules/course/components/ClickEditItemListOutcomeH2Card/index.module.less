@@ -1,0 +1,145 @@
+.click_edit_item_list_outcome_h2_card {
+    padding: 16px 24px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: #fff;
+    transition: all 0.3s;
+    box-sizing: border-box;
+
+    &.active {
+        border: 1px solid #1678ff;
+    }
+
+    .card_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card_title {
+            position: relative;
+            height: 32px;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 32px;
+
+            &::after {
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 6px;
+                background: rgba(0, 103, 255, 20%);
+            }
+        }
+    }
+
+    .card_content {
+        margin-top: 16px;
+
+        .outcomes_list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    .card_footer {
+        margin-top: 16px;
+        padding-left: calc(4em + 12px);
+    }
+
+    .learning_outcome {
+        display: flex;
+        align-items: flex-start;
+
+        .outcome_index {
+            margin-right: 12px;
+            width: 4em;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 24px;
+        }
+
+        .learning_outcome_wrapper {
+            flex: 1;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            background: #fff;
+            transition: all 0.2s ease;
+
+            &:hover {
+                border-color: #d9d9d9;
+            }
+
+            .outcome_header {
+                display: flex;
+                align-items: center;
+                background: rgba(0, 0, 0, 3%);
+
+                .outcome_title_wrapper {
+                    flex: 1;
+                    padding: 8px 16px;
+                }
+            }
+
+            .outcome_content {
+                padding: 16px;
+
+                .outcome_info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .info_row {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 12px;
+
+                        .info_label {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 85%);
+                            line-height: 24px;
+                        }
+
+                        .info_content {
+                            min-width: 0;
+                            flex: 1;
+
+                            .info_content_text {
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: rgba(0, 0, 0, 65%);
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .delete_btn {
+        padding: 8px 16px 8px 8px;
+        color: rgba(0, 0, 0, 45%);
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+    .fullscreen_content {
+        padding: 16px;
+
+        .outcomes_list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}

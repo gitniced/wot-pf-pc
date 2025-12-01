@@ -1,0 +1,150 @@
+.page {
+    width: 100%;
+    height: 543px;
+    background-image: url('https://wtzp-img.oss-cn-hangzhou.aliyuncs.com/gz_origin/bg%402x%20(1).png');
+    background-size: 100% 100%;
+
+    .main {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding: 80px 0;
+        width: 1200px;
+        min-width: 1200px;
+
+        .title {
+            font-size: 36px;
+            font-family: PingFang-SC-Heavy, PingFang-SC;
+            font-weight: 800;
+            text-align: center;
+            color: #333;
+            line-height: 50px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+
+            .card {
+                position: relative;
+                padding: 32px 24px;
+                width: 282px;
+                height: 285px;
+                border-radius: 8px;
+                box-sizing: border-box;
+
+                .text {
+                    margin-bottom: 16px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 8px;
+                    border-radius: 8px 8px 0 0;
+                    content: '';
+                }
+
+                .box {
+                    border-radius: 8px;
+
+                    .head {
+                        font-size: 16px;
+                        font-family: PingFang-SC-Heavy, PingFang-SC;
+                        font-weight: 800;
+                        line-height: 22px;
+                    }
+
+                    .info {
+                        margin-top: 8px;
+                        font-size: 14px;
+                        font-family: PingFangSC-Regular, 'PingFang SC';
+                        font-weight: 400;
+                        color: #888;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            .card1 {
+                border-radius: 8px;
+                background: linear-gradient(180deg, #edf5ff 0%, #dcebff 100%);
+
+                &::before {
+                    background: #4795ff;
+                }
+
+                .box {
+                    padding: 16px 16px 10px;
+                    background: #f6fbff;
+
+                    .head {
+                        color: #125dff;
+                    }
+                }
+
+                .box + .box {
+                    margin-top: 15px;
+                }
+            }
+
+            .card2 {
+                background: linear-gradient(180deg, #f3fcf7 0%, #e6f7ee 100%);
+
+                &::before {
+                    background: #30be73;
+                }
+
+                .box {
+                    padding: 16px;
+                    background: #f9fefb;
+
+                    .head {
+                        color: #45c681;
+                    }
+                }
+            }
+
+            .card3 {
+                background: linear-gradient(180deg, #fdf8f0 0%, #ffecd5 100%);
+
+                &::before {
+                    background: #ee9221;
+                }
+
+                .box {
+                    padding: 16px;
+                    background: #fefcf7;
+
+                    .head {
+                        color: #f2b161;
+                    }
+                }
+            }
+
+            .card4 {
+                background: linear-gradient(180deg, #f4f0fd 0%, #f1e9ff 100%);
+
+                &::before {
+                    background: #491eee;
+                }
+
+                .box {
+                    padding: 16px;
+                    background: #faf8fe;
+
+                    .head {
+                        color: #572fee;
+                    }
+                }
+            }
+        }
+    }
+}

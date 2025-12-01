@@ -1,0 +1,102 @@
+.report_detail_modal {
+    color: rgba(0, 0, 0, 0.85);
+    --exam-center-primary-color: #1890ff;
+    --exam-center-primary-color-hover: #40a9ff;
+    --exam-center-primary-color-active: #096dd9;
+    --exam-center-primary-color-outline: rgba(24, 144, 255, 0.2);
+    --exam-center-primary-1: #e6f7ff;
+    --exam-center-primary-2: #bae7ff;
+    --exam-center-primary-3: #91d5ff;
+    --exam-center-primary-4: #69c0ff;
+    --exam-center-primary-5: #40a9ff;
+    --exam-center-primary-6: #1890ff;
+    --exam-center-primary-7: #096dd9;
+    --exam-center-primary-color-deprecated-l-35: #cbe6ff;
+    --exam-center-primary-color-deprecated-l-20: #7ec1ff;
+    --exam-center-primary-color-deprecated-t-20: #46a6ff;
+    --exam-center-primary-color-deprecated-t-50: #8cc8ff;
+    --exam-center-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+    --exam-center-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+    --exam-center-primary-color-active-deprecated-d-02: #dcf4ff;
+    --exam-center-success-color: #52c41a;
+    --exam-center-success-color-hover: #73d13d;
+    --exam-center-success-color-active: #389e0d;
+    --exam-center-success-color-outline: rgba(82, 196, 26, 0.2);
+    --exam-center-success-color-deprecated-bg: #f6ffed;
+    --exam-center-success-color-deprecated-border: #b7eb8f;
+    --exam-center-error-color: #ff4d4f;
+    --exam-center-error-color-hover: #ff7875;
+    --exam-center-error-color-active: #d9363e;
+    --exam-center-error-color-outline: rgba(255, 77, 79, 0.2);
+    --exam-center-error-color-deprecated-bg: #fff2f0;
+    --exam-center-error-color-deprecated-border: #ffccc7;
+    --exam-center-warning-color: #faad14;
+    --exam-center-warning-color-hover: #ffc53d;
+    --exam-center-warning-color-active: #d48806;
+    --exam-center-warning-color-outline: rgba(250, 173, 20, 0.2);
+    --exam-center-warning-color-deprecated-bg: #fffbe6;
+    --exam-center-warning-color-deprecated-border: #ffe58f;
+    --exam-center-info-color: #1890ff;
+    --exam-center-info-color-deprecated-bg: #e6f7ff;
+    --exam-center-info-color-deprecated-border: #91d5ff;
+
+    .report_detail_modal_content {
+        .content_info {
+            .content_info_item {
+                display: flex;
+                align-items: center;
+
+                &:not(:first-child) {
+                    margin-top: 16px;
+                }
+
+                > :first-child {
+                    width: 10em;
+                    margin-right: 16px;
+                    text-align: right;
+                    color: rgba(0, 0, 0, 0.45);
+                }
+            }
+        }
+
+        .content_detail {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #f0f0f0;
+
+            .content_detail_item {
+                display: flex;
+                align-items: flex-start;
+
+                &:not(:first-child) {
+                    margin-top: 16px;
+                }
+
+                > :first-child {
+                    width: 5em;
+                    margin-right: 16px;
+                    text-align: right;
+                    color: rgba(0, 0, 0, 0.45);
+                }
+
+                .content_detail_item_option {
+                    &:not(:first-child) {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .GRADING_TYPE_tag {
+        box-sizing: content-box;
+        text-align: center !important;
+        width: 5em;
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 0 8px;
+        color: #1678ff !important;
+        border-color: #97c3ff;
+        line-height: 24px;
+    }
+}

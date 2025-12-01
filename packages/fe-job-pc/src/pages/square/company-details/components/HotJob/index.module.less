@@ -1,0 +1,39 @@
+.similar_positions {
+    .main {
+        margin: auto;
+        padding-top: 8px;
+        width: 1200px;
+        max-width: 1200px;
+
+        .search_content {
+            height: 168px;
+
+            .search_box {
+                display: flex;
+                align-items: center;
+                padding: 24px 0;
+                width: 100%;
+                border-radius: 8px;
+                background-color: #fff;
+                flex-direction: column;
+            }
+
+            .no_top {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9;
+                width: 100vw;
+                background-color: #fff;
+                box-shadow: 0 3px 6px rgba(6, 0, 1, 5%);
+            }
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 245px;
+        }
+    }
+}

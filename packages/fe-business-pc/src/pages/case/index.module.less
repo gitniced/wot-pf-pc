@@ -1,0 +1,54 @@
+.case {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #f0f2f5;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        padding: 8px 24px;
+        width: 100%;
+        height: 64px;
+        font-family: PingFangSC-Medium, 'PingFang SC';
+        background: #fff;
+
+        .header_left {
+            display: flex;
+            align-items: center;
+
+            .header_logo {
+                margin-right: 8px;
+                width: 48px;
+                height: 48px;
+            }
+
+            .header_title {
+                font-size: 24px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 85%);
+                line-height: 32px;
+            }
+        }
+
+        .header_right {
+            display: flex;
+            align-items: center;
+        }
+
+        .kefu {
+            margin-right: 33px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .kefu:hover {
+            fill: var(--primary-color);
+        }
+
+        .extra_button {
+            color: rgba(0, 0, 0, 65%);
+        }
+    }
+}

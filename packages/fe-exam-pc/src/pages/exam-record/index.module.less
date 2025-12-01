@@ -1,0 +1,121 @@
+.page_exam_record {
+    width: 100%;
+    height: calc(100vh - 112px);
+    overflow-y: auto;
+
+    .page_stu_list {
+        width: 100%;
+        margin-top: 24px;
+        padding: 24px 24px 24px;
+        background-color: #fff;
+        border-radius: 8px;
+
+        .project_type {
+            display: inline-block;
+            height: 24px;
+            line-height: 22px;
+            padding: 0 8px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+
+        .buttonContainer {
+            font-weight: 400;
+            color: var(--primary-color);
+            line-height: 24px;
+            span {
+                cursor: pointer;
+                margin-right: 16px;
+            }
+        }
+
+        .buttonBar {
+            display: flex;
+            align-items: center;
+            .batchBtn {
+                width: 112px;
+                height: 32px;
+                background: var(--primary-color);
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                line-height: 24px;
+                justify-content: center;
+                margin-right: 16px;
+                span {
+                    margin-right: 5px;
+                }
+        
+            }
+
+        }
+
+        .stuStateText {
+            display: flex;
+            align-items: center;
+            
+            .circle {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+        }
+    
+        :global {
+            .super_form_item {
+                margin-bottom: 24px !important;
+    
+                .exam-center-select {
+                    width: 100%;
+                }
+                
+                .exam-center-picker {
+                    width: 100%;
+                    border-radius: 6px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
+
+.component_base_info {
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+
+    .title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+
+    .label {
+        color: rgba(0,0,0,0.85);
+    }
+
+    .value {
+        color: rgba(0, 0, 0, 0.65);
+    }
+
+    :global {
+        .exam-center-col {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+
+.exam_detail_tooltip {
+    :global {
+        .exam-center-tooltip-inner {
+            width: max-content;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/* stylelint-disable */
+
+.question_table {
+    .editor_text {
+        max-height: 200px;
+        overflow-y: auto;
+        white-space: break-spaces;
+
+        img {
+            max-width: 60px !important;
+            max-height: 60px !important;
+        }
+    }
+
+    :global {
+        .exam-center-table-pagination.exam-center-pagination {
+            margin-bottom: 0;
+        }
+
+        .exam-center-pagination-total-text {
+            flex: 1;
+        }
+    }
+}
+
+.question_form {
+    :global {
+        .exam-center-input {
+            height: 32px;
+        }
+
+        .exam-center-btn {
+            display: flex;
+            align-items: center;
+            height: 32px;
+        }
+    }
+}
+
+.icon_hover:hover {
+    color: var(--exam-center-primary-color);
+}

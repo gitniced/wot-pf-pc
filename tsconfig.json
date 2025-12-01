@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": "./"
+    },
+    "include": ["preStart.ts", "*.js", "*.ts", "packages/*/src/**/*"],
+    "exclude": [
+        "node_modules",
+        "packages/*/node_modules",
+        "packages/*/dist",
+        "packages/*/src/**/iconfonts.js"
+    ]
+}

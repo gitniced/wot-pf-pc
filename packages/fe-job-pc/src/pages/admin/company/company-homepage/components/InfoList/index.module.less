@@ -1,0 +1,85 @@
+/* stylelint-disable*/
+.info_list {
+    padding: 24px;
+    width: 312px;
+    min-width: 312px;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+    background: rgba(0, 0, 0, 2%);
+
+    .header {
+        border-radius: 8px;
+        background-color: #fff;
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 16px;
+            border: 1px solid rgba(22, 120, 255, 25%);
+            border-radius: 8px;
+            background: linear-gradient(
+                180deg,
+                rgba(22, 120, 255, 15%) 0%,
+                rgba(255, 255, 255, 0%) 100%
+            );
+
+            .text {
+                .title {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 85%);
+                    line-height: 24px;
+                }
+
+                .info {
+                    margin-top: 8px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 45%);
+                    line-height: 22px;
+                }
+            }
+
+            .progress {
+                width: 72px;
+
+                :global {
+                    .fe-job-pc-progress-text {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .list {
+        display: flex;
+        margin-top: 24px;
+        flex-wrap: wrap;
+        row-gap: 8px;
+
+        .item {
+            padding: 8px 24px;
+            width: 100%;
+            font-weight: 400;
+            border-radius: 6px;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 24px;
+            cursor: pointer;
+
+            &:hover {
+                background: var(--primary-color-05);
+            }
+        }
+
+        .active {
+            color: red;
+            color: var(--primary-color);
+            background: var(--primary-color-05);
+        }
+    }
+}

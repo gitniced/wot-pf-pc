@@ -1,0 +1,201 @@
+/* stylelint-disable selector-class-pattern */
+.page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0.15rem;
+    background-color: #fff;
+    border-radius: 0.08rem;
+
+    :global {
+        .organization-checkbox-wrapper {
+            max-width: 200px;
+            margin-left: 0;
+            padding: 0.04rem;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        height: 0.25rem;
+        margin-bottom: 0.1rem;
+        padding-left: 0.1rem;
+        color: var(--primary-color);
+        font-weight: 400;
+        font-size: var(--size-1);
+        line-height: 0.25rem;
+        background-color: var(--primary-color-006);
+        border-radius: 0.04rem;
+
+        svg {
+            width: 0.13rem;
+            height: 0.13rem;
+        }
+
+        span {
+            margin-left: 0.06rem;
+        }
+    }
+
+    .item {
+        padding-top: 0.15rem;
+
+        &_title {
+            width: 0.8rem;
+            height: 0.2rem;
+            margin-bottom: 0.1rem;
+            padding: 0 0.08rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: var(--size-1);
+            line-height: 0.2rem;
+            background: linear-gradient(270deg, #fff 0%, var(--primary-color-006) 100%);
+            border-radius: 0.04rem;
+        }
+
+        &_top {
+            display: flex;
+            align-items: center;
+            color: rgba(0, 0, 0, 85%);
+            font-weight: 500;
+            font-size: var(--size-1);
+            line-height: 0.14rem;
+            background: #fafafa;
+            border: 1px solid #e8e8e8;
+            border-bottom: none;
+
+            &_first,
+            &_second,
+            &_third,
+            &_fourth {
+                width: 200px;
+                height: 0.34rem;
+                padding: 0.1rem 0.15rem;
+                border-left: 1px solid #e8e8e8;
+            }
+
+            &_first {
+                border-left: none;
+            }
+
+            &_fourth {
+                width: 4rem;
+            }
+        }
+
+    }
+
+    .btn {
+        display: inline-flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.08rem;
+        font-weight: 400;
+        font-size: var(--size-1);
+        border-radius: 0.04rem;
+    }
+}
+
+.part_first {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 85%);
+    font-weight: 500;
+    font-size: var(--size-1);
+    line-height: 0.14rem;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+
+    &:nth-last-of-type(1) {
+        margin-bottom: 0.2rem;
+        border: 1px solid #e8e8e8;
+    }
+
+    .group_first,
+    .group_second {
+        width: 100%;
+    }
+
+    .check_first,
+    .check_second,
+    .check_third {
+
+        display: flex;
+        align-items: center;
+        width: 200px;
+        padding: 0.1rem 0.15rem;
+        min-width: 200px;
+    }
+
+    .check_second,
+    .check_third {
+        border-left: 1px solid #e8e8e8;
+    }
+
+    .part_second {
+        display: flex;
+        flex: 1;
+    }
+
+    .part_second {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #e8e8e8;
+
+        &:nth-last-of-type(1) {
+            border: none;
+        }
+
+    }
+
+    .check_fourth {
+        word-break: break-all;
+        margin-left: 0;
+        max-width: 4rem;
+    }
+
+
+}
+
+
+.part_third {
+    display: flex;
+    border-bottom: 1px solid #e8e8e8;
+    width: 100%;
+
+    &:nth-last-of-type(1) {
+        border: none;
+    }
+
+    .group_third {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.1rem 0.15rem;
+        border-left: 1px solid #e8e8e8;
+    }
+
+
+    &_item {
+        min-width: 200px;
+        margin-left: 0;
+        padding: 0.1rem 0.15rem;
+
+        &:nth-last-of-type(1) {
+            border-bottom: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .header {
+        svg {
+            width: 0.2rem !important;
+            height: 0.2rem !important;
+        }
+    }
+}

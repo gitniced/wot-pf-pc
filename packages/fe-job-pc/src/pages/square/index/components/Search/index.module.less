@@ -1,0 +1,66 @@
+/* stylelint-disable*/
+.page {
+    display: flex;
+    justify-content: center;
+    height: 366px;
+    background-size: 100% 100%;
+    background-image: url('https://wtzp-static.oss-cn-hangzhou.aliyuncs.com/dev/fe_job_pc/img/%E8%93%9D%E8%89%B2banner%402x.png');
+
+    .search_box {
+        padding: 60px 0;
+        width: 1200px;
+        min-width: 1200px;
+
+        .h2 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 500;
+            color: #333;
+            line-height: 48px;
+        }
+
+        .search {
+            margin-top: 24px;
+            width: 712px;
+            border-radius: 8px !important;
+            background-color: #fff;
+
+            :global {
+                .fe-job-pc-input-affix-wrapper {
+                    height: 52px;
+                    border: none;
+                    border-radius: 8px 0 0 8px;
+                    box-shadow: none;
+
+                    .fe-job-pc-input {
+                        line-height: 39px;
+                    }
+                }
+
+                .fe-job-pc-input-group-addon {
+                    left: 0;
+                    border-radius: 8px;
+
+                    .fe-job-pc-input-search-button {
+                        width: 100px;
+                        height: 52px;
+                        border: none;
+                        border-radius: 8px;
+
+                        span {
+                            text-shadow: none;
+                        }
+
+                        .anticon-search {
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+
+            .icon {
+                margin-right: 6px;
+            }
+        }
+    }
+}

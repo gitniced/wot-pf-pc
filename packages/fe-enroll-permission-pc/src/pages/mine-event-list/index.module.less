@@ -1,0 +1,266 @@
+.enroll_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    line-height: 24px;
+    background: #f0f2f5;
+    background: #fff;
+
+    .enroll_list_search_bar_wrapper {
+        width: 100%;
+        height: 104px;
+        margin: 0 -24px 0;
+        text-align: center;
+        z-index: 10;
+        background: var(--primary-color-015);
+
+        .enroll_list_search_bar {
+            padding: 32px 0;
+            background: var(--primary-color-015);
+
+            .search_bar_input {
+                width: 480px;
+            }
+        }
+    }
+
+    .enroll_list_wrapper {
+        width: 100%;
+        max-height: none;
+        padding: 0 24px 24px 24px;
+        overflow-y: auto;
+    }
+    .enroll_list_wrapper_portal {
+        min-height: calc(100vh - 168px);
+    }
+
+    .enroll_list_screen {
+        width: 100%;
+        max-width: 1200px;
+        margin: 24px auto 16px;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px 32px;
+        .filter_line_split {
+            width: 100%;
+            height: 0;
+            border: 1px dashed #e8e8e8;
+        }
+        .filter_line {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            margin: 16px 0;
+            .filter_line_label {
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.85);
+                margin-right: 8px;
+            }
+            .filter_line_list {
+                color: rgba(0, 0, 0, 0.65);
+                display: flex;
+                max-width: 1070px;
+                overflow-x: auto;
+                .filter_line_list_item {
+                    min-width: 48px;
+                    cursor: pointer;
+                    padding: 5px 8px;
+                    margin-right: 24px;
+                    border-radius: 4px;
+
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                    &.active {
+                        background: var(--primary-color);
+                        color: #fff;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    height: 6px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: rgba(0, 0, 0, 0.06);
+                    border-radius: 3px;
+                    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.08);
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: rgba(0, 0, 0, 0.12);
+                    border-radius: 3px;
+                    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .enroll_list_main {
+        width: 100%;
+        // max-width: 1200px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+    :global {
+        .enroll-pagination {
+            text-align: right;
+        }
+        .fe-enroll-permission-pc-pagination {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.event_card {
+    width: calc(25% - 18px);
+    height: 100%;
+    // min-width: 282px;
+    min-height: 246px;
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background: #fff;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+
+    .event_card_img_con {
+        width: 100%;
+        height: 158px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        & > img {
+            object-fit: cover;
+        }
+        .event_status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 24px;
+            padding: 0 8px;
+            border-radius: 16px;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            &.no_pending {
+                background: linear-gradient(270deg, #d1d1d1 0%, #e7e7e7 100%);
+                box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+            }
+            &.pending {
+                background: linear-gradient(270deg, #fe6731 0%, #f8934a 100%);
+                box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+            }
+        }
+        .event_watch {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 32px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+            box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 16px;
+            .event_watch_svg {
+                width: 20px;
+                height: 16px;
+                color: #fff;
+                padding-right: 4px;
+                flex: none;
+            }
+            .event_watch_text {
+                font-family: PingFang-SC, PingFang-SC;
+                font-weight: 500;
+                font-size: 14px;
+                color: #ffffff;
+            }
+        }
+    }
+    .event_card_name {
+        width: 100%;
+        height: 24px;
+        padding: 0 16px;
+        margin: 16px 0 8px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: nowrap;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.85);
+    }
+    .event_card_info {
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.45);
+        .event_card_split {
+            width: 1px;
+            height: 12px;
+            background: #e8e8e8;
+            box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+            margin: 0 8px;
+            flex: none;
+        }
+    }
+    &:hover {
+        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+        transform: translateY(-4px);
+        .event_card_img_con {
+            .event_status,
+            .event_watch {
+                box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+            }
+        }
+        .event_card_name {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.page {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.pc_event_list_layout {
+    width: 100%;
+    padding: 24px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 26px;
+}

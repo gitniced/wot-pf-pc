@@ -1,0 +1,86 @@
+.candidate_list {
+    height: 100%;
+
+    .tab_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 46px;
+
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33.33%;
+            height: 100%;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            cursor: pointer;
+        }
+
+        .active {
+            color: #1890ff;
+            border-bottom: 2px solid #1890ff;
+        }
+
+        .no_active {
+            color: #a7a7a8;
+            border-bottom: 2px solid #333438;
+        }
+    }
+
+    .list_box {
+        width: 100%;
+        height: calc(100vh - 110px);
+        padding: 16px 0;
+        overflow-y: auto;
+
+        // &:hover {
+        //   overflow-y: overlay;
+        // }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            // height: 274px;
+            background: #7c8083;
+            border-radius: 2px;
+        }
+    }
+
+    .list_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 48px;
+        padding: 16px 24px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        cursor: pointer;
+
+        &:hover {
+            background: #323235;
+        }
+    }
+
+    .success_status {
+        color: #52c41a;
+    }
+
+    .error_status {
+        color: #ff4d4f;
+    }
+}
+.popover {
+    :global {
+        .fe-signin-pc-popover-inner {
+            border-radius: 8px;
+            .fe-signin-pc-popover-inner-content {
+                padding: 0;
+            }
+        }
+    }
+}

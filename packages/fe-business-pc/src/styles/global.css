@@ -1,0 +1,67 @@
+/* stylelint-disable */
+html,
+body {
+    width: 100%;
+    min-width: 1200px;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji' !important;
+    color: rgba(0, 0, 0, 85%);
+    background-color: #fff;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    font-feature-settings: 'tnum';
+}
+
+.icon {
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentcolor;
+}
+
+.right_content {
+    position: relative;
+
+    /* padding: 16px; */
+
+    /* background-color: #fff; */
+    border-radius: 8px;
+}
+
+.iconpark-icon {
+    width: 1em;
+    height: 1em;
+}
+
+#root-master {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+body {
+    overflow: auto;
+    min-width: 1200px;
+    background: #f0f2f5;
+}
+
+.ant-btn {
+    line-height: 1;
+}
+
+.w-e-full-screen-container {
+    z-index: 9999 !important;
+}
+
+.org-sub-menu-wrapper {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 100%;
+}

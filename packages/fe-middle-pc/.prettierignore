@@ -1,0 +1,17 @@
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+**/*.min.js
+**/*.min.css
+**/iconfonts.js
+**/*.variable.css
+public/
+node_modules/
+dist/
+build/
+.turbo/
+.umi
+.umi-production
+.umi-test
+pnpm-lock.yaml

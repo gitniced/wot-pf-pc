@@ -1,0 +1,75 @@
+.page {
+    width: 100%;
+
+    .submit_score {
+        margin-bottom: 16px;
+        line-height: normal !important;
+    }
+
+    .no_preview_content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 500px;
+        flex-direction: column;
+
+        .no_preview {
+            margin-bottom: 8px;
+            width: 320px;
+            height: 320px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/not_found.png');
+        }
+
+        .no_preview_small_text {
+            position: absolute;
+            top: 260px;
+            width: 100%;
+            font-size: 16px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            text-align: center;
+            color: rgba(0, 0, 0, 65%);
+            line-height: 22px;
+        }
+
+        .no_preview_text {
+            position: absolute;
+            top: 290px;
+            width: 100%;
+            font-size: 16px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            text-align: center;
+            color: rgba(0, 0, 0, 65%);
+            line-height: 22px;
+
+            span {
+                color: var(--primary-color);
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+
+        .no_preview_btn {
+            margin-right: 8px;
+            width: 116px;
+            height: 32px;
+            border-radius: 6px;
+            color: rgba(0, 0, 0, 65%);
+            line-height: normal !important;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+
+            &:focus {
+                color: var(--primary-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/* stylelint-disable */
+.selectClassifyModal {
+    padding-bottom: 24px;
+
+    :global {
+        .wt-component-empty img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .selected {
+        height: 40px;
+        background: rgba(0, 0, 0, 0.04);
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 0 16px;
+        line-height: 38px;
+        margin-bottom: 24px;
+
+        .inner_selected {
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+        }
+    }
+
+    .modal_content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        & > div {
+            border: 1px solid #ccc;
+            height: 370px;
+            padding: 20px;
+            overflow: auto !important;
+            margin-left: -1px;
+        }
+        :global {
+
+            div[class*='ant-row ant-form-item'] {
+                margin-right: 0 !important;
+            }
+
+            .prevBox::-webkit-scrollbar {
+                width: 6px;
+                height: 6px;
+            }
+            .prevBox::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.06);
+                border-radius: 3px;
+                -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.08);
+            }
+            .prevBox::-webkit-scrollbar-thumb {
+                background: rgba(0, 0, 0, 0.12);
+                border-radius: 3px;
+                -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

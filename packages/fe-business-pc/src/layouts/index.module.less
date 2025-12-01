@@ -1,0 +1,195 @@
+/* stylelint-disable selector-class-pattern */
+.container {
+    display: flex;
+    overflow-x: auto;
+    height: 100%;
+    background-color: #f7f8fc;
+    flex: 1;
+
+    .layout_content {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 24px;
+    }
+}
+
+.engineer_footer {
+    margin: 24px 0 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: PingFangSC, 'PingFang SC';
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 45%);
+    line-height: 22px;
+
+    a {
+        color: rgba(0, 0, 0, 45%);
+    }
+}
+
+:global {
+    .ant-btn {
+        border-radius: 4px !important;
+    }
+
+    .ant-input {
+        border-radius: 6px !important;
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border-radius: 6px !important;
+    }
+}
+
+.assistant_btn {
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    cursor: pointer;
+    background-image: url('https://wtzp-static.oss-cn-hangzhou.aliyuncs.com/public/fe-engineer-pc/images/bg_aizhushou%402x_2292c872.png');
+
+    > img {
+        margin-right: 4px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.logo_assistant_btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    user-select: none;
+
+    span {
+        margin: 0 7px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 45%);
+    }
+
+    img {
+        flex: none;
+        display: block;
+        margin-right: 4px;
+        width: 20px;
+        height: 20px;
+    }
+
+    div {
+        font-size: 20px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 500;
+        color: rgba(0, 0, 0, 85%);
+        line-height: normal;
+        user-select: none;
+    }
+}
+
+.engineer_left_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-family: PingFangSC, 'PingFang SC';
+    font-weight: 400;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 65%);
+    background: rgba(0, 0, 0, 4%);
+    line-height: normal;
+    cursor: pointer;
+    user-select: none;
+}
+
+.engineer_left_assistant_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8px;
+    width: 93px;
+    height: 32px;
+    border-radius: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    user-select: none;
+    background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/bg_jiaoyan%402x.png');
+
+    img {
+        flex: none;
+        display: block;
+        margin-right: 6px;
+        width: 14px;
+        height: 14px;
+    }
+
+    div {
+        font-size: 14px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        color: rgba(0, 0, 0, 85%);
+    }
+
+    &:hover {
+        div {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.dropdown_wrapper {
+    padding-top: 0 !important;
+
+    .person_info_dropdown_menu {
+        .person_info_item {
+            position: relative;
+            padding-left: 36px;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+        }
+
+        .person_info_item > svg {
+            position: absolute;
+            top: 14px;
+            left: 8px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .right_arrow {
+            position: absolute;
+            top: 16px;
+            right: 8px;
+        }
+
+        .person_info_item:first-child {
+            margin-top: 8px;
+        }
+
+        .grey {
+            color: rgba(0, 0, 0, 45%);
+        }
+
+        .person_info_item:hover {
+            border-radius: 8px;
+            color: var(--primary-color);
+            background: var(--primary-color-005);
+            cursor: pointer;
+
+            svg {
+                fill: var(--primary-color);
+            }
+        }
+    }
+}

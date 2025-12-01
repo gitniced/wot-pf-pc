@@ -1,0 +1,44 @@
+/* stylelint-disable */
+.component_logout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: transparent;
+
+    .logo {
+        height: 24px;
+        visibility: hidden;
+    }
+
+    &.bg {
+        background-color: #3995F6;
+
+        .logo {
+            visibility: visible;
+        }
+    }
+   
+
+    .logout_inner {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.8);
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+        }
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+
+        .text {
+            margin-left: 8px;
+        }
+    }
+}

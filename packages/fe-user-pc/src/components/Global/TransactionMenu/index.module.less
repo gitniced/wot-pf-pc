@@ -1,0 +1,113 @@
+.page {
+    z-index: 99;
+    padding-top: 0.05rem;
+    width: 1.3rem;
+    min-height: calc(100vh - 0.4rem);
+    background: #fff;
+    box-shadow: 2px 0 12px 0 rgba(0, 21, 41, 3%);
+
+    .user_info {
+        display: none;
+        padding: 24px;
+        padding-bottom: 0;
+    }
+
+    .line {
+        margin: 0.05rem auto;
+        width: 1.1rem;
+        height: 1px;
+        background: rgba(0, 0, 0, 6%);
+    }
+
+    .menu_item_group {
+        margin: 0.1rem auto 0.15rem;
+    }
+
+    .menu_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.025rem 0.1rem;
+        height: 0.3rem;
+        border-radius: 0.05rem;
+        background: #fff;
+        cursor: pointer;
+
+        .icon {
+            margin-right: 0.05rem;
+            width: 0.13rem;
+            height: 0.13rem;
+            fill: #a0a1a9;
+        }
+
+        .name {
+            font-size: var(--size-1);
+            font-family: PingFangSC-Regular, 'PingFang SC';
+            font-weight: 400;
+            color: rgba(0, 0, 0, 85%);
+        }
+
+        &.active {
+            background: var(--primary-color-006);
+
+            .icon {
+                fill: var(--primary-color);
+            }
+
+            .name {
+                color: var(--primary-color);
+            }
+        }
+
+        &:hover {
+            background: var(--primary-color-006);
+
+            .icon {
+                fill: var(--primary-color);
+            }
+
+            .name {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .page {
+        width: 208px;
+
+        .user_info {
+            display: block;
+        }
+
+        .line {
+            margin: 8px auto;
+            width: 160px;
+            height: 1px;
+        }
+
+        .menu_item_group {
+            margin: 0.24rem auto;
+        }
+
+        .menu_item {
+            margin: 8px auto;
+            width: 160px;
+            height: 48px;
+
+            .icon {
+                margin-right: 8px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .page {
+        width: 208px;
+        min-height: calc(100vh - 0.55rem);
+    }
+}

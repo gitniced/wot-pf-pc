@@ -1,0 +1,69 @@
+.popover {
+    // 组内互评
+    &.intra_group {
+        width: 292px;
+    }
+
+    // 组间互评
+    &.inter_group {
+        width: 487px;
+    }
+}
+
+.title_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+
+    .title {
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 500;
+        color: rgba(0, 0, 0, 85%);
+        user-select: none;
+    }
+
+    .close {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            & > svg {
+                fill: var(--primary-color);
+            }
+        }
+
+        & > svg {
+            width: 16px;
+            height: 16px;
+            fill: rgba(0, 0, 0, 45%);
+        }
+    }
+}
+
+.user_content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .avatar {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+    }
+
+    span {
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        color: rgba(0, 0, 0, 85%);
+        line-height: normal;
+    }
+}

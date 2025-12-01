@@ -1,0 +1,100 @@
+/* stylelint-disable selector-class-pattern */
+.content {
+    width: 100%;
+
+    :global {
+        .organization-steps-item-title {
+            font-weight: bold;
+            font-size: var(--size-2);
+        }
+    }
+
+    .select,
+    .input,
+    .cascader {
+        background: #fff;
+        border-radius: 0.04rem;
+    }
+
+    .avatar {
+        position: relative;
+        width: 0.6rem;
+        height: 0.6rem;
+        overflow: hidden;
+        background-color: antiquewhite;
+        cursor: pointer;
+
+        .avatar_btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0.6rem;
+            // height: 0.24rem;
+            color: #fff;
+            font-weight: 400;
+            font-size: var(--size-1);
+            font-family: PingFangSC-Regular, 'PingFang SC';
+            text-align: center;
+            background: rgba(0, 0, 0, 35%);
+        }
+
+        .upload_btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            .avatar_btn {
+                background: rgba(0, 0, 0, 65%);
+            }
+        }
+    }
+
+    .avatar_loading {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0.6rem;
+        height: 0.6rem;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .suffix_input {
+        position: relative;
+
+        .suffix {
+            position: absolute;
+            right: -206px;
+            top: 4px;
+            display: flex;
+            align-items: center;
+            width: 200px;
+
+            .tips {
+                font-size: 16px;
+                color: #1678ff;
+                transform: translateY(-2px);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .avatar {
+        width: 0.8rem !important;
+        height: 0.8rem !important;
+
+        .avatar_btn {
+            width: 0.8rem !important;
+        }
+    }
+}

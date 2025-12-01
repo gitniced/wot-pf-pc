@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: fe-organization-pc-configmap
+data:
+    default.conf: |
+        server {
+          listen 80;
+          access_log /var/log/nginx/host.access.log  main;
+          index index.html ;
+          root /usr/share/nginx/html;
+          add_header Cache-Control 'no-cache,no-store,max-age=0,must-revalidate,proxy-revalidate';
+          add_header Access-Control-Allow-Origin *;
+          add_header 'Access-Control-Allow-Credentials' 'true';
+            add_header 'Access-Control-Allow-Methods' *;
+            add_header 'Access-Control-Allow-Headers' *;
+          location / {
+              try_files $uri $uri/ /index.html;
+          }
+            location  /subApp/enroll-center {
+                proxy_pass http://fe-enroll-pc:80;
+            }
+            location  /subApp/career_fe_pc {
+                proxy_pass http://career-fe-pc:80;
+            }
+            location /subPages {
+                proxy_pass http://career-fe-pc-sub:80;
+            }
+            location /subApp/user-center {
+                proxy_pass http://fe-user-pc:80;
+            }
+            location  /subApp/exam_fe_pc {
+                proxy_pass http://exam-fe-pc:80;
+            }
+            location /subApp/organization {
+                proxy_pass http://fe-organization:80;
+            }
+            location /subApp/trading-center {
+                proxy_pass http://fe-trading-center:80;
+            }
+            location  /subApp/exam-center {
+                proxy_pass http://fe-exam-pc:80;
+            }
+          location =/robots.txt {
+              default_type text/html;
+              add_header Content-Type "text/plain; charset=UTF-8";
+              return 200 "User-Agent: *\nDisallow: /";
+          }
+        }

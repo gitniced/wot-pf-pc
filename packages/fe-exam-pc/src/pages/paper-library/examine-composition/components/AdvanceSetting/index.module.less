@@ -1,0 +1,60 @@
+.advance {
+    padding-top: 8px;
+
+    .radio_group {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .radio_span {
+            margin-right: 4px;
+        }
+    }
+
+    .input_question {
+        margin-top: 24px;
+
+        > div {
+            margin-bottom: 0;
+        }
+
+        :global {
+            /* stylelint-disable-next-line selector-class-pattern */
+            .exam-center-picker {
+                width: 202px;
+                height: 32px;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    .add_margin {
+        margin: 0 4px;
+    }
+
+    .switch_box {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        span {
+            margin-right: 8px;
+        }
+
+        :global {
+            /* stylelint-disable-next-line selector-class-pattern */
+            .exam-center-switch {
+                border-radius: 100px !important;
+            }
+
+            /* stylelint-disable-next-line selector-class-pattern */
+            .exam-center-form-item-label > label {
+                color: rgba(0, 0, 0, 65%);
+            }
+        }
+    }
+}

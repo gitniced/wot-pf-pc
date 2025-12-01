@@ -1,0 +1,190 @@
+.layout {
+    font-family: 'Helvetica Neue', 'Helvetica, Arial', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC',
+        'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    background-repeat: round;
+    background-size: contain;
+    background-color: #fff;
+    background-image: url('https://static.zpimg.cn/public/fe_user_pc/images/job_bg_blue.png');
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    .blank_content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 18%;
+        height: 660px;
+        flex: 1;
+
+        .user_content {
+            flex: none;
+            width: 490px;
+        }
+
+        .banner {
+            margin-right: 182px;
+            width: 494px;
+            height: 391px;
+        }
+    }
+}
+
+.job_login {
+    margin: 0.4rem 0;
+    padding: 60px 60px 0;
+    width: 490px;
+    font-family: PingFangSC-Regular, 'PingFang SC';
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 50%);
+    box-shadow: 0 8px 40px 4px rgba(203, 203, 203, 24%);
+    backdrop-filter: blur(2px);
+
+    .form_account {
+        margin-bottom: 22px;
+    }
+
+    .form_password {
+        margin-bottom: 8px;
+    }
+
+    .tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+        font-size: 28px;
+        font-family: PingFangSC-Medium, 'PingFang SC';
+        font-weight: bold;
+        color: #333;
+        line-height: 40px;
+    }
+
+    .alert {
+        align-items: start;
+        margin-bottom: 16px;
+        width: 370px;
+        font-family: PingFangSC-Regular, 'PingFang SC';
+        font-weight: 400;
+        border-radius: 6px;
+        color: rgba(0, 0, 0, 65%);
+        line-height: 22px;
+
+        div[class='ant-alert-message'] {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 65%);
+            line-height: 22px;
+        }
+
+        span {
+            margin-top: 5px;
+        }
+    }
+
+    .input {
+        padding: 4px 11px !important;
+        width: 368px !important;
+        height: 48px !important;
+        border-radius: 6px;
+        background: #fff;
+    }
+
+    .forget_option {
+        overflow: hidden;
+    }
+
+    .code {
+        width: 202px !important;
+        height: 48px !important;
+        font-size: 16px;
+        border-radius: 6px;
+        background: #fff;
+    }
+
+    .code_btn {
+        margin-left: 8px;
+        width: 132px !important;
+        height: 48px !important;
+        border: 1px solid rgba(0, 0, 0, 15%);
+        border-radius: 6px;
+        color: rgba(0, 0, 0, 65%);
+        background: #fff;
+    }
+
+    .login_item {
+        margin: 24px 0 8px;
+    }
+
+    .login_btn {
+        width: 100% !important;
+        height: 48px !important;
+        border-radius: 6px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .forget_btn {
+        float: right;
+        color: rgba(0, 0, 0, 45%);
+        line-height: 22px;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+    .login_tool {
+        width: 100%;
+        text-align: center;
+    }
+
+    .register {
+        display: block;
+        margin-bottom: 120px;
+        font-weight: 400;
+        text-align: center;
+        color: rgba(0, 0, 0, 45%);
+        line-height: 0.14rem;
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+
+    .other_way_divider {
+        margin-top: 40px;
+    }
+
+    .other_way {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: PingFangSC-Regular, 'PingFang SC';
+        font-weight: 400;
+        text-align: center;
+        color: rgba(0, 0, 0, 45%);
+    }
+
+    .wei_xin,
+    .ding_ding {
+        align-items: center;
+        margin-left: 16px;
+        cursor: pointer;
+
+        .svg_icon {
+            position: relative;
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+
+            &:hover {
+                top: -4px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+[defaults]
+url=https://sentry.wozp.cn/
+org=wotu
+project=fe-user-pc
+
+[auth]
+token=7b7db388990d4d5abf180232e319a5f85a0bf07a078546beb38e38deebc48270

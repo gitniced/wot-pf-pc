@@ -1,0 +1,35 @@
+/* stylelint-disable selector-class-pattern */
+.icon {
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentcolor;
+}
+
+. {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.iconpark-icon {
+    width: 1em;
+    height: 1em;
+}
+
+#root-master {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+body {
+    overflow: auto;
+    min-width: 1200px;
+    background: #f7f8fc;
+}
+
+.ant-btn {
+    line-height: 1;
+}

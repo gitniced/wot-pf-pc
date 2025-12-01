@@ -1,0 +1,28 @@
+.page {
+    position: relative;
+    height: calc(100vh - 112px);
+
+    .content_box {
+        display: flex;
+        height: calc(100% - 58px);
+
+        .content {
+            border-radius: 0 12px 12px 0;
+            background-color: #fff;
+            flex: 1;
+        }
+    }
+
+    .button_box {
+        position: absolute;
+        bottom: -24px;
+        left: -24px;
+        padding: 12px 24px;
+        width: calc(100% + 48px);
+        height: 56px;
+        text-align: right;
+        background: #fff;
+        filter: blur(0);
+        box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 3%);
+    }
+}

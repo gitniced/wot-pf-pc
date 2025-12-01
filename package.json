@@ -1,0 +1,106 @@
+{
+    "name": "root",
+    "private": false,
+    "scripts": {
+        "createTurbo": "node newTurbo.js",
+        "modulePull": "node modulePull.js",
+        "preStart": "ts-node preStart.ts",
+        "local": "cross-env BUILD_ENV=local npm run preStart",
+        "test": "cross-env BUILD_ENV=test npm run preStart",
+        "pre": "cross-env BUILD_ENV=pre npm run preStart",
+        "pro": "cross-env BUILD_ENV=pro npm run preStart",
+        "lint": "turbo run lint",
+        "lint:all": "turbo run lint:all",
+        "lint:css": "stylelint 'packages/*/src/**/*.{less,css}' --fix",
+        "lint:js": "eslint 'packages/*/src/**/*.{js,jsx,ts,tsx}' --fix",
+        "prettier": "prettier --write 'packages/*/src/**/*.{js,jsx,tsx,ts,less,css,md,json}'",
+        "prepare": "husky install",
+        "user": "dotenv -- turbo turboPipeline --filter=\"./packages/fe-user-pc\" --filter=\"./packages/fe-business-pc\" --filter=\"./packages/fe-exam-pc\""
+    },
+    "gitHooks": {
+        "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    },
+    "lint-staged": {
+        "packages/*/src/**/*.{js,jsx,ts,tsx}": [
+            "prettier --write",
+            "eslint --fix"
+        ],
+        "packages/*/src/**/*.{less,css}": [
+            "prettier --write",
+            "stylelint --fix"
+        ],
+        "packages/*/src/**/*.{md,json}": [
+            "prettier --write"
+        ],
+        "*.{json,js,ts}": [
+            "prettier --write"
+        ],
+        "packages/*/package.json": [
+            "prettier --write"
+        ],
+        "packages/*/tsconfig.json": [
+            "prettier --write"
+        ]
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "dependencies": {
+        "@babel/core": "^7.28.0",
+        "@babel/generator": "^7.23.0",
+        "@babel/parser": "^7.23.0",
+        "@babel/plugin-syntax-typescript": "^7.27.1",
+        "@babel/traverse": "^7.23.0",
+        "@babel/types": "^7.23.0",
+        "@types/node": "^20.6.2",
+        "axios": "0.19.2",
+        "chalk": "3.0.0",
+        "cheerio": "^1.1.2",
+        "child_process": "^1.0.2",
+        "cross-env": "7.0.3",
+        "fs-extra": "^11.1.1",
+        "path": "^0.12.7",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "rimraf": "^5.0.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.5"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.26.2",
+        "@commitlint/cli": "^17.8.1",
+        "@commitlint/config-conventional": "^17.8.1",
+        "@types/react": "^17.0.75",
+        "@types/react-dom": "^17.0.25",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "@typescript-eslint/parser": "^5.62.0",
+        "@umijs/fabric": "^2.12.1",
+        "dotenv-cli": "^7.3.0",
+        "envfile": "6.18.0",
+        "eslint": "^8.18.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-jest": "^26.5.3",
+        "eslint-plugin-react": "^7.30.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-unicorn": "^42.0.0",
+        "husky": "^8.0.3",
+        "inquirer": "8.2.5",
+        "lerna": "^7.3.0",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.8.8",
+        "prettier-eslint": "^16.4.2",
+        "stylelint": "^15.11.0",
+        "stylelint-config-css-modules": "^4.5.1",
+        "stylelint-config-recommended": "^12.0.0",
+        "stylelint-config-prettier": "^9.0.5",
+        "stylelint-config-standard": "^30.0.1",
+        "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+        "stylelint-less": "^1.0.8",
+        "stylelint-order": "^6.0.3",
+        "stylelint-prettier": "^3.0.0",
+        "turbo": "^1.10.14"
+    },
+    "volta": {
+        "node": "16.20.2"
+    }
+}

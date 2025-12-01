@@ -1,0 +1,163 @@
+/* stylelint-disable selector-class-pattern */
+.page {
+    padding: 24px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+
+    .content {
+        .form {
+            margin-top: 24px;
+
+            .isLogo {
+                width: 80px;
+                height: 80px;
+                border: 1px solid rgba(0, 0, 0, 15%);
+                border-radius: 8px;
+                background: #fff;
+
+                :global {
+                    .ant-image {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80px;
+                        height: 80px;
+                        border: none;
+
+                        .ant-image-img {
+                            margin-right: 3px;
+                            width: 64px;
+                            height: 64px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            .form_no_mb {
+                margin-bottom: 12px !important;
+            }
+
+            .theme_view_item {
+                display: inline-flex;
+                place-content: center center;
+                margin-right: 20px;
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                text-align: center;
+                color: rgba(0, 0, 0, 45%);
+                flex-direction: column;
+                line-height: 24px;
+            }
+
+            .custom_theme_img {
+                width: 72px;
+                height: 92px;
+                border: 1px solid #dfdfdf;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+
+            .themeColor {
+                :global {
+                    .ant-image {
+                        box-sizing: border-box;
+                        width: 72px;
+                        height: 92px;
+                    }
+
+                    .ant-image-img:hover {
+                        box-sizing: border-box;
+                        border: 1px solid var(--primary-color);
+                        border-radius: 6px;
+                    }
+                }
+
+                .color_png {
+                    border: 1px solid var(--primary-color);
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .upload {
+            width: 104px;
+            height: 104px;
+            font-size: 14px;
+        }
+
+        :global {
+            .ant-upload {
+                flex-direction: column;
+            }
+
+            [class~='ant-upload-select-picture-card'] {
+                border-radius: 6px !important;
+            }
+
+            .ant-form-item-extra {
+                margin-top: 8px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 65%);
+                line-height: 24px;
+            }
+
+            .ant-form-item {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    :global {
+        .ant-form-item .ant-input-textarea-show-count::after {
+            position: absolute;
+            right: 8px;
+            bottom: 26px;
+        }
+
+        .ant-input-textarea {
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+        }
+
+        .ant-input-textarea-show-count > .ant-input {
+            margin-bottom: 26px;
+            border: 0;
+        }
+
+        .ant-input-textarea-show-count > .ant-input:focus {
+            box-shadow: 0 0 0 0;
+        }
+    }
+
+    .input_btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        flex: none;
+    }
+
+    .domain_extra {
+        word-break: break-all;
+
+        &_title {
+            margin-bottom: 4px;
+        }
+    }
+
+    .sub_title {
+        margin-left: 8px;
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        text-align: left;
+        color: rgba(0, 0, 0, 45%);
+        line-height: 24px;
+        font-style: normal;
+    }
+}

@@ -1,0 +1,32 @@
+.global_empty_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 0.5rem;
+    width: 100%;
+    flex-direction: column;
+
+    & > div {
+        width: 0.65rem;
+        height: 0.65rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('https://static.zpimg.cn/public/fe_user_pc/images/empty_bg.png');
+    }
+
+    & > p {
+        margin-top: 0.1rem;
+        font-size: var(--size-1);
+        font-weight: 400;
+        color: #888;
+    }
+
+    &.component {
+        & > div {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}

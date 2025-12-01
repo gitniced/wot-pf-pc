@@ -1,0 +1,102 @@
+.job_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 28px 0;
+        width: 1200px;
+
+        .logo {
+            > img {
+                height: 64px;
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #fef2df;
+
+        .nav_item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 13px 41px;
+            font-size: 22px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            color: rgba(0, 0, 0, 85%);
+            font-style: normal;
+            line-height: 30px;
+            cursor: pointer;
+
+            .ai {
+                margin-right: 2px;
+                height: 17px;
+            }
+
+            .hot {
+                margin-right: 4px;
+                height: 24px;
+            }
+
+            .dropdown {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                z-index: 9999;
+                width: 100%;
+                border-radius: 4px;
+
+                > div {
+                    padding-top: 10px;
+
+                    > div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px 0;
+                        font-size: 16px;
+                        font-family: PingFangSC, 'PingFang SC';
+                        font-weight: 400;
+                        color: #fff;
+                        background: linear-gradient(270deg, #f8934a 0%, #fe6731 100%);
+                    }
+
+                    > div:hover {
+                        color: #ff6a00;
+                        background: #fff;
+                    }
+
+                    > div:first-child {
+                        border-radius: 4px 4px 0 0;
+                    }
+
+                    > div:last-child {
+                        border-radius: 0 0 4px 4px;
+                    }
+                }
+            }
+        }
+
+        .nav_item:hover {
+            z-index: 9999;
+            color: rgba(255, 255, 255, 85%);
+            background: linear-gradient(270deg, #f8934a 0%, #fe6731 100%);
+        }
+
+        .active {
+            color: rgba(255, 255, 255, 85%);
+            background: linear-gradient(270deg, #f8934a 0%, #fe6731 100%);
+        }
+    }
+}

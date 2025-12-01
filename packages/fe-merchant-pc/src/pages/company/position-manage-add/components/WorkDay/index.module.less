@@ -1,0 +1,33 @@
+.common_style() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 15%);
+
+    // border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+    }
+}
+
+.container {
+    display: flex;
+
+    .active_item {
+        .common_style();
+
+        // color: #fff;
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);  
+    }
+
+    .item {
+        .common_style();
+    }
+}

@@ -1,0 +1,121 @@
+:global {
+    /* stylelint-disable-next-line selector-class-pattern */
+    .ant-radio-button-wrapper-checked {
+        background-color: var(--primary-color-02) !important;
+
+        .icon {
+            fill: var(--primary-color) !important;
+        }
+    }
+}
+
+.type_icon_group,
+.fill_methods_icon_wkj {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 0 100px !important;
+    width: 100% !important;
+
+    .type_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        color: rgba(0, 0, 0, 65%);
+        flex: none;
+
+        span:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background-color: #fff;
+        }
+
+        .type_icon {
+            width: 19px;
+            height: 18px;
+            color: #8c8c8c;
+            // background: #fff;
+            fill: #8c8c8c;
+        }
+
+        &::before {
+            display: none;
+            background: #fff;
+        }
+    }
+
+    label[class~='ant-radio-button-wrapper'] {
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+    }
+
+    label[class~='ant-radio-button-wrapper-checked'] {
+        border: 1px solid var(--primary-color);
+        border-radius: 4px;
+    }
+}
+
+.fill_methods_icon_wkj {
+    padding: 0 88px !important;
+
+    .all_fill,
+    .all_fill_active {
+        flex-shrink: 0;
+        width: 80px;
+        height: 24px;
+        background-color: #8c8c8c;
+    }
+
+    .all_fill_active {
+        background-color: var(--primary-color);
+    }
+
+    .space_fill,
+    .space_fill_active {
+        flex-shrink: 0;
+        width: 64px;
+        height: 24px;
+        background-color: #8c8c8c;
+    }
+
+    .space_fill_active {
+        background-color: var(--primary-color);
+    }
+
+    .type_btn {
+        width: 80px;
+    }
+
+    label[class*='ant-radio-button-wrapper'] {
+        padding: 0;
+    }
+}
+
+.type_text,
+.type_text_fill {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 87px;
+    padding-top: 8px;
+    cursor: pointer;
+
+    &_checked {
+        color: var(--primary-color);
+    }
+
+    span {
+        // width: 48px;
+        font-size: 16px;
+    }
+}
+
+.type_text_fill {
+    padding: 0 88px;
+
+    > span {
+        width: 80px;
+        text-align: center;
+    }
+}

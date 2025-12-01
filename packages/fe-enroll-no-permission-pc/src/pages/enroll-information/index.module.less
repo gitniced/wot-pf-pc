@@ -1,0 +1,80 @@
+/* stylelint-disable */
+
+.page_enroll_information_bg {
+    width: 100%;
+    margin: 0 auto;
+    background: #f0f2f5;
+
+    overflow: hidden;
+
+    .page_enroll_information {
+        width: 1200px;
+        padding: 24px;
+        margin: 24px auto;
+        border-radius: 12px;
+        background: #ffffff;
+
+        .enroll_information_header {
+            padding: 24px;
+            margin-bottom: 64px;
+            border-radius: 8px;
+            background: linear-gradient(
+                134deg,
+                var(--primary-color-005) 0%,
+                var(--primary-color-002) 100%
+            );
+
+            .information_summary {
+                .label {
+                    display: block;
+                    width: max-content;
+                    color: rgba(0, 0, 0, 0.85);
+                }
+
+                .value {
+                    &.organization_name {
+                        max-width: 50%;
+                        min-width: 200px;
+                        display: block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    color: rgba(0, 0, 0, 0.65);
+                }
+            }
+        }
+
+        .enroll_information_step_2 {
+            padding: 0 360px 24px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .enroll_information_step_3 {
+            padding: 0 180px 24px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .first_step_content {
+            margin-top: 32px;
+        }
+
+        .second_step_content {
+            margin-top: 24px;
+        }
+        :global {
+            .fe-enroll-no-permission-pc-form-item-control-input-content {
+                .fe-enroll-no-permission-pc-input {
+                    height: 32px;
+                }
+                textarea {
+                    height: auto !important;
+                }
+            }
+            .fe-enroll-no-permission-pc-form-item-extra {
+                word-break: break-all;
+            }
+        }
+    }
+}

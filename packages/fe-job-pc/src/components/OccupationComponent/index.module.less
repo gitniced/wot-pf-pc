@@ -1,0 +1,66 @@
+.flex_common() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font_common() {
+    height: 22px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, 'PingFang SC';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 45%);
+    line-height: 22px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    width: 592px;
+    height: 204px;
+    border-radius: 12px;
+    background: #fff;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    .label {
+        .flex_common();
+
+        .label_left {
+            height: 26px;
+            font-size: 18px;
+            font-family: PingFangSC-Medium, 'PingFang SC';
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 26px;
+        }
+
+        .label_right {
+            .font_common();
+
+            color: #d23e31;
+        }
+    }
+
+    .desc {
+        padding: 16px;
+        height: 80px;
+        border-radius: 8px;
+        background: #fafafa;
+        box-sizing: border-box;
+
+        span {
+            .font_common();
+        }
+    }
+
+    .base {
+        .flex_common();
+
+        span {
+            .font_common();
+        }
+    }
+}

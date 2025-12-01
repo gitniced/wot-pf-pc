@@ -1,0 +1,86 @@
+/* stylelint-disable*/
+.page {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+
+    .link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: start;
+        min-width: 170px;
+        color: var(--primary-color);
+    }
+
+    .center {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 170px;
+    }
+
+    .operation {
+        margin-bottom: 0;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 6%);
+    }
+
+    .label {
+        display: flex;
+        align-items: center;
+        // max-width: 200px;
+        margin-right: 4px;
+        overflow: hidden;
+        color: #555;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+
+    .link_text {
+        // max-width: 110px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .selected_label {
+        margin-right: 6px;
+        padding: 0 11px 0 6px;
+        background: rgba(0, 0, 0, 4%);
+        border: 1px solid rgba(0, 0, 0, 15%);
+        border-radius: 4px;
+        // max-width: 112px;
+    }
+
+    .change {
+        margin-right: 4px;
+        color: var(--primary-color);
+        flex-shrink: 0;
+    }
+
+    .close {
+        margin-left: 7px;
+        color: rgba(0, 0, 0, 45%);
+        font-size: 14px;
+    }
+}
+
+.drop {
+    :global {
+        .ant-dropdown-menu-submenu-expand-icon {
+            top: 0 !important;
+            border-radius: 8px;
+        }
+
+        .ant-dropdown {
+            width: 160px !important;
+        }
+
+        .ant-dropdown-menu-item {
+            width: 160px !important;
+            height: 32px !important;
+        }
+    }
+}

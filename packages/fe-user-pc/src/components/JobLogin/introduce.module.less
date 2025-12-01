@@ -1,0 +1,181 @@
+/* stylelint-disable*/
+.wrapper {
+    margin: 0 auto;
+    padding: 48px 0;
+    max-width: 1200px;
+    font-size: 18px;
+    font-family: PingFangSC-Regular, 'PingFang SC';
+    font-weight: 400;
+    color: #666;
+    line-height: 25px;
+
+    .title {
+        margin-bottom: 8px;
+        font-size: 28px;
+        font-family: PingFangSC-Medium, 'PingFang SC';
+        font-weight: bold;
+        text-align: center;
+        color: #333;
+        line-height: 40px;
+    }
+
+    .desc {
+        text-align: center;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+}
+
+.school_introduce {
+    padding: 48px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .note {
+        &_item {
+            display: flex;
+            margin-bottom: 22px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &_icon {
+                margin-right: 10px;
+                width: 24px;
+                height: 24px;
+            }
+
+            &_text {
+                font-size: 16px;
+                line-height: 22px;
+                font-family: PingFangSC-Regular, 'PingFang SC';
+            }
+
+            &_title {
+                margin-bottom: 6px;
+                font-size: 18px;
+                font-family: PingFangSC-Medium, 'PingFang SC';
+                font-weight: bold;
+                color: #333;
+                line-height: 25px;
+            }
+        }
+
+        &_img {
+            margin-left: 24px;
+            width: 660px;
+            height: 400px;
+        }
+    }
+}
+
+.company_introduce {
+    display: flex;
+    background-color: #fff;
+
+    .note {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        width: 1200px;
+
+        &_item {
+            position: relative;
+            height: 351px;
+
+            &_img {
+                width: 386px;
+                height: 240px;
+                border-radius: 8px 8px 0 0;
+            }
+
+            &_text {
+                font-size: 16px;
+                font-family: PingFangSC-Regular, 'PingFang SC';
+            }
+
+            &_bottom {
+                position: absolute;
+                top: 207px;
+                padding: 24px 11px;
+                width: 386px;
+                height: 144px;
+                border-radius: 0 0 8px 8px;
+                background: rgba(255, 255, 255, 64%);
+                box-shadow: inset 0 -2px 0 0 var(--primary-color);
+                backdrop-filter: blur(3px);
+            }
+
+            &_title {
+                margin-bottom: 8px;
+                font-size: 16px;
+                font-family: PingFangSC-Medium, 'PingFang SC';
+                font-weight: bold;
+                text-align: center;
+                color: #333;
+                line-height: 22px;
+                line-height: 25px;
+            }
+
+            &_text {
+                max-width: 364px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.recommend {
+    padding: 80px 0 56px;
+    background-repeat: round;
+    background-size: contain;
+    background-image: url('https://static.zpimg.cn/public/fe_user_pc/images/job_blue_bottom_bg.png');
+
+    &_title {
+        margin-bottom: 40px;
+        font-size: 28px;
+        font-family: PingFangSC-Medium, 'PingFang SC';
+        font-weight: bold;
+        text-align: center;
+        color: #333;
+        line-height: 40px;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 1200px;
+        flex-wrap: wrap;
+
+        .recommend_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+            width: 284px;
+            height: 146px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 8px 40px 4px rgba(211, 232, 255, 24%);
+
+            img {
+                width: 173px;
+                height: 63px;
+            }
+        }
+
+        .school_recommend_item {
+            img {
+                width: 212px;
+                height: 78px;
+            }
+        }
+    }
+}

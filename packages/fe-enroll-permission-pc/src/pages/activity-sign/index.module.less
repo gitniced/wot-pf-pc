@@ -1,0 +1,84 @@
+.page_sign_management {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    min-height: calc(100vh - 110px);
+}
+
+.sign_detail_modal {
+    .header {
+        margin-bottom: 24px;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 8px;
+        padding: 16px;
+
+        :global {
+            .ant-col {
+                display: flex;
+            }
+        }
+    }
+
+    .content {
+        :global {
+            .ant-form-item {
+                margin-bottom: 16px;
+            }
+            .ant-space {
+                flex: 1;
+            }
+        }
+
+        .col {
+            display: flex;
+
+            .label {
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.85);
+                line-height: 24px;
+            }
+
+            .value_wrapper {
+                display: flex;
+                .value {
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.65);
+                    line-height: 24px;
+                }
+
+                .tag_1 {
+                    background: rgba(22, 120, 255, 0.12);
+                    border-radius: 4px;
+                    border: 1px solid rgba(22, 120, 255, 0.48);
+                    font-size: 16px;
+                    color: #1678ff;
+                    line-height: 24px;
+                    padding: 0 8px;
+                    margin-left: 8px;
+                }
+                .tag_2 {
+                    background: rgba(82, 196, 26, 0.12);
+                    border-radius: 4px;
+                    border: 1px solid rgba(82, 196, 26, 0.48);
+                    font-size: 16px;
+                    color: #52c41a;
+                    line-height: 24px;
+                    padding: 0 8px;
+                    margin-left: 8px;
+                }
+            }
+
+            .image_item {
+                background: #ffffff;
+                border-radius: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                padding: 8px;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+}

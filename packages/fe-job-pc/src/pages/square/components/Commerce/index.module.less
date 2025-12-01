@@ -1,0 +1,39 @@
+.commerce {
+    margin-top: 16px;
+    border-radius: 8px;
+    background: #f8f8f8;
+
+    .content {
+        display: flex;
+        margin: 0;
+        padding: 24px 32px;
+        flex-wrap: wrap;
+        gap: 24px 36px;
+
+        .item {
+            &:nth-child(3n-2) {
+                width: 340px;
+            }
+
+            &:nth-child(3n-1) {
+                width: 200px;
+            }
+
+            &:nth-child(3n) {
+                width: 160px;
+            }
+
+            .label {
+                font-size: 15px;
+                color: #999;
+                line-height: 21px;
+            }
+
+            .value {
+                margin-top: 12px;
+                color: #333;
+                line-height: 22px;
+            }
+        }
+    }
+}

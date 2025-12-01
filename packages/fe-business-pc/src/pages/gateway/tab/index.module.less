@@ -1,0 +1,296 @@
+/* stylelint-disable selector-class-pattern */
+.page {
+    // width: 100%;
+    // height: 100%;
+
+    .opera {
+        a {
+            margin-right: 14px;
+        }
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+
+        .contentIn {
+            display: flex;
+            margin: 24px auto;
+            width: 100%;
+
+            .page_content {
+                display: flex;
+                width: 100%;
+                height: max-content;
+                background: #fff;
+
+                .left {
+                    position: relative;
+                    margin-right: 50px;
+                    width: 375px;
+                    height: 650px;
+                    border: 1px solid rgba(0, 0, 0, 8%);
+                    background: #fafafa;
+                    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 8%);
+                    flex: none;
+
+                    .mobile_top {
+                        position: relative;
+                        overflow: hidden;
+                        width: 100%;
+                        height: 88px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url('https://static.zpimg.cn/public/saas_pc/mobile_top.png');
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+
+                        .page_title {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 0;
+                            overflow: hidden;
+                            padding: 0 80px;
+                            width: 100%;
+                            font-size: 16px;
+                            font-weight: 600;
+                            text-align: center;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            color: rgba(0, 0, 0, 85%);
+                            word-wrap: none;
+                        }
+                    }
+
+                    .navButton {
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        height: 66px;
+                        background: #fff;
+                        box-shadow: 0 -2px 10px 0 rgba(222, 222, 222, 40%);
+                        backdrop-filter: blur(20px);
+
+                        .btn {
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                            align-items: center;
+                            width: 20%;
+                            text-align: center;
+                            cursor: pointer;
+
+                            .logo {
+                                display: inline-block;
+
+                                & svg {
+                                    display: block;
+                                    width: 28px;
+                                    height: 28px;
+                                }
+
+                                :global {
+                                    .ant-image {
+                                        width: 28px;
+                                        height: 28px;
+
+                                        .ant-image-img {
+                                            width: 28px;
+                                            height: 28px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .title {
+                                font-size: 10px;
+                                font-family: PingFangSC-Semibold, 'PingFang SC';
+                                font-weight: 600;
+                                text-align: center;
+                                color: rgba(23, 26, 29, 60%);
+                            }
+                        }
+
+                        .btnActive {
+                            & svg {
+                                fill: var(--primary-color) !important;
+                            }
+
+                            .title {
+                                color: var(--primary-color) !important;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    // width: 800px;
+                    width: calc(100% - 425px);
+                    // height: 600px;
+                    height: 650px;
+                    font-size: 16px;
+                    border: 1px solid #e9e9e9;
+                    border-radius: 8px;
+                    background: #fff;
+
+                    h3 {
+                        padding: 15px 24px;
+                        height: 60px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-bottom: 1px solid #e9e9e9;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        padding: 24px 39px;
+
+                        li {
+                            font-size: 16px;
+                            font-family: PingFangSC-Regular, 'PingFang SC';
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 65%);
+                            line-height: 24px;
+                        }
+                    }
+
+                    .tableIconPreview {
+                        position: relative;
+                        margin: 0 auto;
+                        width: 48px;
+                        height: 48px;
+                        border: 1px solid rgba(0, 0, 0, 15%);
+                        border-radius: 8px;
+                        text-align: center;
+                        background: #fff;
+                        cursor: pointer;
+
+                        & svg {
+                            margin: 8px 0;
+                            width: 32px;
+                            height: 32px;
+                        }
+
+                        .svgCheck {
+                            fill: var(--primary-color) !important;
+                        }
+
+                        .changeBtn {
+                            position: absolute;
+                            bottom: 0;
+                            width: 47px;
+                            height: 24px;
+                            border-radius: 0 0 8px 8px;
+                            text-align: center;
+                            background: #000;
+                            opacity: 0.5;
+                            line-height: 24px;
+
+                            span {
+                                font-size: 16px;
+                                font-family: PingFangSC-Regular, 'PingFang SC';
+                                font-weight: 400;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .notSelected {
+                        position: relative;
+                        width: 48px;
+                        height: 48px;
+                        font-size: 24px;
+                        border: 1px solid #d9d9d9;
+                        border-radius: 8px;
+                        text-align: center;
+                        color: #959595;
+                        background: #fafafa;
+                        line-height: 42px;
+
+                        .jia {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+
+                    .add {
+                        margin: 16px 24px;
+                        // width: 752px;
+                        width: calc(100% - 48px);
+                        height: 32px;
+                        font-size: 16px;
+                        font-family: PingFangSC-Regular, 'PingFang SC';
+                        font-weight: 400;
+                        border: 1px dashed rgba(0, 0, 0, 15%);
+                        border-radius: 6px;
+                        text-align: center;
+                        color: var(--primary-color);
+                        background: #fff;
+                        line-height: 32px;
+                        cursor: pointer;
+
+                        .plus {
+                            margin-right: 6px;
+                        }
+                    }
+
+                    .add:hover {
+                        border: 1px dashed var(--primary-color);
+                    }
+
+                    .rowOperate {
+                        & svg {
+                            margin-left: 6px;
+                            width: 13px;
+                            height: 13px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .action {
+                        font-size: 18px;
+                        color: var(--primary-color);
+
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .onSave {
+        display: flex;
+
+        & > button {
+            margin: 0 auto;
+        }
+    }
+
+    :global {
+        #components-table-demo-drag-sorting tr.drop-over-downward td {
+            border-bottom: 2px dashed #1890ff;
+        }
+
+        #components-table-demo-drag-sorting tr.drop-over-upward td {
+            border-top: 2px dashed #1890ff;
+        }
+    }
+
+    .linkName {
+        position: relative;
+        left: 50%;
+        width: fit-content;
+        text-align: center;
+        cursor: pointer;
+        transform: translateX(-50%);
+    }
+}

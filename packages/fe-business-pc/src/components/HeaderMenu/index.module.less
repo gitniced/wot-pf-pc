@@ -1,0 +1,211 @@
+/* stylelint-disable*/
+.wt_pt_header_role {
+    display: flex;
+    // position: absolute;
+    // right: 24px;
+    margin-right: 24px;
+
+    .icon_moren {
+        margin-right: 8px;
+        // todo delect
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        fill: #faad14;
+    }
+
+    .icon_zhankai {
+        margin-top: 8px;
+        margin-right: 8px;
+        width: 12px;
+        height: 12px;
+        fill: #000;
+    }
+
+    .person_info_dropdown {
+        padding: 24px 16px 8px;
+        border-radius: 8px;
+        background-color: #fff;
+        // box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+        //   0 9px 28px 8px rgb(0 0 0 / 5%);
+
+        box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 5%), 0 6px 16px 0 rgba(0, 0, 0, 8%),
+            0 3px 6px -4px rgba(0, 0, 0, 12%);
+
+        .person_info_dropdown_content {
+            .person_info_dropdown_header {
+                // height: 144px;
+                margin-bottom: 16px;
+                text-align: center;
+
+                .person_info_dropdown_header_name {
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                }
+
+                .not_certified {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 90px;
+                    height: 32px;
+                    border-radius: 6px;
+                    color: rgba(0, 0, 0, 45%);
+                    background: linear-gradient(270deg, #f8f8f8 0%, #f0f0f0 100%);
+                }
+
+                .certified {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 90px;
+                    height: 32px;
+                    border-radius: 6px;
+                    color: #52c41a;
+                    background: linear-gradient(270deg, #f5fcf1 0%, #ecf8e6 100%);
+                }
+
+                .not_certified > span {
+                    color: rgba(0, 0, 0, 45%);
+                }
+
+                .auth_tag {
+                    display: flex;
+                    justify-content: center;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .icon_yirenzheng {
+                        fill: #52c41a;
+                        fill-opacity: 85%;
+                    }
+
+                    .icon_weirenzheng {
+                        fill: #bfbfbf;
+                        fill-opacity: 85%;
+                    }
+
+                    .ant-tag {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 0;
+                        width: 90px;
+                        height: 32px;
+                        background: linear-gradient(270deg, #f8f8f8 0%, #f0f0f0 100%);
+                    }
+                }
+            }
+
+            .person_info_dropdown_menu {
+                .person_info_item {
+                    position: relative;
+                    padding-left: 36px;
+                    width: 240px;
+                    height: 48px;
+                    line-height: 48px;
+                }
+
+                .person_info_item > svg {
+                    position: absolute;
+                    top: 14px;
+                    left: 8px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .right_arrow {
+                    position: absolute;
+                    top: 16px;
+                    right: 8px;
+                }
+
+                .person_info_item:first-child {
+                    margin-top: 8px;
+                }
+
+                .grey {
+                    color: rgba(0, 0, 0, 45%);
+                }
+
+                .person_info_item:hover {
+                    border-radius: 8px;
+                    color: var(--primary-color);
+                    background: var(--primary-color-005);
+                    cursor: pointer;
+
+                    svg {
+                        fill: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.name_show_text {
+    overflow: hidden;
+    margin-right: 10px;
+    max-width: 144px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wt_pt_header_select {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+        margin-left: 24px;
+    }
+}
+
+.wt_pt_header_select {
+    .identity_select {
+        .ant-select-dropdown {
+            width: 230px !important;
+        }
+    }
+}
+
+.identity_select {
+    padding: 3px 16px;
+    height: 24px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 65%);
+    background-color: rgba(0, 0, 0, 4%);
+    line-height: 24px;
+}
+
+.identities_identity {
+    padding: 0 16px;
+    height: 24px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 65%);
+    background-color: rgba(0, 0, 0, 4%);
+    line-height: 24px;
+}
+
+.select_option_item_selected {
+    color: var(--primary-color);
+}
+
+.name_show_text {
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.ant-select-item-option-active {
+    background-color: var(--primary-color-005) !important;
+}
+
+.no_margin {
+    margin: 0;
+}

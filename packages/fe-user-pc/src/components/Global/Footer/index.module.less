@@ -1,0 +1,91 @@
+.page {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.11rem;
+    width: 100%;
+    min-height: 0.25rem;
+    background: #fff;
+    flex-direction: column;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        max-width: 1200px;
+        // padding-bottom: 6px;
+        border-bottom: 1px solid #e8e8e8;
+        flex-wrap: wrap;
+
+        &:last-child {
+            border: none;
+        }
+
+        .split {
+            width: 0.01rem;
+            height: 0.14rem;
+            background: #ccc;
+        }
+
+        .site,
+        .site_box {
+            display: flex;
+            align-items: center;
+            // font-size: var(--size-1);
+            font-size: 16px;
+            font-family: PingFangSC-Regular, 'PingFang SC';
+            font-weight: 400;
+            white-space: nowrap;
+            color: rgba(0, 0, 0, 45%);
+        }
+
+        .site {
+            margin: 0 0.075rem;
+
+            img {
+                margin-right: 0.03rem;
+                width: 24px;
+                height: 15px;
+            }
+
+            a {
+                color: rgba(0, 0, 0, 45%);
+            }
+
+            .police {
+                margin-right: 0.03rem;
+                width: 0.11rem;
+                height: 0.13rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url('https://static.zpimg.cn/public/fe_user_pc/images/police.png');
+            }
+
+            &:hover {
+                // color: var(--primary-color);
+                // cursor: pointer;
+
+                a {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .box {
+        display: block;
+    }
+
+    .recommend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+        min-height: 16px;
+    }
+
+    &.dark {
+        background: #000;
+    }
+}

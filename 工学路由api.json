@@ -1,0 +1,588 @@
+[
+    {
+        "path": "/engineer-center/assistant/course/*/design/check",
+        "apis": ["/wil/research/course_task/page_outcome"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/assistant/course/*/preview",
+        "apis": ["/wil/research/courses/detail_base_info"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/assistant/course/create",
+        "apis": ["/wil/research/courses/create"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/assistant/home",
+        "apis": [
+            "/wil/research/courses/status_count",
+            "/wil/research/courses/page",
+            "/wil/resource_library/count_by_major",
+            "/wil/train_level/list_by_major_code",
+            "/wil/research/courses/use",
+            "/wil/research/courses/cancel_use",
+            "/wil/research/courses/page_other_teacher",
+            "/wil/research/courses/list_course_teacher",
+            "/wil/research/courses/add_course_teacher",
+            "/wil/research/courses/remove_course_teacher",
+            "/wil/research/courses/update_base_info",
+            "/wil/research/courses/create",
+            "/wil/research/courses/detail_base_info",
+            "/wil/research/courses/list_template",
+            "/wil/resource_library/create"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/assistant/resource",
+        "apis": ["/wil/resource_library/detail", "/wil/resource_library/create"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/homework/*",
+        "apis": [
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/homework/baseInfo",
+            "/wil/evaluation/homework/classCorrections"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/homework/*/info",
+        "apis": [
+            "/wil/homework/getStudentHomework",
+            "/wil/homework/baseInfo",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/homework/classCorrections",
+            "/wil/evaluation/homework/grade"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/homework",
+        "apis": ["/wil/evaluation/homework/pendingGradeCount", "/wil/evaluation/homework/page"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/lesson",
+        "apis": ["/wil/courses/semesterCourses/allList"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/manager/organization/college",
+        "apis": [
+            "/wil/college/page",
+            "/wil/college/save",
+            "/wil/college/delete",
+            "/wil/college/updateStatus",
+            "/wil/college/updateSortOrder",
+            "/wil/college/list_code_name"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/manager/organization/college/service",
+        "apis": [
+            "/wil/college/page",
+            "/wil/college/save",
+            "/wil/college/delete",
+            "/wil/college/updateStatus",
+            "/wil/college/updateSortOrder",
+            "/wil/college/list_code_name"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-class",
+        "apis": [
+            "/wil/course_schedule/teacher/courses",
+            "/wil/course_schedule/teacher/classes",
+            "/wil/course_schedule/teacher/semesters"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-class/service",
+        "apis": [
+            "/wil/course_schedule/teacher/courses",
+            "/wil/course_schedule/teacher/classes",
+            "/wil/course_schedule/teacher/semesters"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/comment",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/evaluation/getSelfEvaluationTaskCode",
+            "/wil/evaluation/getPeerTargets",
+            "/wil/evaluation/getInterGroupPeerTargets",
+            "/wil/evaluation/getProjectOutcomes",
+            "/wil/evaluation/getCriteria",
+            "/wil/evaluation/getAssProjects"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/description",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/taskAssessment/description"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/grade",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/evaluationScore/classScoreTable"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/grade/info",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/evaluationScore/studentTaskAssessment"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/grade/info/score",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/evaluationScore/matrixByStudent",
+            "/wil/evaluationScore/comments",
+            "/wil/evaluationScore/intraPeerScores",
+            "/wil/evaluationScore/interPeerScores"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/homework",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/evaluationScore/studentHw"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/performance",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/evaluationScore/studentPerformance"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/rating/exam",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule",
+            "/auth/resource/file/upload"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/rating/homework",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/rating/performance",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/rating/task/*",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/evaluation/courseEvaluations",
+            "/wil/evaluation/homework/page",
+            "/wil/classPerformance/page",
+            "/wil/taskAssessment/page",
+            "/wil/finalAssessment/updateScore",
+            "/wil/finalAssessment/downloadTemplate",
+            "/wil/finalAssessment/batchImport",
+            "/wil/finalAssessment/batchSubmit",
+            "/wil/finalAssessment/getBySchedule"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/examine/student",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/courseTeam/student/teamInfo",
+            "/wil/evaluation/statistics",
+            "/wil/evaluationScore/studentScoreTable"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/courseTeam/student/teamInfo",
+            "/wil/courseTeam/createTeam",
+            "/wil/courseTeam/teamlist",
+            "/wil/teamApply/submitApply",
+            "/wil/courseTeam/deleteTeam",
+            "/wil/teamMember/batchRemoveMembers",
+            "/wil/teamMember/exitTeam",
+            "/wil/teamApply/pendingList/*",
+            "/wil/teamApply/process",
+            "/wil/teamMember/transferLeader"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/introduce",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/courses/getIntroduction"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/study/result",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/course_schedule/detail",
+            "/wil/learning/getNodeTree",
+            "/wil/learningActivity/getSubmitteds",
+            "/wil/learningActivity/submitterOutcome"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson/*/study/task",
+        "apis": [
+            "/wil/course_schedule/detail",
+            "/wil/assessmentStatistics/teacherTodo",
+            "/wil/assessmentStatistics/classProgress",
+            "/wil/assessmentStatistics/groupProgressRank",
+            "/wil/evaluationScore/classScoreRanking",
+            "/wil/courses/getClassCourseInfo",
+            "/wil/courses/statistics",
+            "/wil/courses/studentStatistics",
+            "/wil/evaluation/statistics",
+            "/wil/course_schedule/detail",
+            "/wil/learning/getNodeTree",
+            "/wil/learning/taskDetail",
+            "/wil/learning/stageDetail",
+            "/wil/learning/stepDetail",
+            "/wil/learningActivity/list",
+            "/wil/learningActivity/learningResources",
+            "/wil/learningActivity/outcomesByActivity",
+            "/wil/learningActivity/learningResources",
+            "/wil/learningActivity/outcomes",
+            "/wil/homework/getByStudent",
+            "/wil/learningActivity/outcome/edit",
+            "/wil/learningActivity/submissionStatus",
+            "/wil/learningActivity/classStatusStatistics",
+            "/wil/web_file/wps/create_web_file_code",
+            "/wil/resource_library/create",
+            "/wil/resource_library/detail",
+            "/wil/learningActivity/submitterOutcome",
+            "/wil/homework/edit",
+            "/wil/homework/getStudentHomeworkByHk",
+            "/wil/learningActivity/submit",
+            "/wil/homework/submit",
+            "/wil/learningActivity/answer",
+            "/auth/resource/file/upload",
+            "/wil/ai/like",
+            "/wil/ai/get_answer",
+            "/wil/ai/list_session",
+            "/wil/ai/list_session_history",
+            "/wil/ai/list_task_guide_history",
+            "/wil/ai/converter_content",
+            "/wil/ai/recommend_question"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/mine-lesson",
+        "apis": ["/wil/courses/statisticsByClass", "/wil/courses/semesterStuCourses/list"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/performance",
+        "apis": ["/wil/classPerformance/page"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/performance/info",
+        "apis": [
+            "/wil/teaching/classPerformance/baseInfo",
+            "/wil/classPerformance/getBySchedule",
+            "/wil/classPerformance/downloadTemplate",
+            "/wil/classPerformance/batchImport",
+            "/wil/classPerformance/batchSubmit",
+            "/auth/resource/file/upload"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/projects/*/description",
+        "apis": ["/wil/taskAssessment/description"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/projects/*",
+        "apis": [
+            "/wil/taskAssessment/baseInfo",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/taskAssessment/students"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/projects/*/info",
+        "apis": [
+            "/wil/evaluation/getProjectOutcomes",
+            "/wil/taskAssessment/baseInfo",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/taskAssessment/students",
+            "/wil/evaluation/getCriteria",
+            "/wil/evaluationScore/details",
+            "/wil/evaluation/submitEvaluation"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/projects",
+        "apis": ["/wil/taskAssessment/pendingGrade/count", "/wil/taskAssessment/page"],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/quiz/*",
+        "apis": [
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/class_question/baseInfo",
+            "/wil/class_question/class_page"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/quiz/*/info",
+        "apis": [
+            "/wil/class_question/stu_question",
+            "/wil/class_question/baseInfo",
+            "/wil/course_schedule/courseClassInfo",
+            "/wil/class_question/class_page",
+            "/wil/class_question/correct"
+        ],
+        "package": "fe-engineer-pc"
+    },
+    {
+        "path": "/engineer-center/quiz",
+        "apis": ["/wil/class_question/page"],
+        "package": "fe-engineer-pc"
+    }
+]

@@ -1,0 +1,30 @@
+.page_practice_push_edit_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .page_practice_push_edit {
+        width: 100%;
+        padding: 24px;
+        padding-top: 48px;
+        background-color: #fff;
+        border-radius: 8px;
+        height: calc(100vh - 152px);
+        overflow-y: auto;
+
+        .time_of_use {
+            div[class*='merchant-center-form-item-control-input-content'] {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+        }
+
+        .footer_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 16px;
+        }
+    }
+}

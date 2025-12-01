@@ -1,0 +1,123 @@
+.gain_content {
+    width: 100%;
+
+    .gain_content_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        padding: 0 12px;
+        width: 100%;
+        height: 48px;
+        border-radius: 8px;
+        background: #f5f5f5;
+
+        .file_type {
+            margin-right: 4px;
+            width: 24px;
+            height: 24px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            flex: none;
+
+            &.word {
+                background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/word.png');
+            }
+
+            &.excel {
+                background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/excel.png');
+            }
+
+            &.mind {
+                background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/mind.png');
+            }
+
+            &.file {
+                background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/file.png');
+            }
+        }
+
+        .file_name {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin-right: 4px;
+            width: 540px;
+            flex: 1;
+
+            .file_name_text {
+                overflow: hidden;
+                max-width: calc(100% - 72px);
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: rgba(0, 0, 0, 85%);
+                word-break: break-all;
+            }
+
+            .file_template {
+                margin-left: 8px;
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                color: var(--primary-color);
+                flex: none;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+
+        .file_info {
+            flex: none;
+            width: max-content;
+            font-size: 14px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            text-align: center;
+            color: rgba(0, 0, 0, 45%);
+        }
+
+        .ai_btn {
+            flex: none;
+            margin-left: 16px;
+            width: 20px;
+            height: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('https://static.zpimg.cn/public/fe-engineer-pc/images/button_ai_small.png');
+            cursor: pointer;
+        }
+
+        .text_btn {
+            margin-left: 15px;
+            padding: 0;
+            font-size: 16px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            border: 0;
+            color: var(--primary-color);
+            flex: none;
+            cursor: pointer;
+            user-select: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .submit_content {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        width: 100%;
+
+        button {
+            line-height: normal;
+        }
+    }
+}

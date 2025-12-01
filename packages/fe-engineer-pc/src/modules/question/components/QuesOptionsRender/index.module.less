@@ -1,0 +1,82 @@
+.ques_options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+
+    .option {
+        display: flex;
+        margin-bottom: 8px;
+        width: 100%;
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        text-align: left;
+        color: rgba(0, 0, 0, 65%);
+        line-height: 24px;
+        font-style: normal;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.edit {
+            cursor: pointer;
+
+            &:hover {
+                border-radius: 4px;
+                color: var(--primary-color);
+                background: rgba(0, 0, 0, 3%);
+            }
+        }
+
+        .multiple {
+            border-radius: 4px;
+        }
+
+        .selected {
+            border: 1px solid var(--primary-color);
+            color: #fff;
+            background: var(--primary-color);
+        }
+
+        .error {
+            border: 1px solid #ff4d4f;
+            color: #fff;
+            background: #ff4d4f;
+        }
+
+        .correct {
+            border: 1px solid #52c41a;
+            color: #fff;
+            background: #52c41a;
+        }
+    }
+
+    .sort_item {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2px;
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
+        font-family: Helvetica;
+        border: 1px solid #d9d9d9;
+        border-radius: 9px;
+        text-align: right;
+        color: rgba(0, 0, 0, 45%);
+        line-height: 14px;
+        font-style: normal;
+        text-transform: uppercase;
+        flex-shrink: 0;
+    }
+}
+
+.html {
+    :global {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

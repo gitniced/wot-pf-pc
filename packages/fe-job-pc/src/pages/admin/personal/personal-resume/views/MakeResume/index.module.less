@@ -1,0 +1,63 @@
+/* stylelint-disable*/
+.make_resume_container {
+    margin: 24px;
+
+    .content {
+        display: flex;
+
+        .edit {
+            overflow: scroll;
+            padding: 24px;
+            width: 50%;
+            min-width: 200px;
+            height: 1000px;
+            background: #fff;
+            box-sizing: border-box;
+        }
+
+        .preview {
+            position: sticky;
+            top: 0;
+            padding: 24px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+    }
+
+    .function_field {
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 25px;
+        background: #fff;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+
+        .function_group {
+            /deep/ .fe-job-pc-popover-inner-content {
+                padding: 0 !important;
+            }
+        }
+
+        .resume_title {
+            .title {
+                font-size: 18px;
+                font-family: PingFangSC-Medium, 'PingFang SC';
+                font-weight: 500;
+                color: rgba(0, 0, 0, 85%);
+                line-height: 18px;
+            }
+
+            .tips {
+                font-size: 14px;
+                font-family: PingFangSC-Regular, 'PingFang SC';
+                font-weight: 400;
+                color: rgba(0, 0, 0, 45%);
+                line-height: 20px;
+            }
+        }
+    }
+}

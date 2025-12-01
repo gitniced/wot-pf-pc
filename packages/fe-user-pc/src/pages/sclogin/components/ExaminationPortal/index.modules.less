@@ -1,0 +1,61 @@
+.page {
+    height: 691px;
+    background: linear-gradient(180deg, #f2f6ff 0%, #fff 100%);
+
+    .examination_portal {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding: 80px 0;
+        width: 1200px;
+        min-width: 1200px;
+        text-align: center;
+
+        .title {
+            font-size: 36px;
+            font-family: PingFang-SC-Heavy, PingFang-SC;
+            font-weight: 800;
+            color: #333;
+            line-height: 50px;
+        }
+
+        .content {
+            .sibler {
+                margin-top: 173px;
+
+                .item {
+                    position: relative;
+                    margin-left: 19px;
+                    font-size: 24px;
+                    font-family: PingFangSC-Regular, 'PingFang SC';
+                    font-weight: 400;
+                    text-align: left;
+                    color: #525252;
+                    line-height: 32px;
+
+                    &::after {
+                        position: absolute;
+                        top: 6px;
+                        left: -18px;
+                        display: block;
+                        width: 6px;
+                        height: 20px;
+                        background-color: #525252;
+                        content: '';
+                    }
+                }
+
+                .item + .item {
+                    margin-top: 32px;
+                }
+            }
+
+            .images {
+                .image {
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

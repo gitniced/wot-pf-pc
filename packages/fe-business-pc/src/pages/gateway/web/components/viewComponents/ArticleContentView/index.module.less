@@ -1,0 +1,169 @@
+/* stylelint-disable selector-class-pattern */
+
+.page,
+.page_space {
+    // width: 400px;
+    .content {
+        padding: 0 16px;
+        // width: 375px;
+        // height: 100px;
+        .empty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 210px;
+            background: #f8f9f9;
+            flex-direction: column;
+
+            .icon {
+                width: 100px;
+                height: 100px;
+                background: url('https://static.zpimg.cn/public/saas_pc/image_empty.png') no-repeat
+                    center;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .label {
+                margin-top: 4px;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+                color: rgba(0, 0, 0, 45%);
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            font-family: PingFangSC-Medium, 'PingFang SC';
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+        }
+
+        .contentTitle {
+            margin-bottom: 16px;
+            font-size: 16px;
+            font-family: PingFangSC-Regular, 'PingFang SC';
+            font-weight: 400;
+            color: rgba(0, 0, 0, 65%);
+            line-height: 24px;
+        }
+
+        .imageText {
+            .item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 12px;
+                padding: 16px;
+                border-radius: 8px;
+                background-color: #fff;
+                box-shadow: 0 4px 10px 0 rgba(222, 222, 222, 40%);
+
+                .left {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .title {
+                        max-width: 277px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-align: start;
+                        color: #171a1d;
+                        align-self: start;
+                        line-height: 22px;
+                        word-break: break-all;
+                    }
+
+                    .bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 4px;
+
+                        .time {
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: rgba(23, 26, 29, 40%);
+                            line-height: 18px;
+                        }
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .cover {
+                    overflow: hidden;
+                    margin-left: 5px;
+                    width: 100px;
+                    height: 67px;
+                    border-radius: 6px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .time {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: rgba(23, 26, 29, 40%);
+                    line-height: 18px;
+                }
+
+                .tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-self: end;
+                    max-width: 200px;
+
+                    .tag {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        margin: 1px 2px;
+                        padding: 0 4px;
+                        max-width: 60px;
+                        height: 16px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        border: 1px solid rgba(126, 134, 142, 16%);
+                        border-radius: 4px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: rgba(23, 26, 29, 40%);
+                        word-break: break-all;
+
+                        // &:last-child {
+                        //     margin-right: 0;
+                        // }
+                    }
+                }
+
+                .short_tags {
+                    max-width: 150px !important;
+                }
+            }
+
+            .item_symbol {
+                .left .title {
+                    align-self: start;
+                    max-width: 332px;
+                    text-align: start;
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}
+
+.page_space {
+    margin: 0 auto;
+    width: 1200px;
+}

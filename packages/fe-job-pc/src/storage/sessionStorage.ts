@@ -1,0 +1,43 @@
+enum KEYS {
+    MY_BREAD_HISTROY = 'my_bread_histroy',
+    OPEN_KEY = 'openKey',
+    BIZ_CODE = 'bizCode',
+    PLATFORM = 'platform',
+    CURRENT_PORTAL_ALIAS_OBJ = 'currentPortalAliasObj',
+}
+
+/**
+ * 获取 sessionStorage
+ * @param key
+ * @returns
+ */
+export const getSessionStorage = (key: keyof typeof KEYS) => {
+    if (!window) return {}
+    const res = sessionStorage.getItem(KEYS[key]) as any
+
+    try {
+        return JSON.parse(res)
+    } catch (e) {
+        return res
+    }
+}
+
+/**
+ * 通用写入 sessionStorage
+ * @param key
+ * @param val
+ */
+export const setSessionStorage = (key: keyof typeof KEYS, val: any) => {
+    if (!window) return
+    sessionStorage.setItem(KEYS[key], typeof val === 'object' ? JSON.stringify(val) : val)
+}
+
+/**
+ * 通用 删除 sessionStorage
+ * @param key
+ * @param val
+ */
+export const delSessionStorage = (key: keyof typeof KEYS) => {
+    if (!window) return
+    sessionStorage.removeItem(KEYS[key])
+}

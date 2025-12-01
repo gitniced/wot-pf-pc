@@ -1,0 +1,59 @@
+.refund_list {
+
+    // width: 1600px;
+    :global {
+        [class*="ant-select-selector"] {
+            height: 35px !important;
+        }
+
+        [class*="ant-form-item-control-input-content"] {
+            height: 35px;
+        }
+
+    }
+
+    .refund_title {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        background-color: #fafafa;
+
+        >div:not(:first-child) {
+            // width: 200px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .goods {
+            width: 436px;
+        }
+
+        .num {
+            // width: 218px;
+        }
+
+        .price {
+            // width: 376px;
+        }
+
+        .state {
+            // width: 232px;
+        }
+
+        >span {
+            flex-shrink: 0;
+            width: 1px;
+            height: 22px;
+            background-color: #e8e8e8;
+        }
+    }
+
+}
+
+.create_time_search_rangepicker {
+    height: 35px;
+
+    input {
+        font-size: 14px;
+    }
+}

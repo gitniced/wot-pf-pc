@@ -1,0 +1,67 @@
+/* stylelint-disable selector-class-pattern */
+.content {
+    position: relative;
+    width: 1200px;
+    margin: 88px auto;
+
+    :global {
+        .transaction-input-number,
+        .transaction-form-item-control-input {
+            width: 480px;
+            border-radius: 6px;
+        }
+
+        .transaction-form-item .transaction-input-number-handler-wrap {
+            border-radius: 6px;
+        }
+    }
+
+    .title {
+        margin-top: 8px;
+        margin-bottom: 24px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .sale_title {
+        margin-top: 48px;
+    }
+
+    .form {
+        margin-top: 24px;
+    }
+
+    .go_back {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 24px;
+        cursor: pointer;
+
+        &:hover .svg_icon {
+            opacity: 1;
+            fill: var(--primary-color);
+        }
+
+        .svg_icon {
+            width: 18px;
+            height: 16px;
+            margin-right: 8px;
+            opacity: 0.45;
+            fill: #000;
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        .image {
+            width: 18px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+}

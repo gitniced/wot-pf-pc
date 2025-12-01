@@ -1,0 +1,95 @@
+.page_practice_edit_wrapper {
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+
+    .page_practice_edit {
+        width: 100%;
+        height: calc(100% - 56px);
+        overflow-y: auto;
+
+        .content_wrapper, .step_wrapper {
+            padding: 24px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .content_wrapper {
+            margin-top: 24px;
+            padding: 24px;
+
+            :global {
+                .exam-center-row {
+                    align-items: baseline;
+                }
+                
+                .exam-center-picker {
+                    width: 100%;
+                }
+            }
+
+            .left_wrapper {
+                text-align: center;
+                margin-bottom: 48px;
+
+                :global {
+                    .anticon {
+                        font-size: 70px;
+                        color: #52C41A;
+                    }
+                }
+
+                .text {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: rgba(0,0,0,0.85);
+                    line-height: 32px;
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        .first_content_wrapper {
+            :global {
+                .exam-center-form-item {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+
+        .selected_wrapper {
+            width: fit-content;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 8px;
+            background: #FAFAFA;
+
+            .total_count {
+                margin-bottom: 8px;
+            }
+
+            .label {
+                font-size: 16px;
+                color: rgba(0,0,0,0.45);
+                line-height: 24px;
+            }
+
+            .value {
+                font-size: 16px;
+                color: rgba(0,0,0,0.65);
+                line-height: 24px;
+            }
+        }
+    }
+
+    .footer_wrapper {
+        position: fixed;
+        bottom: -24px;
+        margin-left: -24px;
+        width: calc(100% + 48px);
+        padding: 12px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #fff;
+    }
+}

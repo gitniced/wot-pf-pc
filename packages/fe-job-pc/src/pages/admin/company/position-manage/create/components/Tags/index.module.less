@@ -1,0 +1,135 @@
+/* stylelint-disable*/
+.profession_tag_modal {
+    :global {
+        .ant-btn {
+            display: inline-flex;
+            align-items: center;
+            height: 32px;
+        }
+    }
+}
+
+.custom_add_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &:hover {
+        background-color: var(--primary-color-012);
+    }
+
+    button[class~='ant-btn-text']:hover {
+        background: none;
+    }
+}
+
+.choosed_tag {
+    min-height: 30px;
+
+    :global {
+        .ant-tag {
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            height: 24px;
+            font-size: 16px !important;
+            border: none;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 4%);
+            gap: 8px;
+        }
+    }
+}
+
+.tag_container {
+    :global {
+        .ant-tag {
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            height: 24px;
+            font-size: 16px !important;
+            border: none;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 4%);
+            gap: 8px;
+        }
+    }
+}
+
+.tag_title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, 'PingFang SC';
+    font-weight: 500;
+    color: rgba(0, 0, 0, 85%);
+    line-height: 24px;
+}
+
+.recommend_tag {
+    min-height: 50px;
+
+    .tag_active {
+        color: var(--primary-color);
+        background: var(--primary-color-012) !important;
+    }
+
+    :global {
+        .ant-tag {
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            height: 24px;
+            font-size: 16px !important;
+            border: none;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 4%);
+            gap: 8px;
+        }
+    }
+}
+
+.custom_tag {
+    min-height: 50px;
+
+    :global {
+        .ant-tag {
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            height: 24px;
+            font-size: 16px !important;
+            border: none;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 4%);
+            gap: 8px;
+        }
+    }
+
+    .tag_active {
+        color: var(--primary-color);
+        background: var(--primary-color-012) !important;
+    }
+}
+
+.profession_tag_container {
+    :global {
+        .ant-tag {
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            height: 24px;
+            font-size: 16px !important;
+            border: none;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 4%);
+            gap: 8px;
+        }
+    }
+}
+
+.choose_content {
+    overflow-y: scroll;
+    max-height: 296px;
+}

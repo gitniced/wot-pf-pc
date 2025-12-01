@@ -1,0 +1,92 @@
+/* stylelint-disable*/
+.submit_Resume {
+    :global {
+        .fe-job-pc-upload {
+            width: 100%;
+        }
+    }
+
+    .attachment_resume {
+        display: flex;
+        overflow-y: auto;
+        max-height: 640px;
+        flex-direction: column;
+        row-gap: 12px;
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            background: #f8f8f8;
+            column-gap: 12px;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid var(--primary-color);
+                background: rgba(22, 120, 255, 5%);
+
+                .name {
+                    color: var(--primary-color);
+                }
+            }
+
+            .image {
+                width: 48px;
+                height: 48px;
+            }
+
+            &_right {
+                .name {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 85%);
+                    line-height: 26px;
+                }
+
+                .time {
+                    margin-top: 4px;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 45%);
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .active {
+            border: 1px solid var(--primary-color);
+            background: rgba(22, 120, 255, 5%);
+
+            .name {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .upload {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+        padding: 4px 0;
+        width: 100%;
+        font-size: 16px;
+        border: 1px dashed rgba(0, 0, 0, 15%);
+        border-radius: 8px;
+        color: var(--primary-color);
+        color: #1678ff;
+        cursor: pointer;
+        column-gap: 4px;
+        line-height: 24px;
+
+        &:hover {
+            border-color: var(--primary-color);
+        }
+
+        .icon {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

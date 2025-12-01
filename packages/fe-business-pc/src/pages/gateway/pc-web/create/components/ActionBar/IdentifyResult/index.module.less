@@ -1,0 +1,82 @@
+/* stylelint-disable */
+
+.component_identify_result {
+    width: 400px;
+    .module_title {
+        padding: 16px 24px;
+        font-size: 20px;
+        border-bottom: 1px solid #e9e9e9;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+
+    .add_methods{
+        padding: 16px 24px 25px 24px;
+        border-bottom: 1px solid #e9e9e9;
+       
+        :global {
+            .ant-radio-group {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .ant-radio-wrapper {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .ant-form-item-control-input {
+                min-height: 24px;
+            }
+        }
+    }
+
+    .add_content  {
+        padding: 24px 24px 0;
+
+        .title {
+            margin-bottom: 8px;
+        }
+
+        .tips_text {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        :global {
+            label {
+                font-size: 16px;
+            }
+
+            .ant-form-item-control-input {
+                font-size: 16px;
+                min-height: 24px;
+            }
+        }
+    }
+
+    .content_wrapper {
+        margin-top: 16px;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+
+        :global {
+            .ant-btn {
+                border-radius: 6px;
+                margin-top: 4px;
+            }
+        }
+    }
+}

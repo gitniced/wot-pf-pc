@@ -1,0 +1,63 @@
+
+/* stylelint-disable */
+
+.page_practice_detail {
+    width: 100%;
+    border-radius: 6px;
+    overflow-y: auto;
+
+    :global {
+        .exam-center-row {
+            align-items: baseline;
+        }
+        .exam-center-form-item {
+            margin-bottom: 16px;
+        }
+    }
+
+    .content_wrapper {
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 6px;
+        height: calc(100vh - 150px);
+        overflow-y: auto;
+
+        :global {
+            .exam-center-form-item-control-input-content, .exam-center-typography {
+                color: rgba(0,0,0,0.65);
+            }
+        }
+    }
+
+    .selected_wrapper {
+        width: fit-content;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 8px;
+        background: #FAFAFA;
+
+        .total_count {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-size: 16px;
+            color: rgba(0,0,0,0.45);
+            line-height: 24px;
+        }
+
+        .value {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 24px;
+        }
+    }
+}
+
+.join_user_tooltip {
+    :global {
+        .exam-center-tooltip-inner {
+            width: max-content;
+        }
+    }
+}

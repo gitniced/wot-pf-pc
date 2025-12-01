@@ -1,0 +1,53 @@
+.font_common() {
+    height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, 'PingFang SC';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 45%);
+    line-height: 22px;
+}
+
+.container {
+    .label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+
+        .icon {
+            margin-right: 10px;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            background: #d23e31;
+        }
+
+        .name {
+            font-size: 18px;
+            font-family: PingFangSC-Medium, 'PingFang SC';
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 25px;
+        }
+
+        .explain {
+            .font_common();
+        }
+    }
+
+    .job {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+        height: 40px;
+        border-radius: 6px;
+        background: #f7f7f7;
+        box-sizing: border-box;
+
+        .scale {
+            .font_common();
+        }
+    }
+}

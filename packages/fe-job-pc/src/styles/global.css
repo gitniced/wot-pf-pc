@@ -1,0 +1,75 @@
+/* stylelint-disable selector-class-pattern */
+html,
+body {
+    width: 100%;
+    min-width: 1280px;
+    font-family: 'Helvetica Neue', 'Helvetica, Arial', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC',
+        'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon {
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentcolor;
+}
+
+.right_content {
+    position: relative;
+
+    /* padding: 16px; */
+
+    /* background-color: #fff; */
+    border-radius: 8px;
+}
+
+.iconpark-icon {
+    width: 1em;
+    height: 1em;
+}
+
+#root-master {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+* {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+body {
+    overflow: auto;
+    min-width: 1200px;
+    background: #f0f2f5;
+}
+
+.fe-job-pc-btn {
+    line-height: 1;
+    font-size: 16px;
+}
+
+.fe-job-pc-tabs-tab-btn {
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #dadada;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 20%);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 20%);
+}

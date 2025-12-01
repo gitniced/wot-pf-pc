@@ -1,0 +1,139 @@
+/* stylelint-disable */
+
+.candidate_information_page {
+    height: 100vh;
+
+    .empty_wrapper {
+        padding-top: 186px;
+    }
+
+    .candidate_information_inner {
+        position: relative;
+        padding: 28px 0;
+        height: 100%;
+        overflow-y: auto;
+        background-color: #3995F6;
+        background-image: url(https://wtzp-static.oss-cn-hangzhou.aliyuncs.com/public/fe-exam-pc/bg_login%402x.png);
+        background-size: 100% 100%;
+    }
+
+    .wrapper {
+        width: 900px;
+        margin: auto;
+        margin-top: 16px;
+        padding: 0 90px;
+        border-radius: 6px;
+        background-color: #fff;
+        position: relative;
+
+        .header_wrapper {
+            padding: 32px 0;
+            border-bottom: 1px dashed;
+            border-color: rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-size: 18px;
+            color: rgba(0,0,0,0.85);
+            line-height: 26px;
+            font-weight: 500;
+        }
+
+        .content_wrapper {
+            padding: 16px 0 8px 0;
+            border-bottom: 1px dashed;
+            border-color: rgba(0, 0, 0, 0.25);
+
+            :global {
+                .exam-center-form-item {
+                    margin-bottom: 16px !important;
+                    font-size: 18px;
+
+                    label {
+                        display: inline-block;
+                        height: 26px;
+                        width: 5em;
+                        text-align: justify;
+                        text-align-last: justify;
+                        font-size: 24px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: rgba(0,0,0,0.45);
+                        line-height: 26px;
+                    }
+
+                    &-control {
+                        position: relative;
+                        padding-left: 12px;
+
+                        &::before {
+                            content: ':';
+                            position: absolute;
+                            left: -6px;
+                            // font-weight: 500;
+                            // color: rgba(0,0,0,0.85);
+                            // line-height: 26px;
+                        }
+                    }
+                    .exam-center-form-item-control-input {
+                        min-height: auto;
+                    }
+                    .exam-center-form-item-control-input-content {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: rgba(0,0,0,0.85);
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+
+        .footer_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 0 39px 0;
+
+            :global {
+                .exam-center-checkbox-wrapper {
+                    // font-size: 20px;
+                    // color: #525252;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: rgba(0,0,0,0.65);
+                    line-height: 26px;
+                    // line-height: 26px;
+                }
+
+                .exam-center-btn-primary {
+                    margin-top: 16px;
+                    width: 240px;
+                    height: 40px;
+                    // background: #3995F6;
+                    border-radius: 6px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    // color: #FFFFFF;
+                    line-height: 26px;
+                }
+
+                .exam-center-checkbox-inner {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .tips {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            color: #FF4D4F;
+            line-height: 26px;
+
+        }
+    }
+}

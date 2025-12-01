@@ -1,0 +1,93 @@
+.list_item {
+    width: 1200px;
+    // height: 176px;
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    .base {
+        width: 100%;
+        height: 100%;
+        margin-right: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            word-break: break-all;
+            max-width: 735px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 28px;
+            font-size: 20px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 28px;
+            margin-bottom: 41px;
+        }
+        .info {
+            width: 100%;
+            height: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .time {
+                flex: none;
+                width: 110px;
+                height: 22px;
+                font-size: 16px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.45);
+                line-height: 22px;
+            }
+            .tag_list {
+                width: 100%;
+                height: 100%;
+                margin-left: 100px;
+                display: flex;
+                justify-content: flex-end;
+
+                .tag {
+                    flex: none;
+                    padding: 0 8px;
+                    height: 24px;
+                    font-size: 16px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: var(--primary-color);
+                    line-height: 24px;
+                    background: var(--primary-color-006);
+                    border-radius: 4px;
+                    margin-right: 8px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .image {
+        flex: none;
+        width: 200px;
+        height: 112px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &:hover {
+        width: 1200px;
+        // height: 156px;
+        background: #ffffff;
+        box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+    }
+}

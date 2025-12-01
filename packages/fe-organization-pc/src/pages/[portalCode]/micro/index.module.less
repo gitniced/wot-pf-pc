@@ -1,0 +1,56 @@
+.micro {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+
+    div[class*='ant-spin ant-spin-lg ant-spin-spinning'] {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
+}
+
+.header_btn_con {
+    display: flex;
+    align-items: center;
+
+    .center_btn {
+        margin-right: 32px;
+    }
+}
+
+.page_module {
+    // overflow: hidden;
+    div[class='planItem'] {
+        // cursor: pointer;
+        &:hover {
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.3s ease;
+        }
+    }
+
+    div[class='identify_result_item'] {
+        // cursor: pointer;
+        &:hover {
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.3s ease;
+        }
+    }
+
+    div[class='item item_symbol'] {
+        // cursor: pointer;
+        &:hover {
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08) !important;
+            transition: box-shadow 0.3s ease;
+        }
+    }
+}
+
+.pc_course_layout {
+    padding-top: 24px;
+
+    :global {
+        .ant-list-grid .ant-col > .ant-list-item {
+            margin-bottom: 24px;
+        }
+    }
+}

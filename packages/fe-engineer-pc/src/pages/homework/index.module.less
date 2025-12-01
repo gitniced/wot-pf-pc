@@ -1,0 +1,26 @@
+.page {
+    padding: 24px;
+    min-height: calc(100vh - 110px);
+    border-radius: 8px;
+    background-color: #fff;
+
+    .content {
+        width: 100%;
+        /* stylelint-disable */
+        :global {
+            .super_table_title_left {
+                width: 100%;
+            }
+        }
+        /* stylelint-enable */
+    }
+}
+
+.badge_container {
+    display: flex;
+    align-items: center;
+
+    .badge_text {
+        margin-right: 6px;
+    }
+}

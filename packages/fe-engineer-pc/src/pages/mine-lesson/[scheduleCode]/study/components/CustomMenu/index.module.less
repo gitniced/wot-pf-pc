@@ -1,0 +1,157 @@
+.menu_content {
+    width: 228px;
+
+    .group_menu_item {
+        width: 100%;
+        user-select: none;
+        cursor: pointer;
+
+        .sign {
+            flex: none;
+            overflow: hidden;
+            margin-right: 15px;
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            background: rgba(0, 0, 0, 25%);
+        }
+
+        .name {
+            display: -webkit-box;
+            overflow: hidden;
+            max-width: calc(100% - 20px);
+            font-size: 14px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            color: rgba(0, 0, 0, 65%);
+            line-height: 22px;
+            flex: 1;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            word-break: break-all;
+        }
+
+        .arrow {
+            flex: none;
+            overflow: hidden;
+            margin-left: 12px;
+            width: 16px;
+            height: 16px;
+            color: rgba(0, 0, 0, 65%);
+            transition: all ease-in-out 0.2s;
+        }
+
+        .group_menu_item_content {
+            display: flex;
+            align-items: center;
+            padding: 8px 4px 8px 24px;
+            width: 100%;
+            border-radius: 8px;
+
+            /* 定义显示的行数 */
+            -webkit-box-orient: vertical;
+            word-break: break-all;
+
+            &.open {
+                .arrow {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &:hover {
+                background: var(--primary-color-006);
+
+                .sign {
+                    background: var(--primary-color);
+                }
+
+                .name {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        .sub_menu_item_content {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: 4px 4px 4px 68px;
+            width: 100%;
+            height: 38px;
+            border-radius: 6px;
+            border-radius: 8px;
+
+            .name {
+                color: rgba(0, 0, 0, 45%);
+            }
+
+            &.open {
+                .arrow {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &:hover {
+                background: var(--primary-color-006);
+
+                .name {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        .step_menu_item_content {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: 4px 12px 4px 90px;
+            width: 100%;
+            min-height: 38px;
+            border-radius: 6px;
+
+            .name {
+                color: rgba(0, 0, 0, 65%);
+            }
+
+            &.open {
+                .arrow {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &:hover {
+                background: var(--primary-color-006);
+
+                .name {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        .menu_item_child {
+            overflow: hidden;
+            max-height: 0;
+            transition: all ease 0.5s;
+
+            &.open {
+                max-height: 10000px;
+            }
+        }
+
+        .active {
+            background: var(--primary-color-006);
+
+            .sign {
+                background: var(--primary-color);
+            }
+
+            .name {
+                color: var(--primary-color);
+            }
+
+            .arrow {
+                color: var(--primary-color);
+            }
+        }
+    }
+}

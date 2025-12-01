@@ -1,0 +1,82 @@
+/* stylelint-disable selector-class-pattern */
+.card {
+    display: flex;
+    margin-bottom: 24px;
+    padding: 18px;
+    background-color: var(--primary-color-0\.5);
+    border: 1px solid var(--primary-color-025);
+    border-radius: 8px;
+
+    :global {
+        .transaction-input-number {
+            width: 88px !important;
+            border: 1px solid var(--primary-color-045);
+            border-radius: 6px;
+        }
+        .transaction-input-number-handler-wrap {
+            border-radius: 6px;
+        }
+    }
+
+    .image_warp {
+        flex-shrink: 0;
+        box-sizing: border-box;
+        width: 104px;
+        height: 104px;
+        margin-right: 16px;
+        padding: 8px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+
+        .image {
+            max-width: 88px;
+            max-height: 88px;
+        }
+    }
+
+    .describe {
+        .name {
+            height: 24px;
+            margin-bottom: 16px;
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .cycle {
+            display: -webkit-box;
+            max-width: 400px;
+            margin-bottom: 4px;
+            overflow: hidden;
+            color: rgba(0, 0, 0, 0.45);
+            font-size: 16px;
+            line-height: 28px;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+    }
+
+    .item_data {
+        display: flex;
+        margin-right: 0;
+        margin-left: auto;
+
+        &_title {
+            margin-bottom: 12px;
+            color: rgba(0, 0, 0, 0.45);
+        }
+
+        > div {
+            box-sizing: border-box;
+            width: 112px;
+            height: 24px;
+            padding-left: 16px;
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

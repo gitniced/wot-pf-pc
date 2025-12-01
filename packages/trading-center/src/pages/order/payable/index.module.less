@@ -1,0 +1,69 @@
+/**
+ * @ Author: congrong
+ * @ Create Time: 2022-12-22 11:10:13
+ * @ Modified by: cqh
+ * @ Modified time: 2023-01-13 22:24:11
+ */
+/* stylelint-disable selector-class-pattern */
+.page {
+    width: 100%;
+    height: calc(100% - 64px);
+    margin: 0 auto 88px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    .content {
+        margin-top: 24px;
+    }
+
+    .checkRadio {
+        display: flex;
+        p {
+            margin-right: 10px;
+        }
+    }
+
+    .go_back {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 24px;
+        cursor: pointer;
+
+        .svg_icon {
+            width: 18px;
+            height: 16px;
+            margin-right: 8px;
+            opacity: 0.45;
+            fill: #000;
+        }
+
+        &:hover .svg_icon {
+            opacity: 1;
+            fill: var(--primary-color);
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        .image {
+            width: 18px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.delete_text {
+    display: block;
+    margin-left: 5px;
+    color: rgb(245, 154, 35);
+    white-space: nowrap;
+}
+
+.edit_text {
+    display: block;
+    white-space: nowrap;
+}

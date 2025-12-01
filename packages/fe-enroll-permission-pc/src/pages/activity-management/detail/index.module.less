@@ -1,0 +1,80 @@
+.activity_management_details_page {
+    height: 100%;
+
+    .top_box {
+        display: flex;
+
+        .left {
+            margin-right: 24px;
+
+            .img {
+                width: 285px;
+                height: 190px;
+            }
+        }
+
+        .right {
+            .title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+
+                .name {
+                    margin-right: 16px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    word-break: break-all;
+                }
+            }
+
+            .info {
+                display: flex;
+                align-items: center;
+
+                .label {
+                    color: rgba(0, 0, 0, 85%);
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                .value {
+                    color: rgba(0, 0, 0, 65%);
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+            .info:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .bottom {
+        height: inherit;
+
+        .rich_text_content_component {
+            width: 100%;
+            word-break: break-all;
+        }
+    }
+}
+
+.activity_review {
+    width: 925px;
+    margin: auto;
+    white-space: pre-wrap;
+}
+
+.review_img {
+    width: 213px;
+    height: 120px;
+    margin: 5px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.summary{
+    word-wrap: break-word;
+    word-break: break-all;
+}

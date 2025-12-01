@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ranking_list_title {
+        text-align: center;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            margin-right: 10px;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            background: #d23e31;
+        }
+
+        .name {
+            font-size: 18px;
+            font-family: PingFangSC-Medium, 'PingFang SC';
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 25px;
+        }
+    }
+
+    .new_occupation {
+        display: flex;
+        height: 144px;
+        border: 1px solid rgba(22, 120, 255, 15%);
+        border-radius: 12px;
+        background: linear-gradient(140deg, rgba(22, 120, 255, 4%) 0%, rgba(22, 120, 255, 8%) 100%);
+
+        .occupation_collection {
+            display: flex;
+            padding: 16px;
+            width: 800px;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+
+            .occupation_collection_item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 10px;
+                padding: 5px 10px;
+                width: 166px;
+                height: 40px;
+                border-radius: 3px;
+                background: #fff;
+            }
+        }
+    }
+
+    .rank_list_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .job_bank {
+        display: flex;
+        margin: 0 120px;
+    }
+
+    .increase_jobs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .table_content {
+        display: flex;
+        justify-content: space-around;
+
+        .rank_list_item {
+            display: flex;
+
+            div:nth-child(1) {
+                width: 20px;
+            }
+
+            div:nth-child(2) {
+                flex: 1;
+            }
+
+            div:nth-child(3) {
+                width: 80px;
+            }
+        }
+    }
+
+    .apply_job_rank {
+        display: flex;
+        padding: 31px 59px 0 24px;
+        background: #fff;
+    }
+
+    .apply_job_item {
+        display: grid;
+        grid-template-rows: repeat(3, 50px);
+        grid-template-columns: repeat(8, 150px);
+
+        div {
+            border-bottom: 1px solid red;
+        }
+
+        .city {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row-start: span 3;
+        }
+    }
+}

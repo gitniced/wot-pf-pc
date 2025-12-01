@@ -1,0 +1,121 @@
+/* stylelint-disable selector-class-pattern */
+//在顶部加上这一行
+@import url('~antd/lib/style/themes/default.less');
+
+@primary-color: #45459f; //主题色
+@btn-primary-bg: @primary-color; //按钮主题色
+// @my-btn-hover-bg: darken(@primary-color, 10%); //选中、悬浮、点击主题色
+@my-btn-hover-bg: @primary-color; //选中、悬浮、点击主题色
+@my-list-banner-bg: darken(@primary-color, 10%); //列表banner色
+
+/**  自定义颜色变量  **/
+:root {
+    --primary-color: '#45459f'; //主题色
+    --btn-primary-bg: '#45459f'; //按钮主题色
+    --my-btn-hover-bg: '#32328c'; //选中、悬浮、点击主题色
+    --my-list-banner-bg: '#6969b2'; //列表banner色
+}
+
+section {
+    background: #fff;
+}
+
+.btn:active,
+.btn:focus {
+    color: rgba(0, 0, 0, 85%);
+    background: #fff;
+    border-color: #d9d9d9;
+}
+
+.btn:hover {
+    color: @primary-color;
+    border-color: @my-btn-hover-bg;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    color: #fff;
+    background: @btn-primary-bg;
+    border-color: @btn-primary-bg;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background: @my-btn-hover-bg;
+    border-color: @my-btn-hover-bg;
+}
+
+.btn-text {
+    color: #999;
+}
+
+.btn-text:active,
+.btn-text:focus {
+    color: #999;
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0%);
+}
+
+.btn-text:hover {
+    color: @my-btn-hover-bg;
+    // background: #fff;
+    background: none !important;
+    border-color: rgba(0, 0, 0, 0%);
+}
+
+.tag {
+    color: #888;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', 'Microsoft Yahei',
+        'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+}
+
+.tag-checkable-checked {
+    color: #fff;
+}
+
+.pagination-item {
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+
+    & > a {
+        color: #888;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', 'Microsoft Yahei',
+            'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+    }
+}
+
+.pagination-item-active {
+    color: #fff;
+    background: @primary-color;
+    border-color: @primary-color;
+
+    & > a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', 'Microsoft Yahei',
+            'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+    }
+}
+
+.pagination-item-active:focus,
+.pagination-item-active:hover {
+    color: #fff;
+
+    & > a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', 'Microsoft Yahei',
+            'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+    }
+}
+
+.progress-text {
+    color: #000;
+}

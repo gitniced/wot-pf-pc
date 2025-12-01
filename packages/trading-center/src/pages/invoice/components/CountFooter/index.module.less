@@ -1,0 +1,125 @@
+.footer_content {
+    // position: sticky;
+    // bottom: 0;
+    // left: 0;
+    // width: 100%;
+    position: fixed;
+    left: 226px;
+    bottom: 0;
+    z-index: 9;
+    width: calc(100% - 226px);
+    // min-width: 1200px;
+    height: 56px;
+    padding: 0 24px;
+    background: #fff;
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.03);
+    filter: blur(0);
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        .left {
+            display: flex;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: normal;
+            font-family: PingFangSC-Regular, PingFang SC;
+
+            & > span {
+                color: #1678ff;
+                font-weight: bold;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .back_btn {
+                display: flex;
+                align-items: center;
+                margin-right: 17px;
+                padding: 0 15px;
+                cursor: pointer;
+                opacity: 0.45;
+
+                .icon {
+                    width: 18px;
+                    height: 16px;
+                    margin-right: 8px;
+                    color: rgba(0, 0, 0, 0.45);
+                }
+
+                & > span {
+                    color: rgba(0, 0, 0, 1);
+                    font-weight: 400;
+                    font-size: 16px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                }
+            }
+            .prev_btn {
+                // width: 128px;
+                // height: 40px;
+                border-radius: 6px;
+                margin-right: 10px;
+                padding: 4px 16px;
+            }
+
+            .next_btn {
+                // width: 128px;
+                // height: 40px;
+                border-radius: 6px;
+                padding: 4px 16px;
+            }
+        }
+    }
+
+    .go_back {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 24px;
+        cursor: pointer;
+
+        .svg_icon {
+            width: 18px;
+            height: 16px;
+            margin-right: 8px;
+            opacity: 0.45;
+            fill: #000;
+        }
+
+        &:hover .svg_icon {
+            opacity: 1;
+            fill: var(--primary-color);
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        .image {
+            width: 18px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+}
+
+/* 在屏幕宽度小于或等于 1200px 时应用的样式 */
+@media screen and (max-width: 1200px) {
+    .footer_content {
+        position: sticky;
+        width: 100%;
+        left: 0;
+        bottom: -24px;
+    }
+}

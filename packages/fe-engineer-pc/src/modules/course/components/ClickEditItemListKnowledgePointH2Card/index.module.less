@@ -1,0 +1,122 @@
+.knowledge_point {
+    padding: 16px 24px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: #fff;
+    transition: all 0.3s;
+    box-sizing: border-box;
+
+    &.active {
+        border: 1px solid #1678ff;
+    }
+
+    .knowledge_point_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .knowledge_point_header_title {
+            position: relative;
+            height: 32px;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 32px;
+
+            &::after {
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 6px;
+                background: rgba(0, 103, 255, 20%);
+            }
+        }
+    }
+
+    .knowledge_point_content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        margin-top: 16px;
+        flex-direction: column;
+        gap: 12px;
+
+        .droppable_list {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .sortable_item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .draggable_item {
+            position: relative;
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 3%);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            flex: 1;
+
+            &.dragging {
+                z-index: 9999;
+                opacity: 0.5;
+            }
+        }
+
+        .drag_content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+            padding-right: 16px;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .drag_handle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 0;
+            padding-right: 8px;
+            padding-left: 12px;
+            color: #bfbfbf;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: grab;
+            flex-shrink: 0;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+
+            &:active {
+                cursor: grabbing;
+            }
+
+            svg {
+                transition: all 0.2s ease;
+            }
+        }
+
+        .input_wrapper {
+            flex: 1;
+        }
+
+        .delete_btn {
+            cursor: pointer;
+            color: rgba(0, 0, 0, 45%);
+            transition: all 0.2s ease;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}

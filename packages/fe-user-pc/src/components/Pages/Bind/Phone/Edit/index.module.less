@@ -1,0 +1,77 @@
+/* stylelint-disable*/
+.form {
+    margin-top: 0.2rem;
+
+    .steps {
+        margin: auto;
+        width: 60%;
+
+        :global {
+            .fe-user-pc-steps-item-title {
+                font-size: var(--size-1);
+            }
+
+            .fe-user-pc-steps-item-description {
+                max-width: max-content;
+                font-size: var(--size-1);
+                white-space: nowrap;
+            }
+
+            .fe-user-pc-steps-item-content {
+                padding: 0 15px 0 0;
+            }
+        }
+    }
+
+    label {
+        font-size: var(--size-1);
+    }
+
+    .change {
+        position: absolute;
+        top: 50%;
+        left: 101%;
+        width: fit-content;
+        color: var(--primary-color);
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .input {
+        width: 3rem !important;
+        border: 1px solid rgba(0, 0, 0, 15%);
+        border-radius: 0.04rem;
+        background: #fff;
+    }
+
+    .code {
+        width: 1.95rem !important;
+        border: 1px solid rgba(0, 0, 0, 15%);
+        border-radius: 0.04rem;
+        background: #fff;
+    }
+
+    .code_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.05rem;
+        width: 1rem !important;
+        border: 1px solid rgba(0, 0, 0, 15%);
+        border-radius: 0.04rem;
+        background: #fff;
+    }
+
+    .form_btn {
+        text-align: center;
+
+        & > button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border-radius: 0.04rem;
+            background: var(--primary-color);
+        }
+    }
+}

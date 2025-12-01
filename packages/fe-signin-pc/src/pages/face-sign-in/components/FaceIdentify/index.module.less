@@ -1,0 +1,233 @@
+.face_identify {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        // width: 726px;
+        // width: calc((100vh - 65px) * 1.5);
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .video_box {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // width: 726px;
+            // width: calc((100vh - 65px) * 1.5);
+            height: calc(100vh - 65px);
+            position: relative;
+
+            video {
+                width: auto;
+                height: 100%;
+                // object-fit: fill;
+                // min-width: 1000px;
+            }
+
+            canvas {
+                // width: 726px;
+                // height: calc(100vh - 65px);
+                position: absolute;
+                top: 0;
+                left: 0;
+                // display: none;
+            }
+        }
+
+        .mask {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+            &.success_mask {
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.15);
+            }
+            .face_name {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 10px;
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 500;
+                font-size: 120px;
+                color: #ffffff;
+                line-height: 120px;
+                // text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+            }
+
+            .face_mask {
+                width: 100vh;
+                height: 100vh;
+                background-image: url('https://static.zpimg.cn/public/examination_pc/image/face_mask.png');
+                background-size: 100% 100%;
+            }
+        }
+
+        .status {
+            width: 136px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #fff;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            margin-top: -30px;
+
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 24px solid transparent;
+                border-right: 24px solid;
+                border-bottom: 24px solid transparent;
+                position: absolute;
+                top: 0;
+                left: -24px;
+            }
+        }
+
+        .status_error {
+            background: #ff4d4f;
+
+            &::before {
+                border-right-color: #ff4d4f;
+            }
+        }
+
+        .status_success {
+            background: #52c41a;
+
+            &::before {
+                border-right-color: #52c41a;
+            }
+        }
+
+        .status_wait {
+            background: #1890ff;
+
+            &::before {
+                border-right-color: #1890ff;
+            }
+        }
+
+        .name {
+            width: 598px;
+            height: 196px;
+            position: absolute;
+            bottom: 30px;
+            text-align: center;
+            font-size: 140px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #fff;
+            line-height: 196px;
+        }
+
+        .btn_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            bottom: 64px;
+        }
+
+        .btn_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 320px;
+            height: 96px;
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 48px;
+            cursor: pointer;
+            font-size: 40px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            background: #1890ff;
+            color: #fff;
+            user-select: none;
+        }
+
+        .btn_filp_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 96px;
+            height: 96px;
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 48px;
+            cursor: pointer;
+            font-size: 40px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            color: #fff;
+            user-select: none;
+            background-color: #999;
+        }
+
+        .blank_btn_box {
+            background-color: #fff;
+            color: #1890ff;
+            user-select: none;
+        }
+    }
+}
+
+.handle_modal {
+    .img_wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .img_item {
+            width: 171px;
+            text-align: center;
+        }
+
+        .img,
+        .no_img {
+            width: 171px;
+            height: 240px;
+        }
+
+        .no_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #d8d8d8;
+        }
+
+        .margin_top {
+            margin-top: 8px;
+        }
+    }
+
+    .select {
+        display: flex;
+        align-items: center;
+
+        > p {
+            flex-shrink: 0;
+        }
+
+        > div {
+            width: 100%;
+        }
+    }
+}

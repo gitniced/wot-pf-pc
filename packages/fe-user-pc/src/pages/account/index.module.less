@@ -1,0 +1,377 @@
+/* stylelint-disable */
+.page {
+    width: 100%;
+    height: 100%;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        background: #f7f8fc;
+
+        .left_content {
+            flex: 1;
+            width: 8.25rem;
+            margin-right: 0.15rem;
+
+            .account_bind {
+                width: 100%;
+                margin-bottom: 0.15rem;
+                // height: 1.97rem;
+                padding: 0.15rem;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 8px 0 rgba(0, 21, 41, 3%);
+
+                .mind {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 0.66rem;
+                    margin-bottom: 0.14rem;
+                    padding: 0 0.25rem;
+                    background-color: var(--primary-color);
+                    background-image: url('https://static.zpimg.cn/public/fe_user_pc/images/un_finish.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 0.06rem;
+
+                    .un_finish_content {
+                        display: flex;
+                        align-items: center;
+
+                        .un_finish_sign {
+                            display: flex;
+                            align-items: center;
+                            height: 0.2rem;
+                            padding-right: 0.2rem;
+                            border-right: 0.01rem solid #fff;
+
+                            .sign {
+                                width: 0.13rem;
+                                height: 0.13rem;
+                                margin-right: 0.06rem;
+                                fill: #faad14;
+                            }
+
+                            .text {
+                                color: #fff;
+                                font-weight: bold;
+                                font-size: var(--size-3);
+                                font-family: PingFangSC-Medium, 'PingFang SC';
+                            }
+                        }
+
+                        .un_finish_info {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 0.2rem;
+
+                            .type {
+                                margin-bottom: 0.05rem;
+                                color: #fff;
+                                font-weight: bold;
+                                font-size: var(--size-2);
+                                font-family: PingFangSC-Medium, 'PingFang SC';
+                            }
+
+                            .info {
+                                color: rgba(255, 255, 255, 65%);
+                                font-weight: 400;
+                                font-size: var(--size-1);
+                                font-family: PingFangSC-Regular, 'PingFang SC';
+                            }
+                        }
+                    }
+
+                    .fix_btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 0.5rem;
+                        height: 0.25rem;
+                        color: var(--primary-color);
+                        background: #fff;
+                        border-radius: 0.04rem;
+                    }
+                }
+
+                .account_item_list {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .account_item {
+                        width: 1.88rem;
+                        height: 0.88rem;
+                        padding: 0.15rem 0.2rem;
+                        background-color: var(--primary-color-006);
+                        border: 1px solid #f7f9fc;
+                        border-radius: 0.05rem;
+                        cursor: pointer;
+
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            color: rgba(0, 0, 0, 85%);
+                            font-weight: bold;
+                            font-size: var(--size-2);
+                            font-family: PingFangSC-Medium, 'PingFang SC';
+
+                            &>.un_verfiy {
+                                width: 0.11rem;
+                                height: 0.11rem;
+                                margin-left: 0.06rem;
+                                fill: #faad14;
+                            }
+
+                            &>.verfiyed {
+                                width: 0.11rem;
+                                height: 0.11rem;
+                                margin-left: 0.06rem;
+                                fill: #52c41a;
+                            }
+                        }
+
+                        .status_str {
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 0.1rem;
+                            overflow: hidden;
+                            color: rgba(0, 0, 0, 45%);
+                            font-weight: 400;
+                            font-size: var(--size-1);
+                            font-family: PingFangSC-Regular, 'PingFang SC';
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            word-break: break-all;
+                        }
+
+                        .tool_str {
+                            display: flex;
+                            align-items: center;
+                            color: var(--primary-color);
+                            font-weight: 400;
+                            font-size: var(--size-1);
+                            font-family: PingFangSC-Regular, 'PingFang SC';
+
+                            &_text {
+                                color: rgba(0, 0, 0, 65%);
+                                // cursor: default;
+                            }
+
+                            &>svg {
+                                width: 0.08rem;
+                                height: 0.08rem;
+                                margin-left: 0.03rem;
+                                fill: var(--primary-color);
+                            }
+                        }
+
+                        &:hover {
+                            border: 1px solid var(--primary-color);
+
+                            .title {
+                                color: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+
+                .log_list {
+                    display: flex;
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: var(--size-1);
+                    font-family: PingFangSC-Regular, 'PingFang SC';
+
+                    .log_list_title_item {
+                        flex: none;
+                        width: 25%;
+                        margin-top: 0.15rem;
+                        margin-bottom: 10px;
+                        color: rgba(0, 0, 0, 45%);
+                        // margin-bottom: 10px;
+                    }
+                }
+
+                .log_list_item {
+                    display: flex;
+                    flex: none;
+                    width: 100%;
+
+                    .log_list_item_item {
+                        width: 25%;
+                        margin-bottom: 10px;
+                        color: rgba(0, 0, 0, 85%);
+                    }
+                }
+            }
+
+            .account_org {
+                width: 100%;
+                padding: 0.15rem;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 8px 0 rgba(0, 21, 41, 3%);
+            }
+        }
+
+        .right_content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 2rem;
+            height: inherit;
+            padding: 0.3rem 0;
+            overflow: hidden;
+            background: #fff;
+            border-radius: 0.08rem;
+            box-shadow: 0 0 8px 0 rgba(0, 21, 41, 3%);
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0.75rem;
+                background: url('https://static.zpimg.cn/public/fe_user_pc/images/account_user_top.png') no-repeat center / cover;
+                content: '';
+            }
+
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1rem;
+                background: url('https://static.zpimg.cn/public/fe_user_pc/images/account_user_bottom.png') no-repeat center / cover;
+                content: '';
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    .page {
+        .content {
+            .left_content {
+                flex: 1;
+                // width: 100%;
+                margin-right: 0;
+
+                .account_bind {
+                    width: 100%;
+                    margin-bottom: 24px;
+                    padding: 24px;
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 0 8px 0 rgba(0, 21, 41, 3%);
+
+                    .mind {
+                        width: 100%;
+                        height: 106px;
+                        margin-bottom: 22px;
+                        padding: 0 24px;
+                        border-radius: 8px;
+
+                        .un_finish_content {
+                            .un_finish_sign {
+                                height: 32px;
+                                padding-right: 20px;
+                                border-right: 1px solid #fff;
+
+                                .sign {
+                                    width: 21px;
+                                    height: 21px;
+                                    margin-right: 9px;
+                                }
+                            }
+
+                            .un_finish_info {
+                                display: flex;
+                                flex-direction: column;
+                                padding-left: 20px;
+                                margin-right: 16px;
+                                .type {
+                                    margin-bottom: 6px;
+                                }
+                            }
+                        }
+
+                        .fix_btn {
+                            width: 80px;
+                            height: 40px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .account_item_list {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        .account_item {
+                            flex: 1;
+                            min-width: 206px;
+                            height: 144px;
+                            margin-right: 24px;
+                            padding: 24px;
+                            border-radius: 8px;
+
+                            &:last-of-type {
+                                margin-right: 0;
+                            }
+
+                            .title {
+                                &>.un_verfiy {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+
+                                &>.verfiyed {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                            }
+
+                            .status_str {
+                                margin-bottom: 4px;
+                            }
+
+                            .tool_str {
+                                margin-top: 16px;
+
+                                &>svg {
+                                    width: 12px;
+                                    height: 12px;
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    .log_list {
+                        .log_list_title_item {
+                            margin-top: 24px;
+                        }
+                    }
+                }
+
+                .account_org {
+                    padding: 24px;
+                }
+            }
+
+            .right_content {
+                display: none;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,232 @@
+.job_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 28px 0;
+        width: 1200px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            > img {
+                height: 64px;
+            }
+
+            .platform_select {
+                margin-left: 16px;
+                padding: 0 12px;
+                font-size: 16px;
+                border-radius: 16px;
+                text-align: center;
+                color: #fff;
+                background: linear-gradient(270deg, #f8934a 0%, #fe6731 100%);
+            }
+        }
+
+        .login {
+            position: relative;
+
+            .login_but {
+                position: relative;
+                display: inline-block;
+                width: 80px;
+                height: 32px;
+                font-size: 16px;
+                border-radius: 0 6px 6px 0;
+                text-align: center;
+                color: #fff;
+                background: linear-gradient(270deg, #f8934a 0, #fe6731 100%);
+                line-height: 32px;
+                cursor: pointer;
+
+                > img {
+                    position: absolute;
+                    bottom: 0;
+                    left: -25px;
+                    height: 58px;
+                }
+
+                .login_dropdown {
+                    position: absolute;
+                    top: 56px;
+                    left: -50%;
+                    z-index: 9;
+                    overflow: hidden;
+                    width: 164px;
+                    height: 164px;
+                    border-radius: 6px;
+                    background: black;
+                    background: #fff;
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 8%), 0 4px 20px 0 rgba(0, 0, 0, 8%);
+
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        padding: 15px;
+                        font-size: 16px;
+                        font-family: PingFangSC, 'PingFang SC';
+                        font-weight: 400;
+                        color: #333;
+                        font-style: normal;
+                        line-height: 22px;
+
+                        > img {
+                            margin-right: 16px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    > div:hover {
+                        background: rgba(39, 163, 255, 8%);
+                    }
+
+                    > div:first-child {
+                        margin-top: 4px;
+                    }
+                }
+
+                .show_login_dropdown {
+                    z-index: 11;
+                    height: 164px;
+                    transition: height 0.5s;
+                }
+
+                .hide_login_dropdown {
+                    z-index: 11;
+                    height: 0;
+                    transition: height 0.5s;
+                }
+            }
+
+            .login_area {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                > img {
+                    margin-right: 8px;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                }
+
+                .login_area_info {
+                    > div:first-child {
+                        font-size: 16px;
+                        font-family: PingFangSC, 'PingFang SC';
+                        font-weight: 400;
+                        color: #333;
+                        font-style: normal;
+                        line-height: 22px;
+                    }
+
+                    > div:first-child:hover {
+                        color: #27a3ff;
+                    }
+
+                    > div:last-child {
+                        font-size: 14px;
+                        font-family: PingFangSC, 'PingFang SC';
+                        font-weight: 400;
+                        color: #999;
+                        font-style: normal;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #fef2df;
+
+        .nav_item {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 13px 0;
+            width: 170px;
+            font-size: 20px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            color: rgba(0, 0, 0, 85%);
+            font-style: normal;
+            line-height: 30px;
+            cursor: pointer;
+
+            .ai {
+                margin-right: 2px;
+                height: 17px;
+            }
+
+            .hot {
+                margin-right: 4px;
+                height: 24px;
+            }
+
+            .dropdown {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                border-radius: 4px;
+
+                > div {
+                    padding-top: 10px;
+
+                    > div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px 0;
+                        font-size: 16px;
+                        font-family: PingFangSC, 'PingFang SC';
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 85%);
+                        background: linear-gradient(270deg, #f8934a 0%, #fe6731 100%);
+                    }
+
+                    > div:hover {
+                        color: #ff6a00;
+                        background: #fff;
+                    }
+
+                    > div:first-child {
+                        border-radius: 4px 4px 0 0;
+                    }
+
+                    > div:last-child {
+                        border-radius: 0 0 4px 4px;
+                    }
+                }
+            }
+        }
+
+        .nav_item:hover {
+            z-index: 12;
+            color: rgba(255, 255, 255, 85%);
+            background: linear-gradient(270deg, #f8934a 0%, #fe6731 100%);
+        }
+
+        .active {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 85%);
+            background: linear-gradient(270deg, #f8934a 0%, #fe6731 100%);
+        }
+    }
+}

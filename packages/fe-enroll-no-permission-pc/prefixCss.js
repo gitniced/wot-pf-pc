@@ -1,0 +1,15 @@
+/* eslint-disable */
+const fs = require('fs')
+const path = require('path')
+const packageInfo = require('./package.json')
+try {
+    let oldData = fs.readFileSync(path.join(__dirname, './src/styles/antd.variable.css'), 'utf8')
+    let newData = oldData
+        .replaceAll('ant-', `${packageInfo.name}-`)
+        .replaceAll('font-size: 14px', 'font-size: 16px')
+        .replaceAll('line-height: 1.5715', 'line-height: normal')
+    fs.writeFileSync(path.join(__dirname, './src/styles/antd.variable.css'), newData, 'utf8')
+    console.log('success done')
+} catch (error) {
+    throw error
+}

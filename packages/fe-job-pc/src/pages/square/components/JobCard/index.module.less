@@ -1,0 +1,158 @@
+.job_card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 350px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 16px 32px 0 rgba(138, 149, 158, 5%);
+    flex-direction: column;
+    cursor: pointer;
+
+    .content {
+        overflow: hidden;
+        padding: 16px 16px 24px;
+        height: 90px;
+        box-sizing: border-box;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 22px;
+
+            .profession_name {
+                overflow: hidden;
+                font-size: 15px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #333;
+                line-height: 21px;
+                flex: 1;
+            }
+
+            .salary {
+                font-size: 15px;
+                color: #ff561b;
+                line-height: 21px;
+            }
+        }
+
+        .tags {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin-top: 8px;
+            height: 22px;
+            column-gap: 8px;
+            flex-wrap: wrap;
+
+            .mini_tag {
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                color: #999;
+                line-height: 18px;
+                column-gap: 8px;
+
+                &:not(:last-child) {
+                    &::after {
+                        display: block;
+                        width: 1px;
+                        height: 10px;
+                        border-radius: 1px;
+                        background: #d8d8d8;
+                        content: '';
+                    }
+                }
+            }
+
+            .default_tag {
+                padding: 5px 8px;
+                font-size: 12px;
+                border-radius: 3px;
+                white-space: nowrap;
+                color: #666;
+                background: #f8f8f8;
+                line-height: 12px;
+            }
+        }
+    }
+
+    .company_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 16px;
+        background: linear-gradient(
+            94deg,
+            rgba(224, 241, 255, 54%) 0%,
+            rgba(247, 255, 255, 0%) 100%
+        );
+        column-gap: 16px;
+
+        .company {
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+
+            .name {
+                display: block;
+                overflow: hidden;
+                width: 180px;
+                font-size: 12px;
+                text-align: left;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #333;
+                line-height: 17px;
+            }
+        }
+
+        .user_mini {
+            overflow: hidden;
+            width: 106px;
+            min-width: 106px;
+            font-size: 13px;
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #999;
+            line-height: 18px;
+        }
+
+        .user_info {
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            font-size: 14px;
+            color: #666;
+            line-height: 20px;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 16%);
+
+        .content {
+            .title {
+                .profession_name {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+.mini {
+    border: 1px solid #e5e5e5;
+    background-size: 100% 100%;
+    background-color: transparent;
+    box-shadow: none;
+    background-image: url('https://wtzp-static.oss-cn-hangzhou.aliyuncs.com/dev/fe_job_pc/img/%E8%93%9D%E8%89%B2%E8%81%8C%E4%BD%8D%E5%8D%A1%E7%89%87%E5%86%85%E5%88%87%E7%89%87%402x.png');
+
+    &:hover {
+        box-shadow: 0 16px 32px 0 rgba(138, 149, 158, 16%);
+    }
+}

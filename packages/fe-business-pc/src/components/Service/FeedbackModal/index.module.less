@@ -1,0 +1,108 @@
+/* stylelint-disable*/
+/**
+ * Created by cgl on 2020/9/23.
+ */
+.container {
+    width: 100%;
+}
+
+.upload {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tips {
+    margin-top: 10px;
+    color: #888;
+}
+
+.myUplpad {
+    overflow: hidden;
+    height: 108px;
+
+    div[class='zhipei-upload zhipei-upload-select zhipei-upload-select-picture-card'] {
+        margin-right: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    div[class='zhipei-upload-list-picture-card-container'] {
+        width: 100px;
+        height: 100px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+.upload_container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    :global {
+        .zhipei-upload-picture-card-wrapper {
+            width: 100px;
+        }
+    }
+}
+
+.img_item {
+    display: inline-block;
+    padding: 8px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .img_box {
+        position: relative;
+        display: inline-block;
+        overflow-y: hidden;
+        width: 100%;
+        height: 100%;
+
+        .img_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            > img {
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        .img_modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 50%);
+
+            .img_icon {
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

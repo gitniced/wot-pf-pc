@@ -1,0 +1,45 @@
+.todo_list {
+    border: 1px solid #f7f1f0;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #fff5f2 0%, #fff 23%, #fff 100%);
+
+    .todo_list_title {
+        padding: 12px 16px 8px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .todo_list_content {
+        display: flex;
+        margin-top: 8px;
+
+        .todo_list_content_item {
+            flex: none;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 161px;
+            height: 64px;
+            cursor: pointer;
+
+            > span:first-child {
+                margin-bottom: 4px;
+                font-size: 18px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 500;
+                color: #ff4d4f;
+                line-height: 24px;
+            }
+
+            > span:last-child {
+                font-size: 14px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                color: rgba(0, 0, 0, 45%);
+                line-height: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+/* stylelint-disable selector-class-pattern */
+.nav {
+    display: flex;
+    width: 100%;
+    height: 1.06rem;
+    padding: 0.2rem;
+    background: var(--primary-color);
+    border-radius: 0.08rem 0.08rem 0 0;
+    box-shadow: 0 0 0.08rem 0 rgba(0, 21, 41, 3%);
+
+    .logo {
+        width: 0.46rem;
+        height: 0.46rem;
+        margin-right: 0.1rem;
+        border-radius: 0.08rem;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .icon_shouqi {
+        width: 0.08rem;
+        height: 0.08rem;
+        margin-left: 0.03rem;
+    }
+
+    &_title {
+        margin-bottom: 0.11rem;
+        color: #fff;
+        font-weight: 500;
+        font-size: var(--size-3);
+        line-height: 0.21rem;
+
+        span {
+            margin-right: 0.08rem;
+        }
+    }
+
+    .icon {
+        width: 0.8em;
+        height: 0.8em;
+        margin-right: 0.05rem;
+        overflow: hidden;
+        font-size: var(--size-3);
+        cursor: pointer;
+        opacity: 0.5;
+        fill: rgba(255, 255, 255, 65%);
+
+        &:hover {
+            opacity: 1;
+            fill: #fff;
+        }
+    }
+
+    &_switch {
+        position: absolute;
+        top: 0.21rem;
+        right: 0.21rem;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        height: 0.2rem;
+        color: #fff;
+        font-weight: 400;
+        font-size: var(--size-1);
+        line-height: 0.2rem;
+        text-align: center;
+        border: 1px solid #fff !important;
+        border-radius: 0.04rem;
+        cursor: pointer;
+    }
+
+    &_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &_detail {
+            display: flex;
+            align-items: center;
+            min-width: 1.9rem;
+            height: 0.16rem;
+            color: #fff;
+            font-weight: 400;
+            font-size: var(--size-1);
+            line-height: 0.16rem;
+            white-space: nowrap;
+
+            &:last-of-type {
+                width: 1rem;
+            }
+
+            &_approve {
+                display: flex;
+                align-items: center;
+                // cursor: pointer;
+            }
+
+            &_approve:hover {
+                color: rgba(255, 255, 255, 100%);
+            }
+
+            span {
+                color: rgba(255, 255, 255, 65%);
+            }
+        }
+    }
+}
+
+.drawer {
+    .btn {
+        display: inline-flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.05rem;
+        font-weight: 400;
+        font-size: var(--size-1);
+        border-radius: 0.04rem;
+        cursor: pointer;
+    }
+
+    .radio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // width: 1.68rem;
+
+        & > span {
+            display: block;
+            width: 1.36rem;
+            margin-left: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    img {
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 0.04rem;
+    }
+
+    :global {
+        .organization-radio-button-wrapper {
+            border: none !important;
+        }
+
+        .organization-radio-button-wrapper-checked {
+            border: 1px solid var(--primary-color-045) !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .nav {
+        top: -1rem !important;
+        height: 1.2rem !important;
+    }
+
+    .logo {
+        width: 0.6rem !important;
+        height: 0.6rem !important;
+    }
+
+    .nav_title {
+        height: 0.3rem !important;
+    }
+
+    .nav_info_detail {
+        span {
+            max-width: 1rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .icon_shouqi {
+        width: 0.12rem !important;
+        height: 0.12rem !important;
+    }
+
+    .drawer {
+        :global {
+            .organization-drawer-content {
+                width: 2.5rem !important;
+            }
+
+            label {
+                width: 1.85rem !important;
+            }
+        }
+
+        .radio {
+            span {
+                width: 1.1rem !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+/* stylelint-disable selector-class-pattern */
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 0.15rem;
+    background-color: #fff;
+    border-radius: 0.08rem;
+
+    .select_main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    // :global {
+    //     .organization-upload,
+    //     .organization-upload-select-picture-card {
+    //         position: relative;
+    //         width: 0.8rem;
+    //         height: 0.8rem;
+    //     }
+    // }
+
+    .alert {
+        max-width: 1200px;
+        margin: 32px auto;
+    }
+
+    .input {
+        width: 3rem;
+    }
+
+    .upload_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0.8rem;
+        height: 0.8rem;
+
+        &_text {
+            color: rgba(0, 0, 0, 65%);
+            font-weight: 400;
+            font-size: 16px;
+            font-family: PingFangSC-Regular, 'PingFang SC';
+            line-height: 0.15rem;
+        }
+    }
+
+    .upload_img {
+        max-width: 0.74rem;
+        max-height: 0.7rem;
+    }
+
+    .avatar_loading {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0.74rem;
+        height: 0.7rem;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .example {
+        position: absolute;
+        top: 0;
+        left: 118px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 102px;
+        height: 102px;
+        padding: 0.03rem 0.05rem;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 15%);
+        border-radius: 0.04rem;
+
+        &_icon {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 0.15rem;
+            height: 0.15rem;
+            background: rgba(0, 0, 0, 45%);
+            border-radius: 0.04rem;
+        }
+    }
+
+    .message {
+        width: 2rem;
+        color: rgba(0, 0, 0, 45%);
+        font-weight: 400;
+        font-size: 0.1rem;
+        line-height: 0.15rem;
+        text-align: left;
+    }
+
+    .btn_box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        margin-right: 0.1rem;
+    }
+
+    .approve {
+        margin-top: 12px;
+        color: rgba(0, 0, 0, 45%);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+
+        .icon {
+            margin-right: 3px;
+            color: #faad14;
+        }
+
+        span {
+            color: #1678ff;
+            cursor: pointer;
+        }
+    }
+
+    .avatar_uploader{
+        .upload_button{
+            width: 104px;
+            height: 104px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            text-align: center;
+            vertical-align: top;
+            background-color: #fafafa;
+            border: 1px dashed #d9d9d9;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        :global{
+            .organization-upload.organization-upload-select-picture-card {
+                width: auto;
+                height: auto;
+                margin-right: 8px;
+                margin-bottom: 8px;
+                text-align: center;
+                vertical-align: top;
+                background-color: transparent;
+                border: 1px dashed #fff;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: border-color 0.3s;
+              }
+              .organization-upload.organization-upload-select-picture-card > .organization-upload {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                text-align: center;
+              }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/* stylelint-disable*/
+body {
+    min-width: 1200px !important;
+    background: #f7f8fc;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    vertical-align: -0.15em;
+    fill: currentColor;
+}
+
+.iconpark-icon {
+    width: 1em;
+    height: 1em;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.fe-signin-pc-input {
+    color: #333;
+    font-weight: 400;
+    background: #fff;
+    border: 0.01rem solid rgba(0, 0, 0, 0.15);
+    /* border-radius: 0.04rem !important; */
+}
+
+.fe-signin-pc-input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+}
+
+/* button,
+.fe-signin-pc-btn {
+    line-height: normal;
+    border-radius: 0.04rem !important;
+    cursor: pointer;
+}
+
+.fe-signin-pc-select:not(.fe-signin-pc-select-customize-input) .fe-signin-pc-select-selector {
+    border-radius: 0.04rem !important;
+} */
+
+.fe-signin-pc-radio-button-wrapper:not(:first-child)::before {
+    width: 0;
+}
+
+.fe-signin-pc-image-preview-mask {
+    z-index: 100000;
+}
+
+.fe-signin-pc-image-preview-wrap {
+    z-index: 100001;
+}

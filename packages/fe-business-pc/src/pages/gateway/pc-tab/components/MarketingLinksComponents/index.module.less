@@ -1,0 +1,54 @@
+.marketing_links_component {
+    margin-top: 6px;
+
+    .mark_upload {
+        padding-top: 8px;
+        padding-left: 20px;
+        width: 128px;
+        height: 128px;
+
+        .mark_upload_placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    :global {
+        div[class*='ant-upload ant-upload-select ant-upload-select-picture-card'] {
+            width: 128px;
+            height: 128px;
+            border-radius: 8px;
+        }
+
+        div[class*='ant-upload-list-picture-card-container'] {
+            margin-bottom: 0;
+            width: 128px;
+            height: 128px;
+        }
+
+        div[class*='ant-form-item'] {
+            margin-bottom: 0;
+        }
+
+        div[class*='ant-upload-list ant-upload-list-picture-card'] {
+            overflow: visible;
+            width: 128px;
+            height: 128px;
+        }
+
+        div[class*='ant-upload-list-item ant-upload-list-item-done ant-upload-list-item-list-type-picture-card'] {
+            border-radius: 8px;
+        }
+    }
+
+    .extra {
+        margin-top: 12px;
+        margin-bottom: 18px;
+        padding-left: 16px;
+        font-size: 16px;
+        font-family: PingFangSC-Regular, 'PingFang SC';
+        font-weight: 400;
+        color: rgba(0, 0, 0, 65%);
+    }
+}

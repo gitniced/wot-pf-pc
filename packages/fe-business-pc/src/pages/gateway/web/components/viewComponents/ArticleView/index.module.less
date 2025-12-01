@@ -1,0 +1,61 @@
+.article_view {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+    width: 100%;
+    min-height: 84px;
+
+    .article_view_col {
+        color: #171a1d;
+
+        .article_view_item {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .article_view_item_image {
+                width: 48px;
+                height: 48px;
+            }
+
+            .article_view_item_desc {
+                margin-top: 2px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+    flex-direction: column;
+    // background: #f8f9f9;
+
+    .icon {
+        width: 100px;
+        height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('https://static.zpimg.cn/public/saas_pc/article_empty.png');
+    }
+
+    .label {
+        margin-top: 4px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: rgba(0, 0, 0, 45%);
+    }
+}

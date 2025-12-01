@@ -1,0 +1,282 @@
+.audit_page {
+    width: 100%;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+
+    :global {
+        td[class~='enroll-descriptions-item'] {
+            padding-bottom: 24px;
+            height: 48px !important;
+        }
+        span[class~='enroll-descriptions-item-label'],
+        span[class='fe-enroll-pc-descriptions-item-label'] {
+            line-height: 24px;
+        }
+        span[class~='enroll-descriptions-item-content'],
+        span[class='fe-enroll-pc-descriptions-item-content'] {
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+        .fe-enroll-permission-pc-descriptions-item-container {
+            flex-wrap: wrap;
+        }
+        .fe-enroll-permission-pc-descriptions-item-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .audit_title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    .audit_info {
+        width: 100%;
+        display: flex;
+        .avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            margin-right: 16px;
+            .avatar_inner {
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+            }
+        }
+
+        .user_info {
+            flex: 1;
+            flex-direction: column;
+            .info_name {
+                margin-bottom: 6px;
+                display: flex;
+                align-items: center;
+                transition: all ease-in-out 0.3s;
+                span:nth-child(1) {
+                    font-size: 24px;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.85);
+                    margin-right: 5px;
+                }
+                .info_name_btn {
+                    width: 16px;
+                    height: 100%;
+                    margin-left: 8px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    opacity: 0;
+                    svg {
+                        fill: var(--primary-color);
+                    }
+                }
+                &:hover {
+                    .info_name_btn {
+                        opacity: 1;
+                    }
+                }
+            }
+            .info_info {
+                width: 100%;
+            }
+        }
+
+        .info_status {
+            width: 124px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-top: 5px;
+
+            span:nth-child(1) {
+                font-size: 16px;
+                font-family: PingFangSC-Regular;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.45);
+                margin-bottom: 8px;
+            }
+            span:nth-child(2) {
+                font-family: PingFangSC-Regular;
+                font-weight: 400;
+            }
+            .status_text {
+                span {
+                    line-height: 28px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .split {
+        width: 100%;
+        height: 1px;
+        background: #e8e8e8;
+        margin: 0 0 24px 0;
+    }
+
+    .sub_title {
+        width: max-content;
+        height: 24px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 24px;
+        margin-bottom: 24px;
+        position: relative;
+        &::after {
+            width: 100%;
+            height: 6px;
+            background: var(--primary-color-02);
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+        }
+    }
+
+    .enroll_info {
+        padding-bottom: 32px;
+        .enroll_info_title {
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.85);
+            margin-bottom: 18px;
+        }
+
+        .comment {
+            //超出部分隐藏 省略号
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+        }
+        .contentStyle {
+            max-width: 310px;
+            -webkit-line-clamp: 2; // 用来限制在一个块元素显示的文本的行数
+            display: -webkit-box; // 将对象作为弹性伸缩盒模型显示
+            -webkit-box-orient: vertical; //设置或检查伸缩盒对象的子元素的排列方式
+            text-overflow: ellipsis; // 在多行文本的情况下，用...隐藏超出范围的文本
+            word-break: break-all;
+            overflow: hidden;
+        }
+    }
+
+    .enroll_table_item,
+    .enroll_table_item_veridic {
+        width: 100%;
+        margin-top: 16px;
+        .enroll_table_item_title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            span {
+                width: 8px;
+                height: 8px;
+                background: var(--primary-color);
+                margin-right: 8px;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            font-size: 16px;
+            font-family: PingFangSC-Medium;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 24px;
+        }
+        .enroll_table_item_list {
+            width: 100%;
+
+            .img_veridic_box {
+                width: 80px;
+                height: 80px;
+                background: #ffffff;
+                border-radius: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                margin-right: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .enroll_img_img_veridic {
+                    width: 64px;
+                    height: 64px;
+                    object-fit: contain;
+                }
+                div[class~='enroll-image-mask'] {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 8px;
+                    left: -8px;
+                    top: -8px;
+                }
+            }
+        }
+    }
+
+    .enroll_table_item {
+        margin-bottom: 24px;
+    }
+}
+.enroll_img {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-right: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .enroll_img_img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+    }
+    div[class~='enroll-image-mask'] {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        left: -8px;
+        top: -8px;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.enroll_info_cate {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    .enroll_info_cate_info {
+        width: 100%;
+        height: 24px;
+        background: rgba(0, 0, 0, 0.06);
+        border-radius: 6px;
+        padding: 0 12px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: nowrap;
+
+        font-size: 16px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 24px;
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

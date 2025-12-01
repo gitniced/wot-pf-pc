@@ -1,0 +1,44 @@
+.title_content {
+    width: 100%;
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        position: relative;
+        &::after {
+            width: 64px;
+            height: 6px;
+            content: '';
+            background: rgba(0, 103, 255, 0.2);
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+        }
+    }
+    .tab_list {
+        display: flex;
+        align-items: center;
+        .tab_des {
+            flex: none;
+            white-space: nowrap;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.45);
+            margin-right: 8px;
+        }
+        :global {
+            .transaction-radio-button-wrapper:first-child {
+                border-radius: 6px 0px 0px 6px;
+            }
+            .transaction-radio-button-wrapper:last-child {
+                border-radius: 0px 6px 6px 0px;
+            }
+        }
+    }
+}

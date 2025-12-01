@@ -1,0 +1,69 @@
+/**
+ * Created by cgl on 2020/9/22.
+ */
+.item {
+    position: relative;
+    padding: 14px 0;
+    width: 70px;
+    height: 76px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+
+    > p {
+        margin: 0;
+        font-size: 14px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        color: rgba(0, 0, 0, 85%);
+        line-height: 14px;
+    }
+
+    .icon {
+        display: block;
+        margin: 0 auto 8px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .default_color {
+        fill: #888;
+    }
+
+    &:not(:last-child) {
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 24px;
+            height: 1px;
+            background: #e8e8e8;
+            content: '';
+            transform: translateX(-50%);
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: var(--primary-color);
+
+        & > p {
+            color: #fff;
+        }
+
+        &::after {
+            background: var(--primary-color);
+        }
+
+        .svg {
+            svg {
+                fill: #fff !important;
+            }
+        }
+    }
+
+    &:active {
+        color: #fff;
+        background-color: var(--primary-color);
+    }
+}

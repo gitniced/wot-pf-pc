@@ -1,0 +1,44 @@
+.contract_goods_list {
+    .good_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        height: 134px;
+        padding: 24px;
+        background: #f6fbff;
+        border: 1px solid rgba(24, 144, 255, 0.15);
+        border-radius: 6px;
+        column-gap: 24px;
+
+        .img {
+            flex: 1;
+            img {
+                width: 153px;
+                height: 86px;
+                object-fit: cover;
+            }
+        }
+
+        .name,
+        .classify,
+        .rate,
+        .price {
+            height: 86px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            max-width: 20%;
+
+            .title {
+                color: rgba(0, 0, 0, 0.45);
+            }
+
+            .value {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

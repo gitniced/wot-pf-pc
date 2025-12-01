@@ -1,0 +1,59 @@
+.flex_c() {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_basic {
+    display: flex;
+    align-items: center;
+}
+
+.flex_bet {
+    .flex_basic();
+
+    justify-content: space-between;
+}
+
+.container {
+    .flex_c;
+
+    .job_title {
+        div:nth-child(1) {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        div:nth-child(2) {
+            font-size: 14px;
+            color: #999;
+        }
+    }
+
+    .desc_content {
+        .flex_basic;
+
+        .desc_content_item {
+            width: 300px;
+            border: 1px solid #000;
+        }
+    }
+
+    .content {
+        display: flex;
+
+        .content_left {
+            flex: 1;
+        }
+
+        .content_right {
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #f2f2f2;
+            box-sizing: border-box;
+
+            .similar_job {
+                .flex_c;
+            }
+        }
+    }
+}

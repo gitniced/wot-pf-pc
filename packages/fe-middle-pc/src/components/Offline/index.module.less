@@ -1,0 +1,64 @@
+.global_empty_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+
+    & > div {
+        width: 272px;
+        height: 170px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('https://static.zpimg.cn/public/career/hunan/icon_empty.png');
+    }
+
+    & > p {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #888;
+    }
+}
+
+.offline_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 30%);
+
+    .offline_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 900px;
+        height: 600px;
+        border-radius: 30px;
+        background: #fff;
+        flex-direction: column;
+
+        .offline_img {
+            width: 272px;
+            height: 170px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://static.zpimg.cn/public/career/hunan/icon_empty.png');
+        }
+
+        .offline_tit {
+            margin-top: 80px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #888;
+        }
+    }
+}

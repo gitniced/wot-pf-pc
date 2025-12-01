@@ -1,0 +1,1248 @@
+.activity_left {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 7px;
+    width: 19px;
+    height: 8px;
+    background-size: 100% 100%;
+}
+
+.activity_right {
+    content: '';
+    position: absolute;
+    right: -33px;
+    top: 7px;
+    width: 19px;
+    height: 8px;
+    background-size: 100% 100%;
+}
+
+.scan_code_left {
+    width: 10px;
+    height: 48px;
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: -28px;
+}
+
+.scan_code_right {
+    width: 10px;
+    height: 48px;
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: -28px;
+}
+
+.top_box_left {
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.top_box_right {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.enrollSetting {
+    // position: relative;
+    // width: 100vw;
+    // height: 100vh;
+    // overflow: auto;
+    // background: #f0f2f5;
+    // padding-bottom: 36px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+
+    .main {
+        // position: absolute;
+        // top: 104px;
+        // right: 0;
+        // left: 0;
+
+        // width: 1200px;
+        // max-width: 1200px;
+        // margin: auto;
+        // padding: 24px;
+        // background: #fff;
+        // border-radius: 12px;
+        // margin-top: 36px;
+        // padding: 8px;
+
+        .main_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .closeRegistration {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                color: var(--primary-color);
+
+                .header_menu_icon {
+                    margin-top: 3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+
+        .form {
+            margin-left: 260px;
+
+            .link {
+                display: flex;
+                align-items: center;
+
+                .enroll_link {
+                    width: 408px;
+                    height: 32px;
+                    background: rgba(0, 0, 0, 0.04);
+                    margin-right: 10px;
+                    line-height: 32px;
+                    padding-left: 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: var(--primary-color);
+                    text-decoration: underline;
+                    border-radius: 6px;
+                }
+            }
+
+            .qrcode {
+                display: flex;
+                align-items: flex-start;
+                width: 128px;
+                height: 128px;
+                background: #ffffff;
+                border-radius: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                padding: 8px;
+
+                .qrcode_img {
+                    margin-right: 14px;
+                }
+            }
+
+            .poster_div {
+                display: flex;
+                align-items: flex-start;
+
+                .poster {
+                    margin-right: 10px;
+                    width: 375px;
+                    background: #1678ff;
+                    // border-radius: 8px;      
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+
+                    .cover {
+                        width: 351px;
+                        height: 202px;
+                        // background: #dfdfdf;
+                        border-radius: 8px;
+                        border: 2px solid #ffffff;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        margin-bottom: 12px;
+
+                        & img {
+                            width: 347px;
+                            height: 198px;
+                            border-radius: 8px;
+                            object-fit: fill;
+                        }
+                    }
+
+                    .content {
+                        position: relative;
+                        width: 351px;
+                        height: fit-content;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 24px 0px 24px;
+
+                        .name {
+                            font-size: 18px;
+                            font-family: AlibabaPuHuiTi-Bold, AlibabaPuHuiTi;
+                            font-weight: bold;
+                            color: rgba(0, 0, 0, 0.85);
+                            line-height: 24px;
+                            text-align: center;
+                        }
+
+                        .time {
+                            margin-top: 12px;
+                            margin-bottom: 16px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-size: 14px;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 0.65);
+                            line-height: 20px;
+                            text-align: center;
+                        }
+
+                        .activity_introduction {
+                            width: 327px;
+                            height: fit-content;
+                            background: #f1f6fe;
+                            border-radius: 8px;
+                            border: 1px solid #ffffff;
+                            padding: 24px 16px 16px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .activity_title {
+                                font-size: 16px;
+                                font-family: PingFangSC-Medium, PingFang SC;
+                                font-weight: 600;
+                                color: rgba(0, 0, 0, 0.85);
+                                line-height: 22px;
+                                margin-bottom: 12px;
+                                position: relative;
+                            }
+
+                            .activity_title_one::before {
+                                .activity_left();
+                                background: url('https://static.zpimg.cn/public/business_pc/png_title_left%402x.png') no-repeat;
+                                background-size: 100% 100%;
+                            }
+
+                            .activity_title_one::after {
+                                .activity_right();
+                                background: url('https://static.zpimg.cn/public/business_pc/png_title_right%402x.png');
+                                background-size: 100% 100%;
+                            }
+
+                            .activity_title_two::before {
+                                .activity_left();
+                                background: url('https://static.zpimg.cn/public/enroll/png_title_left(3).png') no-repeat;
+                            }
+
+                            .activity_title_two::after {
+                                .activity_right();
+                                background: url('https://static.zpimg.cn/public/enroll/png_title_right(1).png');
+                                background-size: 100% 100%;
+                            }
+
+                            .activity_title_three::before {
+                                .activity_left();
+                                background: url('https://static.zpimg.cn/public/enroll/png_title_left(1).png') no-repeat;
+                            }
+
+                            .activity_title_three::after {
+                                .activity_right();
+                                background: url('https://static.zpimg.cn/public/enroll/png_title_right(2).png');
+                                background-size: 100% 100%;
+                            }
+
+                            .activity_title_four::before {
+                                .activity_left();
+                                background: url('https://static.zpimg.cn/public/enroll/png_title_left(2).png') no-repeat;
+                            }
+
+                            .activity_title_four::after {
+                                .activity_right();
+                                background: url('https://static.zpimg.cn/public/enroll/png_title_right(3).png');
+                                background-size: 100% 100%;
+                            }
+
+                            .activity_content {
+                                font-size: 14px;
+                                font-family: PingFangSC-Regular, PingFang SC;
+                                font-weight: 400;
+                                color: rgba(0, 0, 0, 0.65);
+                                line-height: 26px;
+                                word-break: break-all;
+                            }
+                        }
+                    }
+
+                    .scan_code {
+                        position: relative;
+                        margin-top: 12px;
+                        width: 351px;
+                        border-radius: 8px;
+                        padding: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 20px;
+
+                        .scan_content {
+                            position: relative;
+                            display: flex;
+
+                            .scan_left {
+                                width: 211px;
+
+                                .scan_top {
+                                    display: flex;
+                                    align-items: center;
+                                    padding-top: 16px;
+                                    margin-bottom: 8px;
+
+                                    .scan_img {
+                                        width: 40px;
+                                        height: 40px;
+                                        padding-top: 6px;
+                                        margin-right: 12px;
+
+                                        .scan_imgage {
+                                            width: 40px;
+                                            height: 40px;
+                                        }
+                                    }
+
+                                    .scan_enroll {
+                                        width: 106px;
+                                        height: 24px;
+                                        background: #1678ff;
+                                        border-radius: 0px 12px 12px 12px;
+                                        font-size: 12px;
+                                        font-family: PingFangSC-Regular, PingFang SC;
+                                        font-weight: 400;
+                                        color: #ffffff;
+                                        display: flex;
+                                        align-items: center;
+                                        padding-left: 8px;
+                                        position: relative;
+                                        margin-top: 12px;
+
+                                        & img {
+                                            width: 14px;
+                                            height: 14px;
+                                            vertical-align: middle;
+                                            margin-left: 4px;
+                                            transform: translateY(1px);
+                                        }
+                                    }
+                                }
+
+                                .scan_bottom {
+                                    font-size: 14px;
+                                    font-family: PingFangSC-Medium, PingFang SC;
+                                    font-weight: 600;
+                                    color: rgba(0, 0, 0, 0.85);
+                                }
+                            }
+
+                            .scan_right {
+                                width: 103px;
+                                height: 103px;
+                                margin-top: 12px;
+                                margin-left: 12px;
+                                background-size: 100% 100%;
+
+                                & svg {
+                                    width: 100%;
+                                    height: 100%;
+                                    fill: #1678ff;
+                                }
+
+                                position: relative;
+
+                                .qrcode_scan {
+                                    position: absolute;
+                                    left: 6px;
+                                    top: 6px;
+                                }
+                            }
+                        }
+
+                        .phone {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 12px;
+                            width: 327px;
+                            height: 32px;
+                            background: #bad5ff;
+                            border-radius: 6px;
+                            font-size: 14px;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 0.65);
+                            line-height: 20px;
+                        }
+                    }
+
+                    .scan_code_one::before {
+                        .scan_code_left();
+                        background: url('https://static.zpimg.cn/public/business_pc/png_lianjie%402x.png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .scan_code_one::after {
+                        .scan_code_right();
+                        background: url('https://static.zpimg.cn/public/business_pc/png_lianjie%402x.png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .scan_code_two::before {
+                        .scan_code_left();
+                        background: url('https://static.zpimg.cn/public/enroll/png_lianjie(1).png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .scan_code_two::after {
+                        .scan_code_right();
+                        background: url('https://static.zpimg.cn/public/enroll/png_lianjie(1).png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .scan_code_three::before {
+                        .scan_code_left();
+                        background: url('https://static.zpimg.cn/public/enroll/png_lianjie(2).png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .scan_code_three::after {
+                        .scan_code_right();
+                        background: url('https://static.zpimg.cn/public/enroll/png_lianjie(2).png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .scan_code_four::before {
+                        .scan_code_left();
+                        background: url('https://static.zpimg.cn/public/enroll/png_lianjie(3).png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .scan_code_four::after {
+                        .scan_code_right();
+                        background: url('https://static.zpimg.cn/public/enroll/png_lianjie(3).png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .top_box {
+                        position: relative;
+                        width: 351px;
+                        min-height: 266px;
+                        height: fit-content;
+                        background: #ffffff;
+                        border-radius: 8px;
+                        padding: 24px 32px;
+                        display: flex;
+                        flex-direction: column;
+
+                        // align-items: center;
+                        .scan_imgs {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 12px;
+                            margin-bottom: 8px;
+                            margin: 0 auto;
+
+                            .scan_imgage {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .title_name {
+                            font-size: 20px;
+                            font-family: PingFangSC-Medium, PingFang SC;
+                            font-weight: 500;
+                            color: rgba(0, 0, 0, 0.85);
+                            line-height: 28px;
+                            text-align: center;
+                        }
+
+                        .tel {
+                            margin-top: 24px;
+                            font-size: 16px;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 0.85);
+                            line-height: 22px;
+                            margin-bottom: 16px;
+                            display: flex;
+
+                            .img_tel {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 6px;
+
+                                & img {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+
+                        .adress {
+                            font-size: 16px;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 0.85);
+                            line-height: 22px;
+                            display: flex;
+
+                            .img_tel {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 6px;
+
+                                & img {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom_box {
+                        position: relative;
+                        width: 351px;
+                        height: 246px;
+                        background: #ebf3ff;
+                        border-radius: 8px;
+                        border-top: 1px dashed rgba(22, 120, 255, 0.45);
+                        padding-top: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .qr_code {
+                            position: relative;
+                            width: 160px;
+                            height: 160px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 16px;
+
+                            .qrcode_scan_org {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                            }
+                        }
+
+                        .scan_title {
+                            font-size: 16px;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 0.45);
+                            line-height: 22px;
+                        }
+                    }
+
+                    .top_box_one::before {
+                        .top_box_left();
+                        background-color: #1678ff;
+                    }
+
+                    .top_box_one::after {
+                        .top_box_right();
+                        background-color: #1678ff;
+                    }
+
+                    .top_box_two::before {
+                        .top_box_left();
+                        background-color: #d23e31;
+                    }
+
+                    .top_box_two::after {
+                        .top_box_right();
+                        background-color: #d23e31;
+                    }
+
+                    .top_box_three::before {
+                        .top_box_left();
+                        background-color: #45459f;
+                    }
+
+                    .top_box_three::after {
+                        .top_box_right();
+                        background-color: #45459f;
+                    }
+
+                    .top_box_four::before {
+                        .top_box_left();
+                        background-color: #f7821b;
+                    }
+
+                    .top_box_four::after {
+                        .top_box_right();
+                        background-color: #f7821b;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+
+                    .color_png {
+                        border: 1px solid var(--primary-color);
+                        border-radius: 6px;
+                    }
+
+                    .color_arr {
+                        display: flex;
+                        margin-top: 24px;
+                        column-gap: 12px;
+
+                        div[class*='enroll-image'] {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.qrcode_wrapper {
+    padding: 8px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 15%);
+    border-radius: 8px;
+}
+
+.poster_img_list {
+    display: flex;
+    align-items: center;
+    column-gap: 24;
+
+    .poster_img_item {
+        position: relative;
+        cursor: pointer;
+
+        .poster_img {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .text {
+            margin-top: 4px;
+            color: rgba(0, 0, 0, 45%);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .icon_wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: #1678FF;
+            border-radius: 0 8px;
+
+            img {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        &.active {
+            .icon_wrapper {
+                display: flex;
+            }
+        }
+    }
+}
+
+.poster_wrapper {
+    display: flex;
+    align-items: start;
+    margin-top: 16px;
+    column-gap: 8px;
+}
+
+.first_poster_wrapper {
+    width: 343px;
+    padding: 24px;
+    background-image: url('https://static.zpimg.cn/public/fe_saas_pc/image/share_bg1%402x_0ef61e68.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .first_poster_inner {
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 8px;
+
+        .poster_cover {
+            width: 100%;
+            height: 148px;
+            object-fit: cover;
+            background: #D8D8D8;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .name {
+            margin-top: 12px;
+            color: #171A1D;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            overflow: hidden;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .time {
+            margin-top: 8px;
+            color: rgba(23, 26, 29, 60%);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .divider {
+            position: relative;
+            width: 100%;
+            height: 1px;
+            margin: 12px 0 16px;
+            border: 1px dashed rgba(126, 134, 142, 16%);
+
+            &::before {
+                position: absolute;
+                bottom: -10px;
+                left: -28px;
+                width: 20px;
+                height: 20px;
+                background-color: #a6d6f4;
+                border-radius: 50%;
+                content: '';
+            }
+
+            &::after {
+                position: absolute;
+                right: -28px;
+                bottom: -10px;
+                width: 20px;
+                height: 20px;
+                background-color: #afeee8;
+                border-radius: 50%;
+                content: '';
+            }
+        }
+
+        .qrcode_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            column-gap: 24px;
+            border: none;
+        }
+
+        .qrcode_text,
+        .contract {
+            margin-top: 8px;
+            color: rgba(23, 26, 29, 40%);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        .qrcode_text {
+            margin-bottom: 8px;
+        }
+    }
+
+    .site_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+
+        .site_logo {
+            margin-right: 4px;
+        }
+
+        .site_name {
+            color: #FFF;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+.second_poster_wrapper {
+    width: 343px;
+    // height: 520px;
+    background-position: center;
+    border-radius: 8px;
+    padding: 24px;
+    background-image: url('https://static.zpimg.cn/public/fe_saas_pc/image/share_bg2%402x_7a977f3b.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .second_poster_inner {
+        box-shadow: 0px 4px 12px 0px #93DE77;
+        position: relative;
+        width: 100%;
+
+        .poster_cover_wrapper {
+            border-radius: 8px;
+            border: 2px solid #FFFFFF;
+            margin-bottom: 10px;
+
+            img {
+                width: 100%;
+                height: 166px;
+            }
+        }
+
+        .poster_inner_top_wrapper {
+            border-radius: 8px;
+            box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 8%);
+            background-color: #fff;
+        }
+
+        &_top {
+            padding: 12px 16px;
+
+            .poster_cover {
+                width: 100%;
+                height: 148px;
+                object-fit: cover;
+                background: #D8D8D8;
+                border: none;
+                border-radius: 8px;
+            }
+
+
+            .name {
+                color: #171A1D;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 22px;
+                overflow: hidden;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            .time {
+                margin-top: 8px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: rgba(23, 26, 29, 0.6);
+            }
+        }
+
+
+        .divider {
+            position: relative;
+            width: 100%;
+            height: 1px;
+            margin: 12px 0 16px;
+            border: 1px dashed rgba(126, 134, 142, 16%);
+
+            &::before {
+                position: absolute;
+                bottom: -10px;
+                left: -10px;
+                width: 20px;
+                height: 20px;
+                background-color: #b0ea99;
+                border-radius: 50%;
+                content: '';
+            }
+
+            &::after {
+                position: absolute;
+                right: -10px;
+                bottom: -10px;
+                width: 20px;
+                height: 20px;
+                background-color: #c3ec95;
+                border-radius: 50%;
+                content: '';
+            }
+        }
+
+        &_bottom {
+            padding: 0px 16px 16px;
+
+            .qr_code_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .first_child {
+                    color: #171A1D;
+                    font-weight: 400;
+                    font-size: 15px;
+                    font-family: PingFangSC, "PingFang SC";
+                    line-height: 22px;
+                    margin-bottom: 8px;
+                }
+
+                .second_child {
+                    color: #171A1D;
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: PingFangSC, "PingFang SC";
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .contract {
+        width: 263px;
+        height: 32px;
+        background: linear-gradient(270deg, #CFF845 0%, #78E328 50%, #6BE425 100%), #FBF52A;
+        border-radius: 0px 0px 6px 6px;
+        border: 1px solid #FFFFFF;
+        font-size: 12px;
+        color: #171A1D;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .site_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+
+        .site_logo {
+            margin-right: 4px;
+        }
+
+        .site_name {
+            color: rgba(23, 26, 29, 0.6);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+.third_poster_wrapper {
+    width: 343px;
+    // height: 520px;
+    background-position: center;
+    border-radius: 8px;
+    padding: 24px;
+    background-image: url('https://static.zpimg.cn/public/fe_saas_pc/image/share_bg3%402x_71a0d0b6.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .header_top {
+        width: 100%;
+    }
+
+    .third_poster_inner {
+        background-color: #fff;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 8%);
+        width: 100%;
+    
+
+        &_top {
+            padding: 16px 16px 12px;
+
+            .poster_cover {
+                width: 100%;
+                height: 148px;
+                object-fit: cover;
+                background: #D8D8D8;
+                border: none;
+                border-radius: 8px;
+            }
+
+            .name {
+                margin-top: 12px;
+                color: #171A1D;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 22px;
+                overflow: hidden;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            .time {
+                margin-top: 8px;
+                color: rgba(23, 26, 29, 60%);
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        &_bottom {
+            padding: 16px;
+            // background: rgba(22, 120, 255, 4%);
+
+            .qr_code_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .first_child {
+                    color: #171A1D;
+                    font-weight: 400;
+                    font-size: 15px;
+                    font-family: PingFangSC, "PingFang SC";
+                    line-height: 22px;
+                    margin-bottom: 8px;
+                }
+
+                .second_child {
+                    color: #171A1D;
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: PingFangSC, "PingFang SC";
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .divider {
+        width: 263px;
+        position: relative;
+        margin: auto;
+
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            border: 1px dashed rgba(126, 134, 142, 16%);
+        }
+    }
+
+    .site_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+
+        .site_logo {
+            margin-right: 4px;
+        }
+
+        .site_name {
+            color: #FFF;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+.fourth_poster_wrapper {
+    width: 343px;
+    // height: 520px;
+    background-position: center;
+    border-radius: 8px;
+    padding: 24px;
+    background-image: url('https://static.zpimg.cn/public/fe_saas_pc/image/share_bg4%402x_9a944eea.png');
+    background-size: cover;
+
+    .fourth_poster_inner {
+        &_top {
+            padding: 13px 16px 16px;
+            background-color: #fff;
+            border-radius: 0 0 8px 8px;
+            position: relative;
+            margin-top: 9px;
+
+            &::before {
+                display: block;
+                content: "";
+                position: absolute;
+                top: -9px;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background-image: url(https://static.zpimg.cn/public/fe_saas_pc/image/bg_card2%402x_f4b24ba8.png);
+                background-position: top center;
+                background-size: cover;
+            }
+
+            &::after {
+                display: block;
+                content: "";
+                position: absolute;
+                bottom: -25px;
+                right: 12px;
+                width: 10px;
+                height: 38px;
+                background-image: url(https://static.zpimg.cn/public/fe_saas_pc/image/png_lianjie%402x_9fd02a31.png);
+                background-size: cover;
+                z-index: 10;
+            }
+
+
+            .poster_cover {
+                width: 100%;
+                height: 148px;
+                object-fit: cover;
+                background: #D8D8D8;
+                border: none;
+                border-radius: 8px;
+            }
+
+            .name {
+                margin-top: 12px;
+                color: #171A1D;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 22px;
+                overflow: hidden;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            .time {
+                margin-top: 8px;
+                color: rgba(23, 26, 29, 60%);
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        &_bottom {
+            padding: 12px 16px 16px;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+            margin-top: 18px;
+            position: relative;
+
+
+            &::before {
+                display: block;
+                content: "";
+                position: absolute;
+                top: -9px;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background-image: url(https://static.zpimg.cn/public/fe_saas_pc/image/bg_card2%402x_f4b24ba8.png);
+                background-position: top center;
+                background-size: cover;
+            }
+
+            &::after {
+                display: block;
+                content: "";
+                position: absolute;
+                top: -32px;
+                left: 12px;
+                width: 10px;
+                height: 38px;
+                background-image: url(https://static.zpimg.cn/public/fe_saas_pc/image/png_lianjie%402x_9fd02a31.png);
+                background-size: cover;
+            }
+
+            .contract {
+                height: 32px;
+                background: rgba(22, 120, 255, 0.12);
+                border-radius: 6px;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.65);
+                line-height: 32px;
+                text-align: center;
+                margin-top: 12px;
+            }
+
+            .qr_code_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .first_child {
+                    color: #171A1D;
+                    font-weight: 400;
+                    font-size: 15px;
+                    font-family: PingFangSC, "PingFang SC";
+                    line-height: 22px;
+                    margin-bottom: 8px;
+                }
+
+                .second_child {
+                    color: #171A1D;
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: PingFangSC, "PingFang SC";
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .site_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+
+        .site_logo {
+            margin-right: 4px;
+        }
+
+        .site_name {
+            color: #FFF;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

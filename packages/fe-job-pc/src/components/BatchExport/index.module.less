@@ -1,0 +1,138 @@
+/* stylelint-disable*/
+.batchExportModal {
+    :global {
+        .fe-job-pc-modal-content {
+            padding: 0;
+        }
+    }
+}
+
+.exportingModal {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 24px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .content {
+        padding: 24px;
+        text-align: center;
+
+        .loadingIcon {
+            margin: 0 auto 16px;
+            width: 40px;
+            height: 48px;
+            font-size: 40px;
+            background-size: contain;
+        }
+
+        .text {
+            margin-bottom: 16px;
+            color: rgba(0, 0, 0, 85%);
+        }
+    }
+
+    button {
+        display: block;
+        margin: 0 auto 24px;
+    }
+}
+
+.confirmModal {
+    padding: 24px;
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 24px;
+
+        .warningIcon {
+            margin-right: 16px;
+            font-size: 22px;
+            color: #faad14;
+        }
+
+        .text {
+            color: rgba(0, 0, 0, 85%);
+        }
+    }
+
+    .footer {
+        text-align: right;
+
+        button + button {
+            margin-left: 8px;
+        }
+    }
+}
+
+.successModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
+    .successIcon {
+        margin-right: 16px;
+        font-size: 40px;
+        color: #52c41a;
+    }
+
+    .content {
+        .text {
+            font-size: 24px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 500;
+            text-align: left;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 32px;
+            font-style: normal;
+        }
+
+        .fileName {
+            margin-top: 8px;
+            font-size: 16px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 400;
+            text-align: left;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 24px;
+            font-style: normal;
+        }
+    }
+
+    .footer {
+        text-align: center;
+
+        button + button {
+            margin-left: 8px;
+        }
+    }
+}
+
+.failModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
+    .failIcon {
+        margin-right: 16px;
+        font-size: 40px;
+        color: #ff4d4f;
+    }
+
+    .content {
+        .text {
+            font-size: 24px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 500;
+            text-align: left;
+            color: rgba(0, 0, 0, 85%);
+            line-height: 32px;
+            font-style: normal;
+        }
+    }
+}

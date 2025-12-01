@@ -1,0 +1,126 @@
+/* stylelint-disable*/
+
+.test_paper_answer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .mg_0 {
+        margin: 0;
+    }
+
+    .text_center {
+        text-align: center;
+    }
+
+    .keep_original {
+        white-space: pre-wrap;
+    }
+
+    // 宋体五号
+    .song_5 {
+        font-size: 10.5pt;
+        font-family: SongTi;
+    }
+
+    // 宋体五号粗
+    .song_5_b {
+        font-weight: 700;
+        font-size: 10.5pt;
+        font-family: SongTi;
+    }
+
+    // 黑体小二粗
+    .black_2_l {
+        font-weight: bold;
+        font-size: 18pt;
+        font-family: HeiTi;
+    }
+
+    // 黑体三号粗
+    .black_3_b {
+        font-weight: bold;
+        font-size: 15pt;
+        font-family: HeiTi;
+    }
+
+    // 黑体四号粗
+    .black_4_b {
+        font-weight: bold;
+        font-size: 14pt;
+        font-family: HeiTi;
+    }
+
+    // A4纸
+    .a4_page {
+        display: flex;
+        flex-direction: column;
+        width: 794px;
+    }
+
+    .question_type_box {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10.5pt;
+        font-family: SongTi;
+    }
+
+    .question_content {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: calc(100% - 100px);
+    }
+
+    .answer {
+        display: flex;
+        flex-shrink: 0;
+        max-width: 100%;
+        margin-right: 24px;
+        word-wrap: break-word;
+        word-break: break-all;
+
+        & > p {
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
+
+    .analysis {
+        display: flex;
+        flex-wrap: wrap;
+
+        .analysis_content {
+            word-wrap: break-word;
+            word-break: break-all;
+
+            > p {
+                display: flex;
+                flex-flow: column wrap;
+            }
+        }
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: baseline;
+    }
+
+    // 下载按钮
+    .print_button {
+        position: absolute;
+        top: 40px;
+        right: 200px;
+    }
+
+    @media print {
+        .print_button {
+            display: none;
+        }
+    }
+
+    // 设置打印页面大小为A4纸，纵向打印portrait，横向打印为landscape，margin属性指定页边距
+    @page {
+        margin: 6mm 0 6mm 13mm;
+        size: a4 portrait;
+    }
+}

@@ -1,0 +1,59 @@
+/* stylelint-disable */
+
+.component_fontsize {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    margin-top: 16px;
+    padding: 0 24px;
+    font-size: 24px;
+    color: #666;
+    background-color: #fff;
+
+    .fontsize_inner {
+        display: flex;
+        align-items: center;
+
+
+        .text {
+            margin-right: 16px;
+            font-size: 18px;
+        }
+
+        .low {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(0,0,0,0.45);
+        }
+
+        .high {
+            font-size: 32px;
+            font-weight: 500;
+            color: rgba(0,0,0,0.45);
+        }
+
+        :global {
+            .exam-center-slider {
+                width: 175px;
+                margin: 0 16px;
+            }
+        }
+    }
+
+    .scientific_calculator {
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+            color: #3995F6;
+        }
+
+        :global {
+            .anticon {
+                margin-right: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/* stylelint-disable selector-class-pattern */
+.page {
+    width: 100%;
+    // min-width: 1800px;
+    min-height: calc(100vh - 0.4rem);
+    padding-top: 0.4rem;
+    background: #f7f8fc !important;
+
+    .layout {
+        display: flex;
+        // min-width: 1500px;
+        .menu {
+            width: 1.3rem;
+            min-height: calc(100vh - 0.4rem);
+            background: #fff;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            // min-width: 1500px;
+            margin: 0.15rem;
+            overflow: hidden;
+
+            .children {
+                position: relative;
+                width: 100%;
+                // min-height: 6rem;
+                height: 100%;
+                // background: #fff;
+                // border-radius: 0.08rem;
+                // box-shadow: 0 0 12px 0 rgba(0, 21, 41, 0.03);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .page {
+        .layout {
+            // margin: auto;
+            .content {
+                position: relative;
+                width: 100%;
+                margin: 24px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    :global {
+        .ant-input-affix-wrapper {
+            height: auto !important;
+            padding: 0 11px !important;
+        }
+
+        .ant-btn {
+            width: auto !important;
+            height: auto !important;
+            padding: 4px 20px !important;
+        }
+    }
+}

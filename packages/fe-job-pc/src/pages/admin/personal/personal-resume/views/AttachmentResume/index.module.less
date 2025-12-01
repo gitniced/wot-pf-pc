@@ -1,0 +1,121 @@
+@import url('../../common.module.less');
+
+.job_seeker_container {
+    overflow-y: auto;
+    width: 248px;
+    height: 1px;
+    box-sizing: border-box;
+    flex: 1;
+
+    .sub_wrap {
+        border-radius: 12px;
+        background: #fff;
+
+        .sub_wrap_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 12px 12px 0 0;
+            background: var(--primary-color-005);
+
+            .text {
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 85%);
+                line-height: 24px;
+            }
+
+            .icon {
+                cursor: pointer;
+                width: 16px;
+                height: 16px;
+                fill: rgba(0, 0, 0, 45%);
+
+                &:hover {
+                    fill: var(--primary-color);
+                }
+            }
+        }
+
+        .sub_wrap_content {
+            overflow-y: scroll;
+            padding-top: 4px;
+            padding-bottom: 16px;
+
+            /* 隐藏滚动条 */
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+
+            .attachment_wrap {
+                position: relative;
+
+                .attachment_item {
+                    display: flex;
+                    margin-top: 16px;
+                    padding: 0 10px;
+                    cursor: pointer;
+
+                    &_left {
+                        margin-right: 2px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    &_middle {
+                        width: 158px;
+
+                        .file_name {
+                            overflow: hidden;
+                            max-width: 158px;
+                            font-size: 16px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            color: rgba(0, 0, 0, 85%);
+                            line-height: 24px;
+                        }
+
+                        .update_time {
+                            font-size: 12px;
+                            color: rgba(0, 0, 0, 45%);
+                            line-height: 20px;
+                        }
+                    }
+
+                    &_right {
+                        margin-left: 4px;
+
+                        .icon {
+                            width: 20px;
+                            height: 20px;
+                            fill: rgba(0, 0, 0, 45%);
+
+                            &:hover {
+                                fill: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sub_empty_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 24px;
+        flex-direction: column;
+
+        .text {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 65%);
+            line-height: 24px;
+        }
+    }
+}

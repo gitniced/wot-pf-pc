@@ -1,0 +1,189 @@
+.team_list {
+    padding: 24px;
+    width: 100%;
+
+    .class_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 24px;
+
+        .class_name {
+            overflow: hidden;
+            width: 540px;
+            height: 24px;
+            font-size: 16px;
+            font-family: PingFangSC, 'PingFang SC';
+            font-weight: 500;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: rgba(0, 0, 0, 85%);
+            flex: none;
+            word-break: break-all;
+        }
+
+        .class_info {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            div {
+                margin-right: 4px;
+                font-size: 14px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 400;
+                color: rgba(0, 0, 0, 85%);
+            }
+
+            span {
+                font-size: 16px;
+                font-family: PingFangSC, 'PingFang SC';
+                font-weight: 500;
+                color: rgba(0, 0, 0, 85%);
+            }
+
+            .split {
+                margin: 0 12px;
+                width: 1px;
+                height: 12px;
+                border-radius: 1px;
+                background: #d9d9d9;
+                flex: none;
+            }
+        }
+    }
+
+    .group_content {
+        margin-top: 12px;
+        width: 804px;
+
+        .group_content_item_content {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 104px;
+
+            .group_content_item {
+                padding: 16px;
+                width: 252px;
+                height: 104px;
+                border-radius: 8px;
+                background: rgba(0, 0, 0, 3%);
+                flex: none;
+
+                div {
+                    overflow: hidden;
+                    margin-bottom: 4px;
+                    width: 100%;
+                    height: 24px;
+                    font-size: 16px;
+                    font-family: PingFangSC, 'PingFang SC';
+                    font-weight: 400;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: rgba(0, 0, 0, 85%);
+                    flex: none;
+                    word-break: break-all;
+                    line-height: 24px;
+                }
+
+                span {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 22px;
+                    font-size: 14px;
+                    font-family: PingFangSC, 'PingFang SC';
+                    font-weight: 400;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: rgba(0, 0, 0, 45%);
+                    flex: none;
+                    word-break: break-all;
+                    line-height: 22px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+
+        .group_content_one_line {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+
+            .group_content_item_content {
+                flex: none;
+                width: auto;
+            }
+        }
+    }
+}
+
+.next_arrow {
+    right: 0 !important;
+    z-index: 1;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 100%;
+    background: #fff !important;
+    box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 5%);
+
+    svg {
+        width: 14px;
+        height: 14px;
+        color: var(--primary-color);
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.prev_arrow {
+    left: -16px !important;
+    z-index: 1;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 100%;
+    background: #fff !important;
+    box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 5%);
+
+    svg {
+        width: 14px;
+        height: 14px;
+        color: var(--primary-color);
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.custom_empty {
+    padding-top: 0;
+    width: 100%;
+    height: 70px;
+
+    & > div {
+        flex: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    & > p {
+        margin: 4px 0 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

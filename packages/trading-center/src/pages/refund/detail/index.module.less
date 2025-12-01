@@ -1,0 +1,277 @@
+.oneLine() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.numLine(@line) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+}
+
+.layout_page {
+    width: 100%;
+    min-width: 1200px;
+    min-height: calc(100vh - 0.4rem);
+    // padding-top: 0.4rem;
+    background: #f7f8fc;
+
+    .layout_content {
+        width: 100%;
+        min-height: calc(100vh - 0.41rem);
+        // padding-bottom: 100px;
+        background-image: url('https://wtzp-static.oss-cn-hangzhou.aliyuncs.com/public/fe_user_pc/images/refund_bg.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+}
+
+.refund {
+    .refund_top {
+        width: 100%;
+        background: #fff;
+        border-radius: 8px;
+
+        .refund_info {
+            display: flex;
+            align-items: center;
+            width: 1152px;
+            height: 40px;
+            margin-bottom: 24px;
+            padding: 0 17px;
+            color: rgba(0, 0, 0, 0.65);
+            font-weight: 400;
+            font-size: 16px;
+            background: #fffbe6;
+            border: 1px solid #ffe58f;
+            border-radius: 6px;
+
+            .refund_info_icon {
+                margin-right: 10px;
+                fill: #faad14;
+            }
+        }
+
+        .step {
+            & div[class*='transaction-steps-item-description'] {
+                max-width: fit-content !important;
+            }
+        }
+    }
+    .space {
+        height: 16px;
+    }
+
+    .refund_body {
+        display: flex;
+        // align-items: center;
+        min-height: 600px;
+        .reason_content {
+            width: 750px;
+            white-space: pre-wrap;
+        }
+        .step {
+            width: 220px;
+            flex-shrink: 0;
+        }
+
+        .split_line {
+            flex-shrink: 0;
+            width: 1px;
+            // height: 100%;
+            background-color: #e8e8e8;
+            margin-left: 80px;
+        }
+        .content {
+            flex: 1;
+            .line {
+                width: 100%;
+                height: 1px;
+                background-color: #e8e8e8;
+            }
+            .detail_content {
+                margin-left: 24px;
+            }
+
+            .order_item_body_goods_item_goods {
+                display: flex;
+                flex: 1;
+                box-sizing: border-box;
+
+                .order_item_body_goods_item_goods_image {
+                    box-sizing: border-box;
+                    width: 104px;
+                    height: 104px;
+                    padding: 8px;
+                    border: 1px solid rgba(0, 0, 0, 15%);
+                    border-radius: 6px;
+
+                    > img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .order_item_body_goods_item_goods_desc {
+                    margin-left: 16px;
+
+                    .order_item_body_goods_item_goods_name {
+                        width: 400px;
+                        color: rgba(0, 0, 0, 85%);
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .order_item_body_goods_item_goods_attr {
+                        width: 400px;
+                        height: 24px;
+                        margin-top: 8px;
+                        color: rgba(0, 0, 0, 45%);
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .refund_bottom {
+        width: 100%;
+        padding: 32px 24px;
+        background: #fff;
+        border-radius: 8px;
+
+        .refund_bottom_title {
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+}
+
+.result_content {
+    position: relative;
+    width: 100%;
+    padding-top: 24px;
+
+    &::before {
+        position: absolute;
+        bottom: -30px;
+        left: -22px;
+        width: calc(100% + 44px);
+        height: calc(100% + 28px);
+        background: var(--primary-color-006);
+        border-radius: 0 0 8px 8px;
+        content: '';
+    }
+}
+
+.data_content {
+    width: 100%;
+    margin: 24px 0 48px 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .data_info {
+        display: flex;
+
+        .data_title {
+            flex: none;
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .data_value {
+            color: rgba(0, 0, 0, 0.65);
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+
+.footer_content {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    width: 100%;
+    min-width: 1200px;
+    height: 72px;
+    background: #fff;
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.03);
+    filter: blur(0);
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 1200px;
+        height: 100%;
+        margin: auto;
+
+        .back_btn {
+            display: flex;
+            align-items: center;
+            margin-right: 17px;
+            padding: 0 15px;
+            cursor: pointer;
+            opacity: 0.45;
+
+            .icon {
+                width: 18px;
+                height: 16px;
+                margin-right: 8px;
+                color: rgba(0, 0, 0, 0.45);
+            }
+
+            & > span {
+                color: rgba(0, 0, 0, 1);
+                font-weight: 400;
+                font-size: 16px;
+                font-family: PingFangSC-Regular, PingFang SC;
+            }
+        }
+    }
+}
+
+.go_back {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 24px;
+    cursor: pointer;
+
+    &:hover .svg_icon {
+        opacity: 1;
+        fill: var(--primary-color);
+    }
+
+    .svg_icon {
+        width: 18px;
+        height: 16px;
+        margin-right: 8px;
+        opacity: 0.45;
+        fill: #000;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+
+    .image {
+        width: 18px;
+        height: 16px;
+        margin-right: 4px;
+    }
+}

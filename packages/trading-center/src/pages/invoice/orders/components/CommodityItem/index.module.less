@@ -1,0 +1,324 @@
+.commodity_item {
+    width: 100%;
+    // margin-top: 17px;
+    // margin-bottom: 17px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+
+    .hover_text {
+        max-width: 389px;
+        padding: 4px 8px;
+        color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 0.05), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+            0 3px 6px -4px rgba(0, 0, 0, 0.12);
+    }
+
+    [class='transaction-popover-inner-content'] {
+        padding: 0;
+    }
+
+    [class='transaction-popover-inner'] {
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .commodity_item_hearder {
+        display: flex;
+        justify-content: space-between;
+        height: 48px;
+        padding: 0 16px;
+        font-size: 16px;
+        line-height: 48px;
+        background-color: var(--primary-color-005);
+        // background: #f5f9ff;
+        border-radius: 7px 7px 0 0;
+        .commodity_item_left {
+            display: flex;
+            align-items: center;
+            .commodity_item_checkbox {
+                margin-right: 8px;
+            }
+            .order_no {
+                display: block;
+                color: rgba(0, 0, 0, 0.85);
+                font-weight: 400;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+
+        .order_time {
+            color: rgba(0, 0, 0, 0.45);
+        }
+    }
+
+    .content {
+        display: flex;
+
+        .image {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .all_price {
+            width: 136px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .commodity_item_list {
+            flex: 1;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 18px 0 18px 15px;
+
+                .image_warp {
+                    flex-shrink: 0;
+                    box-sizing: border-box;
+                    width: 104px;
+                    height: 104px;
+                    margin-right: 16px;
+                    padding: 8px;
+                    border: 1px solid rgba(0, 0, 0, 0.15);
+                    border-radius: 6px;
+                }
+
+                .describe {
+                    .name {
+                        margin-bottom: 16px;
+                        color: rgba(0, 0, 0, 0.85);
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 24px;
+                        white-space: normal;
+                        word-wrap: break-word;
+                    }
+
+                    .cycle {
+                        display: -webkit-box;
+                        max-width: 400px;
+                        margin-bottom: 4px;
+                        overflow: hidden;
+                        color: rgba(0, 0, 0, 0.45);
+                        font-size: 16px;
+                        line-height: 28px;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                    }
+                }
+
+                .item_data {
+                    display: flex;
+                    margin-right: 0;
+                    margin-left: auto;
+
+                    .serve {
+                        width: 152px;
+                        color: rgba(0, 0, 0, 0.45);
+
+                        span {
+                            margin-right: 4px;
+                        }
+
+                        &:hover {
+                            color: rgba(0, 0, 0, 0.85);
+                        }
+                    }
+
+                    .serve_content {
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                    > div {
+                        box-sizing: border-box;
+                        // width: 112px;
+                        width: 120px;
+                        height: 24px;
+                        color: rgba(0, 0, 0, 0.85);
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .only_good {
+                height: 190px;
+            }
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 130px;
+            padding: 16px;
+            border-bottom: 1px solid #e8e8e8;
+            border-left: 1px solid #e8e8e8;
+
+            .status_item {
+                display: flex;
+                align-items: center;
+
+                .point0,
+                .point1,
+                .point2,
+                .point3,
+                .point4,
+                .point5 {
+                    width: 8px;
+                    height: 8px;
+                    margin-right: 8px;
+                    background-color: #faad14;
+                    border-radius: 50%;
+                }
+
+                .point1,
+                .point3 {
+                    background-color: #0067ff;
+                }
+
+                .point2 {
+                    background-color: #d9d9d9;
+                }
+
+                .point5 {
+                    background-color: #ff4d4f;
+                }
+
+                .text {
+                    height: 24px;
+                    color: rgba(0, 0, 0, 0.85);
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .payment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 152px;
+            padding: 16px;
+            border-bottom: 1px solid #e8e8e8;
+            border-left: 1px solid #e8e8e8;
+
+            > a:not(:first-child) {
+                margin-top: 16px;
+            }
+
+            .to_payment {
+                min-width: 70px !important;
+                min-height: 32px !important;
+            }
+            .no_payment {
+                margin-top: 16px;
+            }
+            .no_payment,
+            .editor_payment {
+                display: block;
+                height: 24px;
+                color: rgba(0, 0, 0, 0.45);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                // margin-top: 16px;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .desc {
+        display: flex;
+        padding: 16px;
+        color: rgba(0, 0, 0, 0.45);
+        font-size: 16px;
+
+        > div:first-child {
+            flex-shrink: 0;
+        }
+    }
+}
+
+[class='transaction-list-header'] {
+    padding: 0;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 6px 6px 0 0;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.06);
+    // margin-bottom: 16px;
+}
+
+.hearder {
+    &,
+    li {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    line-height: 56px;
+    background: #fafafa;
+
+    > li {
+        box-sizing: border-box;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    > li:not(:first-child) {
+        border-left: 1px solid #e8e8e8;
+    }
+
+    > li:first-child {
+        flex: 5;
+    }
+
+    .price,
+    .num,
+    .rate,
+    .all_price,
+    .state {
+        width: 120px;
+    }
+
+    .all_price {
+        width: 136px;
+    }
+
+    .state {
+        width: 132px;
+    }
+
+    .editor {
+        width: 152px;
+    }
+}

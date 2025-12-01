@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>邮箱验证</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .info_content {
+            width: 480px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 41px 33px;
+            margin: 100px auto;
+            box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%);
+        }
+
+        .logo_content {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            background: #fff url('https://static.zpimg.cn/public/fe_user_pc/images/png_logo%402x.png') no-repeat center / contain;
+            margin-right: 6px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-family: AlibabaPuHuiTiM;
+            color: #002140;
+        }
+
+
+        .wellcome {
+            width: 100%;
+            font-size: 20px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8500);
+            margin: 31px 0 16px 0;
+        }
+
+
+        .warring {
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.6500);
+        }
+
+
+        .code {
+            width: 416px;
+            height: 56px;
+            background: #F7F9FC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: bold;
+            color: #1678FF;
+            margin: 40px auto 0;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .info_content {
+                width: 16em;
+                border-radius: 1em;
+                padding: 2em 1.5em;
+            }
+
+
+            .logo {
+                width: 1.8em;
+                height: 1.8em;
+                margin-right: 0.3em;
+            }
+
+            .title {
+                font-size: 1.5em;
+            }
+
+
+            .wellcome {
+                font-size: 1em;
+                margin: 1em 0 0.8em 0;
+            }
+
+
+            .warring {
+                font-size: 0.8em;
+            }
+
+
+            .code {
+                width: 100%;
+                height: 56px;
+                font-size: 2em;
+                margin: 40px auto 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="info_content">
+        <div class="logo_content">
+            <div class="logo"></div>
+            <div class="title">用户中心</div>
+        </div>
+        <div class="wellcome">18888888888，您好！</div>
+        <div class="warring">您本次收取的邮箱验证码如下，请在30分钟内输入验证码完成验证操作，如非你本人操作，请忽略此邮件。</div>
+        <div class="code">847765</div>
+    </div>
+</body>
+
+</html>

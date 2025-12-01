@@ -1,0 +1,122 @@
+.page {
+    .custom_collapse {
+        overflow: hidden;
+        padding: 0;
+        width: 216px;
+        border: 0 !important;
+        background: #fff;
+
+        .icon {
+            font-size: 10px;
+            color: rgba(0, 0, 0, 65%);
+        }
+
+        .custom_title {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 85%);
+        }
+    }
+
+    .custom_panel {
+        overflow: hidden;
+        border: 0 !important;
+        border-radius: 2px;
+        background: #fff;
+
+        .drop_content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            border-radius: 6px;
+
+            .active {
+                overflow: hidden;
+                background: var(--primary-color);
+
+                .drag_image {
+                    fill: #fff !important;
+                }
+
+                .drag_title {
+                    color: #fff !important;
+                }
+            }
+
+            &:hover {
+                background: var(--primary-color);
+
+                .drag_image {
+                    fill: #fff !important;
+                }
+
+                .drag_title {
+                    color: #fff !important;
+                }
+            }
+        }
+
+        div[class~='ant-collapse-content'] {
+            border: 0;
+
+            div[class~='ant-collapse-content-box'] {
+                display: flex;
+                // padding: 15px 24px;
+                padding: 0 24px;
+                width: 100%;
+                flex-wrap: wrap;
+
+                .panel_item {
+                    position: relative;
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                    width: 80px;
+                    height: 84px;
+
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+
+                    .drag_item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80px;
+                        height: 84px;
+                        flex-direction: column;
+
+                        .drag_title {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 65%);
+                        }
+                    }
+
+                    .drag_image {
+                        margin-bottom: 4px;
+                        width: 32px;
+                        height: 32px;
+                        color: rgba(0, 0, 0, 65%);
+                    }
+
+                    &:hover {
+                        border-radius: 8px;
+                        color: #fff;
+                        background-color: var(--primary-color);
+                        transition: all 0.5s;
+                    }
+
+                    &:hover svg {
+                        transition: all 0.5s;
+                        fill: #fff;
+                    }
+
+                    &:hover .drag_title {
+                        color: #fff;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}

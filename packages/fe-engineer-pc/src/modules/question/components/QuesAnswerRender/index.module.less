@@ -1,0 +1,34 @@
+.answer_wrapper {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    font-size: 16px;
+    font-family: PingFangSC, 'PingFang SC';
+    font-weight: 400;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 85%);
+    line-height: 24px;
+
+    .label {
+        font-size: 16px;
+        font-family: PingFangSC, 'PingFang SC';
+        font-weight: 400;
+        color: rgba(0, 0, 0, 45%);
+        line-height: 24px;
+        flex-shrink: 0;
+    }
+}
+
+.html {
+    :global {
+        p {
+            margin-bottom: 0;
+            word-break: break-all;
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    }
+}

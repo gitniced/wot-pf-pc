@@ -1,0 +1,263 @@
+/* stylelint-disable selector-class-pattern */
+.page {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 56px;
+
+    .tips_wrapper {
+        :global {
+            .fe-enroll-permission-pc-alert-description {
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.65);
+                line-height: 24px;
+                text-align: left;
+                font-style: normal;
+            }
+
+            .fe-enroll-permission-pc-alert-icon {
+                width: 21px;
+                height: 21px;
+                margin-top: 2px;
+            }
+
+            .fe-enroll-permission-pc-alert-message {
+                font-weight: 500;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.85);
+                line-height: 24px;
+
+            }
+        }
+    }
+
+    .content {
+        .form {
+            margin-top: 24px;
+
+            .isLogo {
+                width: 80px;
+                height: 80px;
+                background: #fff;
+                border: 1px solid rgba(0, 0, 0, 15%);
+                border-radius: 8px;
+
+                :global {
+                    .fe-enroll-permission-pc-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80px;
+                        height: 80px;
+                        border: none;
+
+                        .fe-enroll-permission-pc-image-img {
+                            width: 64px;
+                            height: 64px;
+                            margin-right: 3px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            .form_no_mb {
+                margin-bottom: 12px !important;
+            }
+
+            .theme_view_item {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                margin-right: 20px;
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.45);
+                line-height: 24px;
+            }
+
+            .custom_theme_img {
+                box-sizing: border-box;
+                width: 72px;
+                height: 92px;
+                border-radius: 10px;
+                border: 1px solid #dfdfdf;
+            }
+
+            .themeColor {
+                :global {
+                    .ant-image {
+                        box-sizing: border-box;
+                        width: 72px;
+                        height: 92px;
+                    }
+
+                    .ant-image-img:hover {
+                        box-sizing: border-box;
+                        border: 1px solid var(--primary-color);
+                        border-radius: 6px;
+                    }
+                }
+
+                .color_png {
+                    border: 1px solid var(--primary-color);
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .upload {
+            width: 104px;
+            height: 104px;
+            font-size: 14px;
+        }
+
+        :global {
+            .ant-upload {
+                flex-direction: column;
+            }
+
+            [class~='ant-upload-select-picture-card'] {
+                border-radius: 6px !important;
+            }
+
+            .ant-form-item-extra {
+                margin-top: 8px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.65);
+                line-height: 24px;
+            }
+
+            .fe-enroll-permission-pc-form-item-control-input-content {
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.65);
+                line-height: 24px;
+
+            }
+
+            .fe-enroll-permission-pc-form-item-label {
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.85);
+                line-height: 24px;
+
+            }
+
+            .ant-form-item {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    :global {
+        .ant-form-item .ant-input-textarea-show-count::after {
+            position: absolute;
+            right: 8px;
+            bottom: 26px;
+        }
+
+        .ant-input-textarea {
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+        }
+
+        .ant-input-textarea-show-count>.ant-input {
+            margin-bottom: 26px;
+            border: 0;
+        }
+
+        .ant-input-textarea-show-count>.ant-input:focus {
+            box-shadow: 0 0 0 0;
+        }
+    }
+
+    .input_btn {
+        display: inline-flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .domain_extra {
+        word-break: break-all;
+
+        &_title {
+            margin-bottom: 4px;
+        }
+    }
+
+    .sub_title {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 24px;
+        text-align: left;
+        font-style: normal;
+        margin-left: 8px;
+    }
+}
+
+.footer {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 1054px;
+    height: 56px;
+    background-color: #fff;
+    padding: 0 24px;
+    box-shadow: 0px -3px 12px 0px rgba(0, 0, 0, 0.06);
+    filter: blur(0px);
+
+    .enrollment_status_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .enrollment_status_label {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+
+            .info_icon {
+                font-size: 14px;
+            }
+        }
+
+        .enrollment_switch {
+            :global {
+                .ant-switch-inner {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .status_badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background-color: #ff4d4f;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+    }
+}
